@@ -1,0 +1,33 @@
+#! /bin/sh
+
+
+i=1
+for monitor in $(bspc query -M); do
+bspc monitor $monitor \
+        -n "$i" \
+        -d $i/{i,ii}
+    let i++
+done
+NMON=$i
+unset i
+
+bspc config border_width        2
+bspc config window_gap         12
+
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_follows_pointer true
+
+bspc config normal_border color "#1C1919"
+bspc config active_border color "#403D3C"
+bspc config focused_border color "#817267"
+
+bspc rule -a Feh floating=true center=true
+bspc rule -a magic floating=true center=true
+
+bspc config top_padding 20
+
+exec xfce4-session &
+nitrogen --restore &
+compton

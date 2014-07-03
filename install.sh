@@ -15,7 +15,7 @@ files=".bashrc .vim .compton.conf .vimrc .Xdefaults .config/bspwm .config/sxhkd"
 echo "Changing to the $dir directory"
 cd $dir
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# creates symlinks for all the files 
 for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file

@@ -1,0 +1,90 @@
+#page-content {
+    border-width: 0px !important;
+}
+
+/* tabs below toolbar */
+#navigator-toolbox > #toolbar-menubar { -moz-box-ordinal-group: 1 !important; }
+#navigator-toolbox > #nav-bar { -moz-box-ordinal-group: 2 !important; }
+#navigator-toolbox > #PersonalToolbar { -moz-box-ordinal-group: 3 !important; }
+#navigator-toolbox > #TabsToolbar { -moz-box-ordinal-group: 4 !important; }
+
+/* tab separators */
+.tabbrowser-tab:after, .tabbrowser-tab:before { visibility: hidden !important; }
+
+#back-button, #forward-button {
+    display: none !important;
+}
+
+#nav-bar, #urlbar-container, #search-container, #openLocation { 
+    /*display: none !important;*/
+    background:#161616!important; 
+    border-width: 0px !important;
+    min-height: 26px !important;
+    max-height: 26px !important;
+    padding: 0 0 0 0 !important;
+}
+
+
+
+/* make tabs not huge */ 
+.tabbrowser-tab .tab-content { padding: 0 3px 12px 7px !important; }
+.tabbrowser-tab[selected] .tab-content{ padding: 0 3px 12px 7px !important; }
+
+/* tab backgrounds are ugly */
+.tab-background {opacity:0!important;}
+
+#TabsToolbar {
+    -moz-appearance:none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 -16px -1px -13px !important;
+}
+
+tabs {
+    max-height: 20px !important;
+    min-height: 20px !important;
+    background: #333333!important;
+    font-family: leem !important;
+    /*font-size: 10px !important;*/
+    text-align: center !important;
+    border:0px solid #161616!important;
+    border-width: 0px !important;
+    margin: 0 0 0 0 !important;
+    color: #95BDBD !important;
+}
+
+ tab, tabbrowser-tabs { 
+    background-image:none !important;
+    background: none !important;
+    border:0px solid #222222 !important;
+    margin:0;
+}
+
+.tabbrowser-tab[selected] {
+    background: #222222 !important; 
+    color: #95BDBD !important;
+}
+
+window, #url-bar {
+    border:0px solid #161616!important;
+    font-size: 10px !important;
+    font-family:leem! important;
+}
+
+#urlbar {
+    -moz-appearance:none !important;
+    background: #222222 !important; 
+    margin: 0 0 /*7px*/ -2px 2px !important;
+    height:20px !important;
+    border:none !important;
+    border-radius:0px !important;
+    font-family: leem !important;
+    box-shadow: none !important;
+} 
+
+#toolbar {
+    border-width: 0px !important;
+}
+
+.tabs-newtab-button { display: none !important; }
+.tab-close-button {display: none;}

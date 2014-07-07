@@ -15,37 +15,36 @@ Urxvt.boldFont:
 URxvt.internalBorder: 8
 URxvt.externalBorder: 0
 
-*foreground: #D7D0C7
-*background: #151515
 
-!black
-! *color0:     #AF875F
-! *color8:     #AF875F
-*color0:     #101010
-*color8:     #404040
-!red
-*color1:     #E84F4F
-*color9:     #D23D3D
-!green
-*color2:     #B8D68C
-*color10:    #A0CF5D
-!yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
-!blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
-!magenta
-*color5:     #9B64FB
-*color13:    #8542FF
-!cyan
-*color6:     #6D878D
-*color14:    #42717B
-!white
-*color7:     #dddddd
-*color15:    #dddddd
+*background: #090909
+*foreground: #969696
 
-URxvt*borderColor:        #151515
+! Black (not tango) + DarkGrey
+*color0:  #090909
+*color8:  #2d2d2d
+! DarkRed + Red
+*color1:  #6f2522
+*color9:  #9e2c26
+! DarkGreen + Green
+*color2:  #3c472b
+*color10: #597630
+! DarkYellow + Yellow
+*color3:  #62542b
+*color11: #b79326
+! DarkBlue + Blue
+*color4:  #2f3146
+*color12: #454975
+! DarkMagenta + Magenta
+*color5:  #352646
+*color13: #5e4679
+!DarkCyan + Cyan (both not tango)
+*color6:  #263b46
+*color14: #487084
+! LightGrey + White
+*color7:  #969696
+*color15: #cccccc
+
+!URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
 URxvt*cursorColor:        #ff8939
 URxvt*cursorColor2:       #151515fffff

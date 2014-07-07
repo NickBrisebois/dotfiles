@@ -1,0 +1,10 @@
+background no
+out_to_console yes
+short_units yes
+out_to_x no
+override_utf8_locale yes
+update_interval 1
+total_run_times 0
+
+TEXT
+C$mem @ $cpu% ~ ${time %a %d %b} ${time %I:%M%P}\

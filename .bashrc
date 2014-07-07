@@ -179,20 +179,14 @@ alias kill9='kill -9 $1'
 conf() {
 
 case $1 in
-bspwm)	vim ~/.config/bspwm/bspwmrc ;;
-sxhkd)	vim ~/.config/sxhkd/sxhkdrc ;;
-conky)	vim ~/.config/bspwm/conkyrc ;;
-mpd)	sudo vim /etc/mpd.conf ;;
-ncmpcpp) vim ~/.ncmpcpp/config ;;
+bspwm)	cd ~/dotfiles/.config/bspwm; ls;;
+sxhkd)	cd ~/dotfiles/.config/sxhkd; vim ~/.config/sxhkd/sxhkdrc ;;
 pacman)	sudo vim /etc/pacman.conf ;;
-tmux)	vim ~/.tmux.conf ;;
 vim)	sudo vim /etc/vimrc ;;
 xinit)	vim ~/.xinitrc ;;
 xresource)	vim ~/.Xresources && xrdb ~/.Xresources ;;
-vimpcol)	vim ~/.vimperator/colors/darkmess.vimp ;;
 bashrc)	vim ~/.bashrc && source ~/.bashrc ;;
-userchrome) vim ~/.mozilla/firefox/9shb6xj3.default/chrome/userChrome.css ;;
-compton) vim ~/compton.conf && killall compton && compton -b ;;
+compton) vim ~/.compton.conf && killall compton && compton -b ;;
 *)	echo "Unknown application: $1" ;;
 esac
 }

@@ -5,8 +5,6 @@ fi
  
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
  
-flavor=${1:-bar}
- 
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
  
@@ -17,16 +15,8 @@ xtitle -sf 'T%s' > "$PANEL_FIFO" &
 conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 #clock -sf 'S%D %A %H:%M' > "$PANEL_FIFO" &
  
-case "$flavor" in
-    bar)
-        cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_bar | bar &
-        ;;
-    dzen2)
-        . panel_colors
-        FONT_FAMILY='Amble'
-        FONT_SIZE=11
-        cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | dzen2 -xs 1 -h $PANEL_HEIGHT -dock -ta l -title-name panel -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" &
-        ;;
-esac
- 
+. panel_colors
+FONT_FAMILY='Amble'
+FONT_SIZE=11
+cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | dzen2 -xs 1 -h $PANEL_HEIGHT -dock -ta l -title-name panel -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" &
 wait

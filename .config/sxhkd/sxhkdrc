@@ -102,7 +102,7 @@ alt + shift + Return
 
 #Run launcher
 alt + d 
-    dmenu_run -p 'enter something... '
+	dmenu_run -i -x 5 -y 20 -w 250 -q -l 5 -p "> " -fn "DejaVu Sans Mono:size=8" -nb "#090909" -nf "#696969" -sb "#090909" -sf "#696969" 
 
 # make sxhkd reload its configuration files:
 alt + Escape

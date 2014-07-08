@@ -9,6 +9,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 
@@ -46,8 +48,6 @@ set backspace=2
  
 set autoindent      
  
-set textwidth=79   
- 
 set formatoptions=c,q,r,t 
  
 set ruler 
@@ -66,5 +66,5 @@ if (&t_Co == 256 || &t_Co == 88) && !has('gui_running') &&
     " Use the guicolorscheme plugin to makes 256-color or 88-color
     " terminal use GUI colors rather than cterm colors.
     runtime! plugin/guicolorscheme.vim
-    colorscheme cottonmouse 
+    colorscheme jellybeans 
 endif

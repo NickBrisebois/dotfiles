@@ -4,11 +4,13 @@ printf "%s\n" "The panel is already running." >&2
 fi
  
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
- 
+
+PANEL_FIFO="/tmp/panel-fifo"
+
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
  
-bspc config top_padding 15
+bspc config top_padding 20
  
 bspc control --subscribe > "$PANEL_FIFO" &
 xtitle -sf 'T%s' > "$PANEL_FIFO" &
@@ -18,5 +20,5 @@ conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 . panel_colors
 FONT_FAMILY='Amble'
 FONT_SIZE=11
-cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | dzen2 -xs 1 -h $PANEL_HEIGHT -dock -ta l -title-name panel -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" &
+cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | dzen2 -xs 1 -x 5 -y 5 -w 1910 -h $PANEL_HEIGHT -dock -ta l -title-name panel -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" &
 wait

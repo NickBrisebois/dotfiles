@@ -102,7 +102,7 @@ alt + shift + Return
 
 #Run launcher
 alt + d 
-	dmenu_run -i -x 5 -y 20 -w 250 -q -l 5 -p "> " -fn "DejaVu Sans Mono:size=8" -nb "#090909" -nf "#696969" -sb "#090909" -sf "#696969" 
+	dmenu_run -i -x 5 -y 25 -w 250 -q -l 5 -p "> " -fn "DejaVu Sans Mono:size=8" -nb "#181512" -nf "#9a875f" -sb "#181512" -sf "#9a875f"
 
 # make sxhkd reload its configuration files:
 alt + Escape
@@ -114,13 +114,13 @@ Print
 
 #Volume Keys
 XF86AudioRaiseVolume
-    pulseaudio-ctl up
+    amixer set Master 5+ 
 
 XF86AudioLowerVolume
-    pulseaudio-ctl down
+    amixer set Master 5-
 
 XF86AudioMute 
-    pulseaudio-ctl mute
+    amixer set Master toggle
 
 #Media Keys
 XF86AudioPlay

@@ -30,6 +30,8 @@ alias pacro="/usr/bin/pacman -Qtdq > /dev/null && sudo /usr/bin/pacman -Rns \$(/
 # aur aliases
 alias yaur="yaourt -Syua"
 
+alias aur="yaourt"
+alias pkS="packer"
 
 alias thunard="dbus-launch thunar"
 

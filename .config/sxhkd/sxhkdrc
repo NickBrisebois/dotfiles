@@ -114,13 +114,13 @@ Print
 
 #Volume Keys
 XF86AudioRaiseVolume
-    amixer set Master 5+ 
+    pulseaudio-ctl up 
 
 XF86AudioLowerVolume
-    amixer set Master 5-
+    pulseaudio-ctl down   
 
 XF86AudioMute 
-    amixer set Master toggle
+    pulseaudio-ctl mute
 
 #Media Keys
 XF86AudioPlay

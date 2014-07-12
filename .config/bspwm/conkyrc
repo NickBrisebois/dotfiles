@@ -14,3 +14,4 @@ C^fg()${if_running mocp}^i(/home/nick/dotfiles/.config/bspwm/images/music.xbm)  
 ^fg()^i(/home/nick/dotfiles/.config/bspwm/images/wifi_02.xbm)  ^fg(\#bea492)${wireless_essid wlp4s0}  \
 ^fg()^i(/home/nick/dotfiles/.config/bspwm/images/volume100.xbm)  ^fg(\#bea492)${execi 1 amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq}%  \
 ^fg()^i(/home/nick/dotfiles/.config/bspwm/images/clock.xbm)  ^fg(\#bea492)${time %I:%M%P}
+

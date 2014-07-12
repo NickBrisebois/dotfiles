@@ -17,6 +17,8 @@ cd $dir
 
 # creates symlinks for all the files 
 for file in files; do
+    echo "Deleting old files if they exist"
+    rm -r $dir/$file
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done

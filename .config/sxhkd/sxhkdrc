@@ -60,6 +60,9 @@ alt + ctrl + {_,shift + }space
 alt + super + {Left,Down,Up,Right}
 	bspc window -e {left -20,down +20,down -20,left +20}
 
+alt + super + {h,j,k,l}
+	bspc window -e {left -20,down +20,down -20,left +20}
+
 alt + {v, c}
     bspc window -p {right, down}
 

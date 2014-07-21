@@ -2,12 +2,12 @@ background no
 out_to_console yes
 short_units yes
 out_to_x no
-text_buffer_size 2048
+#text_buffer_size 2048
 override_utf8_locale yes
 update_interval 1
 total_run_times 0
 if_up_strictness address
-use_spacer left
+#use_spacer left
 
 TEXT
 C^fg()${if_running mocp}^i(/home/nick/dotfiles/.config/bspwm/images/music.xbm)  ^fg(\#bea492)${execi 1 mocp -Q %song}-${execi 1 mocp -Q %artist} ${else}^fg()^i(/home/nick/dotfiles/.config/bspwm/images/pause.xbm)  ^fg(\#696969)No music playing^fg()${endif}  \

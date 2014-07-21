@@ -183,8 +183,9 @@ conf() {
 case $1 in
 bspwm)	cd ~/dotfiles/.config/bspwm; ls;;
 sxhkd)	cd ~/dotfiles/.config/sxhkd; vim ~/.config/sxhkd/sxhkdrc ;;
+openbox) cd ~/.config/openbox; vim rc.xml ;;
 pacman)	sudo vim /etc/pacman.conf ;;
-vim)	sudo vim /etc/vimrc ;;
+vim)	vim ~/.vimrc ;;
 xinit)	vim ~/.xinitrc ;;
 xresource)	vim ~/.Xresources && xrdb ~/.Xresources ;;
 bashrc)	vim ~/.bashrc && source ~/.bashrc ;;

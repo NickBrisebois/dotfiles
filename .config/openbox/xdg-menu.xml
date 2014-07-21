@@ -1,0 +1,239 @@
+ <menu id="Accessories" label="Accessories" icon="/usr/share//icons/gnome/16x16/categories/gnome-util.png">
+      <item label="7-Zip FM" icon="/usr/share//icons/hicolor/32x32/apps/p7zip.png">
+       <action name="Execute"><execute>7zFM</execute></action>
+     </item>
+      <item label="Leafpad" icon="/usr/share//icons/hicolor/16x16/apps/leafpad.png">
+       <action name="Execute"><execute>leafpad </execute></action>
+     </item>
+      <item label="Nemo" icon="/usr/share//icons/gnome/16x16/places/folder.png">
+       <action name="Execute"><execute>nemo </execute></action>
+     </item>
+      <item label="Plank" icon="/usr/share//icons/hicolor/16x16/apps/plank.svg">
+       <action name="Execute"><execute>plank</execute></action>
+     </item>
+      <item label="Root Terminal" icon="/usr/share/pixmaps/gksu-root-terminal.png">
+       <action name="Execute"><execute>gksu -l gnome-terminal</execute></action>
+     </item>
+      <item label="compton">
+       <action name="Execute"><execute>compton</execute></action>
+     </item>
+ </menu> <!-- Accessories -->
+ <menu id="Archlinux" label="Archlinux" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+      <item label="AUR" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open https://aur.archlinux.org</execute></action>
+     </item>
+      <item label="Bugs" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open https://bugs.archlinux.org</execute></action>
+     </item>
+      <item label="Developers" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org/developers/</execute></action>
+     </item>
+      <item label="Documentation" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open https://wiki.archlinux.org/index.php/Official_Arch_Linux_Install_Guide</execute></action>
+     </item>
+      <item label="Donate" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org/donate/</execute></action>
+     </item>
+      <item label="Forum" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open https://bbs.archlinux.org</execute></action>
+     </item>
+      <item label="Homepage" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org</execute></action>
+     </item>
+      <item label="SVN" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open http://projects.archlinux.org/svntogit/</execute></action>
+     </item>
+      <item label="Schwag" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open http://www.zazzle.com/archlinux/</execute></action>
+     </item>
+      <item label="Wiki" icon="/usr/share//icons/hicolor/32x32/apps/arch-logo.png">
+       <action name="Execute"><execute>xdg-open https://wiki.archlinux.org</execute></action>
+     </item>
+ </menu> <!-- Archlinux -->
+ <menu id="Education" label="Education">
+      <item label="LibreOffice Math" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-math.png">
+       <action name="Execute"><execute>libreoffice --math </execute></action>
+     </item>
+ </menu> <!-- Education -->
+ <menu id="Games" label="Games" icon="/usr/share//icons/gnome/16x16/categories/gnome-joystick.png">
+      <item label="Dwarf Fortress" icon="///usr/share/pixmaps/dwarffortress.png">
+       <action name="Execute"><execute>dwarffortress</execute></action>
+     </item>
+      <item label="PlayOnLinux" icon="///usr/share/playonlinux/etc/playonlinux.png">
+       <action name="Execute"><execute>playonlinux</execute></action>
+     </item>
+      <item label="Steam" icon="/usr/share//icons/hicolor/16x16/apps/steam.png">
+       <action name="Execute"><execute>/usr/bin/steam </execute></action>
+     </item>
+ </menu> <!-- Games -->
+ <menu id="Graphics" label="Graphics" icon="/usr/share//icons/gnome/16x16/categories/gnome-graphics.png">
+      <item label="Feh" icon="///usr/share/feh/images/feh.png">
+       <action name="Execute"><execute>feh </execute></action>
+     </item>
+      <item label="FontForge" icon="/usr/share//icons/hicolor/16x16/apps/fontforge.png">
+       <action name="Execute"><execute>fontforge </execute></action>
+     </item>
+      <item label="LibreOffice Draw" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-draw.png">
+       <action name="Execute"><execute>libreoffice --draw </execute></action>
+     </item>
+      <item label="Okular" icon="/usr/share//icons/hicolor/16x16/apps/okular.png">
+       <action name="Execute"><execute>okular   -caption Okular</execute></action>
+     </item>
+ </menu> <!-- Graphics -->
+ <menu id="Internet" label="Internet" icon="/usr/share//icons/gnome/16x16/categories/gnome-globe.png">
+      <item label="Avahi SSH Server Browser" icon="/usr/share//icons/gnome/16x16/devices/network-wired.png">
+       <action name="Execute"><execute>/usr/bin/bssh</execute></action>
+     </item>
+      <item label="Avahi VNC Server Browser" icon="/usr/share//icons/gnome/16x16/devices/network-wired.png">
+       <action name="Execute"><execute>/usr/bin/bvnc</execute></action>
+     </item>
+      <item label="FileZilla" icon="/usr/share//icons/hicolor/16x16/apps/filezilla.png">
+       <action name="Execute"><execute>filezilla</execute></action>
+     </item>
+      <item label="Firefox" icon="/usr/share//icons/hicolor/16x16/apps/firefox.png">
+       <action name="Execute"><execute>/usr/lib/firefox/firefox </execute></action>
+     </item>
+      <item label="Skype" icon="/usr/share//icons/hicolor/16x16/apps/skype.png">
+       <action name="Execute"><execute>skype </execute></action>
+     </item>
+      <item label="Steam" icon="/usr/share//icons/hicolor/16x16/apps/steam.png">
+       <action name="Execute"><execute>/usr/bin/steam </execute></action>
+     </item>
+      <item label="TeamViewer 9" icon="///opt/teamviewer9/tv_bin/desktop/teamviewer.png">
+       <action name="Execute"><execute>/opt/teamviewer9/tv_bin/script/teamviewer</execute></action>
+     </item>
+      <item label="Transmission" icon="/usr/share//icons/hicolor/16x16/apps/transmission.png">
+       <action name="Execute"><execute>transmission-gtk </execute></action>
+     </item>
+ </menu> <!-- Internet -->
+ <menu id="Office" label="Office" icon="/usr/share//icons/gnome/16x16/categories/gnome-applications.png">
+      <item label="LibreOffice" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-startcenter.png">
+       <action name="Execute"><execute>libreoffice </execute></action>
+     </item>
+      <item label="LibreOffice Base" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-base.png">
+       <action name="Execute"><execute>libreoffice --base </execute></action>
+     </item>
+      <item label="LibreOffice Calc" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-calc.png">
+       <action name="Execute"><execute>libreoffice --calc </execute></action>
+     </item>
+      <item label="LibreOffice Draw" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-draw.png">
+       <action name="Execute"><execute>libreoffice --draw </execute></action>
+     </item>
+      <item label="LibreOffice Impress" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-impress.png">
+       <action name="Execute"><execute>libreoffice --impress </execute></action>
+     </item>
+      <item label="LibreOffice Math" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-math.png">
+       <action name="Execute"><execute>libreoffice --math </execute></action>
+     </item>
+      <item label="LibreOffice Writer" icon="/usr/share//icons/hicolor/16x16/apps/libreoffice-writer.png">
+       <action name="Execute"><execute>libreoffice --writer </execute></action>
+     </item>
+      <item label="Okular" icon="/usr/share//icons/hicolor/16x16/apps/okular.png">
+       <action name="Execute"><execute>okular   -caption Okular</execute></action>
+     </item>
+ </menu> <!-- Office -->
+ <menu id="Programming" label="Programming" icon="/usr/share//icons/gnome/16x16/categories/gnome-devel.png">
+      <item label="Geany" icon="/usr/share//icons/hicolor/16x16/apps/geany.png">
+       <action name="Execute"><execute>geany </execute></action>
+     </item>
+      <item label="MonoDevelop" icon="/usr/share//icons/hicolor/16x16/apps/monodevelop.png">
+       <action name="Execute"><execute>monodevelop </execute></action>
+     </item>
+      <item label="OpenJDK Monitoring &amp; Management Console" icon="/usr/share//icons/hicolor/16x16/apps/java.png">
+       <action name="Execute"><execute>/usr/bin/jconsole</execute></action>
+     </item>
+      <item label="OpenJDK Policy Tool" icon="/usr/share//icons/hicolor/16x16/apps/java.png">
+       <action name="Execute"><execute>/usr/bin/policytool</execute></action>
+     </item>
+      <item label="Qt4 Assistant " icon="/usr/share//icons/hicolor/32x32/apps/assistant-qt4.png">
+       <action name="Execute"><execute>assistant-qt4</execute></action>
+     </item>
+      <item label="Qt4 Designer" icon="/usr/share//icons/hicolor/128x128/apps/designer-qt4.png">
+       <action name="Execute"><execute>designer-qt4</execute></action>
+     </item>
+      <item label="Qt4 Linguist " icon="/usr/share//icons/hicolor/16x16/apps/linguist-qt4.png">
+       <action name="Execute"><execute>linguist-qt4</execute></action>
+     </item>
+      <item label="Qt4 QDbusViewer " icon="/usr/share//icons/hicolor/32x32/apps/qdbusviewer-qt4.png">
+       <action name="Execute"><execute>qdbusviewer-qt4</execute></action>
+     </item>
+ </menu> <!-- Programming -->
+ <menu id="Sound &amp; Video" label="Sound &amp; Video" icon="/usr/share//icons/gnome/16x16/categories/gnome-multimedia.png">
+      <item label="Banshee Media Player" icon="/usr/share//icons/hicolor/16x16/apps/media-player-banshee.png">
+       <action name="Execute"><execute>banshee --redirect-log --play-enqueued </execute></action>
+     </item>
+      <item label="FFADO Mixer" icon="/usr/share/pixmaps/ffado.png">
+       <action name="Execute"><execute>ffado-mixer</execute></action>
+     </item>
+      <item label="GNOME ALSA Mixer" icon="///usr/share/pixmaps/gnome-alsamixer/gnome-alsamixer-icon.png">
+       <action name="Execute"><execute>gnome-alsamixer</execute></action>
+     </item>
+      <item label="K3b" icon="/usr/share//icons/hicolor/16x16/apps/k3b.png">
+       <action name="Execute"><execute>k3b </execute></action>
+     </item>
+      <item label="PulseAudio Volume Control" icon="/usr/share//icons/gnome/16x16/apps/multimedia-volume-control.png">
+       <action name="Execute"><execute>pavucontrol</execute></action>
+     </item>
+      <item label="Qt V4L2 test Utility" icon="/usr/share//icons/hicolor/16x16/apps/qv4l2.png">
+       <action name="Execute"><execute>qv4l2</execute></action>
+     </item>
+      <item label="VLC media player" icon="/usr/share//icons/hicolor/16x16/apps/vlc.png">
+       <action name="Execute"><execute>/usr/bin/vlc --started-from-file </execute></action>
+     </item>
+      <item label="gtkpod" icon="/usr/share//icons/hicolor/16x16/apps/gtkpod.png">
+       <action name="Execute"><execute>gtkpod</execute></action>
+     </item>
+ </menu> <!-- Sound & Video -->
+ <menu id="System Tools" label="System Tools" icon="/usr/share//icons/gnome/16x16/categories/gnome-system.png">
+      <item label="Avahi Zeroconf Browser" icon="/usr/share//icons/gnome/16x16/devices/network-wired.png">
+       <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+     </item>
+      <item label="Bulk Rename" icon="/usr/share//icons/hicolor/16x16/apps/Thunar.png">
+       <action name="Execute"><execute>/usr/lib/Thunar/ThunarBulkRename </execute></action>
+     </item>
+      <item label="GParted" icon="/usr/share//icons/hicolor/16x16/apps/gparted.png">
+       <action name="Execute"><execute>/usr/bin/gparted_polkit </execute></action>
+     </item>
+      <item label="Htop" icon="/usr/share/pixmaps/htop.png">
+       <action name="Execute"><execute>xterm -e htop</execute></action>
+     </item>
+      <item label="K3b" icon="/usr/share//icons/hicolor/16x16/apps/k3b.png">
+       <action name="Execute"><execute>k3b </execute></action>
+     </item>
+      <item label="New Login" icon="/usr/share//icons/hicolor/16x16/apps/mdmflexiserver.png">
+       <action name="Execute"><execute>mdmflexiserver</execute></action>
+     </item>
+      <item label="Terminator" icon="/usr/share//icons/hicolor/16x16/apps/terminator.png">
+       <action name="Execute"><execute>terminator</execute></action>
+     </item>
+      <item label="Thunar File Manager" icon="/usr/share//icons/hicolor/16x16/apps/Thunar.png">
+       <action name="Execute"><execute>thunar </execute></action>
+     </item>
+      <item label="Tuxboot" icon="/usr/share/pixmaps/tuxboot.xpm">
+       <action name="Execute"><execute>tuxboot</execute></action>
+     </item>
+      <item label="UNetbootin" icon="/usr/share//icons/hicolor/16x16/apps/unetbootin.png">
+       <action name="Execute"><execute>/usr/bin/unetbootin_polkit</execute></action>
+     </item>
+      <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>uxterm</execute></action>
+     </item>
+      <item label="WinUSB" icon="/usr/share/pixmaps/winusbgui-icon.png">
+       <action name="Execute"><execute>winusbgui</execute></action>
+     </item>
+      <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>xterm</execute></action>
+     </item>
+      <item label="dconf Editor" icon="/usr/share//icons/hicolor/16x16/apps/dconf-editor.png">
+       <action name="Execute"><execute>dconf-editor</execute></action>
+     </item>
+      <item label="urxvt" icon="/usr/share//icons/gnome/16x16/apps/utilities-terminal.png">
+       <action name="Execute"><execute>urxvt</execute></action>
+     </item>
+      <item label="urxvt (client)" icon="/usr/share//icons/gnome/16x16/apps/utilities-terminal.png">
+       <action name="Execute"><execute>urxvtc</execute></action>
+     </item>
+      <item label="urxvt (tabbed)" icon="/usr/share//icons/gnome/16x16/apps/utilities-terminal.png">
+       <action name="Execute"><execute>urxvt-tabbed</execute></action>
+     </item>
+ </menu> <!-- System Tools -->

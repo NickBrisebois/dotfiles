@@ -4,12 +4,12 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 xsetroot -cursor_name left_ptr
 
 compton &
-thunar --daemon &
+#thunar --daemon &
 nitrogen --restore &
 unclutter &
-start-pulseaudio-x11
+start-pulseaudio-x11 &
 
-session=${1:-sxhkd & exec bspwm}
+session=${1:-sxhkd & exec bspwm & panel}
 
 case $session in 
     bspwm ) sxhkd & exec bspwm;;

@@ -52,7 +52,7 @@ set formatoptions=c,q,r,t
  
 set ruler 
  
-set background=dark 
+"set background=dark 
  
 set mouse=a         
  

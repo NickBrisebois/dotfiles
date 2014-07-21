@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .compton.conf .xinitrc .vimrc .vim .Xdefaults .config/sxhkd .config/bspwm"    # list of files/folders to symlink in homedir
+files=".bashrc .compton.conf .xinitrc .vimrc .vim .Xdefaults .config/sxhkd .config/bspwm .config/tint2 .config/openbox"    # list of files/folders to symlink in homedir
 
 ##########
 

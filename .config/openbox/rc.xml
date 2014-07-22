@@ -15,12 +15,12 @@
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
        under the mouse pointer. when followMouse is enabled -->
-    <underMouse>no</underMouse>
+    <underMouse>yes</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
     <focusDelay>1</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
-    <raiseOnFocus>no</raiseOnFocus>
+    <raiseOnFocus>yes</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
@@ -184,7 +184,11 @@
       <action name="Execute">
         <command>urxvt</command>
       </action>
+   </keybind>
+   <keybind key="A-m">
+       <action name="Iconify"/>
     </keybind>
+
     <keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>mocp --toggle-pause</command>
@@ -491,22 +495,6 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
-    </context>
-    <context name="TRCorner BRCorner TLCorner BLCorner">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </mousebind>
-      <mousebind button="Left" action="Drag">
-        <action name="Resize"/>
-      </mousebind>
-    </context>
-    <context name="Client">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -798,7 +786,7 @@
   # end of the example
 -->
     <application class="*" type="normal">
-      <decor>no</decor>
+      <decor>yes</decor>
       <position force="yes">
         <x>center</x>
         <y>center</y>

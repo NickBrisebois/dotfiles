@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PATH=$PATH:/home/nick/bin:/home/nick/bin/sublime:/home/nick/.config/bspwm/
+PATH=$PATH:/home/nick/.bin:/home/nick/bin/sublime:/home/nick/.config/bspwm/
 export PATH
 
 # environment variables
@@ -131,6 +131,7 @@ ex ()
   fi
 }
 
+
 #============================================================= 
 # cd & ls in one :- when you cd to a directory the ls command 
 # automatically lists it's contents however you have configred 
@@ -192,6 +193,16 @@ bashrc)	vim ~/.bashrc && source ~/.bashrc ;;
 compton) vim ~/.compton.conf && killall compton && compton -b ;;
 *)	echo "Unknown application: $1" ;;
 esac
+}
+
+jump () {
+    case $1 in
+        proj) cd ~/Documents/Projects/ ;;
+        img) cd ~/Images ;;
+        vid) cd ~/Videos ;;
+        conf) cd ~/.config ;;
+    *) echo "Unknown location: $1" ;;
+    esac
 }
 
 #PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "

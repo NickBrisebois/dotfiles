@@ -16,7 +16,7 @@ URxvt.internalBorder: 8
 URxvt.externalBorder: 0
 
 
-*background: #090909
+*background: #171717
 *foreground: #969696
 
 ! Black (not tango) + DarkGrey

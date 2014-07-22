@@ -10,8 +10,8 @@ if_up_strictness address
 #use_spacer left
 
 TEXT
-C^fg()${if_running mocp}^i(/home/nick/dotfiles/.config/bspwm/images/music.xbm)  ^fg(\#bea492)${execi 1 mocp -Q %song}-${execi 1 mocp -Q %artist} ${else}^fg()^i(/home/nick/dotfiles/.config/bspwm/images/pause.xbm)  ^fg(\#696969)No music playing^fg()${endif}  \
-^fg()^i(/home/nick/dotfiles/.config/bspwm/images/wifi_02.xbm)  ^fg(\#bea492)${wireless_essid wlp4s0}  \
-^fg()^i(/home/nick/dotfiles/.config/bspwm/images/volume100.xbm)  ^fg(\#bea492)${execi 1 amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq}%  \
-^fg()^i(/home/nick/dotfiles/.config/bspwm/images/clock.xbm)  ^fg(\#bea492)${time %I:%M%P}
+C^fg()${if_running mocp}^i(/home/nick/dotfiles/.config/bspwm/images/music.xbm)  ^fg(\#C8CACC)${execi 1 mocp -Q %song}-${execi 1 mocp -Q %artist} ${else}^fg()^i(/home/nick/dotfiles/.config/bspwm/images/pause.xbm)  ^fg(\#696969)No music playing^fg()${endif}  \
+^fg()^i(/home/nick/dotfiles/.config/bspwm/images/wifi_02.xbm)  ^fg(\#C8CACC)${wireless_essid wlp4s0}  \
+^fg()^i(/home/nick/dotfiles/.config/bspwm/images/volume100.xbm)  ^fg(\#C8CACC)${execi 1 amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq}%  \
+^fg()^i(/home/nick/dotfiles/.config/bspwm/images/clock.xbm)  ^fg(\#C8CACC)${time %I:%M%P}
 

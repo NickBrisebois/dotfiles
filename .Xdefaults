@@ -14,38 +14,42 @@ Urxvt.boldFont:
 
 URxvt.internalBorder: 8
 URxvt.externalBorder: 0
+!
+!! kori's colorscheme
+!
 
-
-*background: #171717
-*foreground: #969696
-
-! Black (not tango) + DarkGrey
-*color0:  #090909
-*color8:  #2d2d2d
-! DarkRed + Red
-*color1:  #6f2522
-*color9:  #9e2c26
-! DarkGreen + Green
-*color2:  #3c472b
-*color10: #597630
-! DarkYellow + Yellow
-*color3:  #62542b
-*color11: #b79326
-! DarkBlue + Blue
-*color4:  #2f3146
-*color12: #454975
-! DarkMagenta + Magenta
-*color5:  #352646
-*color13: #5e4679
-!DarkCyan + Cyan (both not tango)
-*color6:  #263b46
-*color14: #487084
-! LightGrey + White
-*color7:  #969696
-*color15: #cccccc
+URxvt.background:               #1b1b1b
+URxvt.foreground:               #FFFFFF
+URxvt.colorBD:                  #CFCFCF
+URxvt.colorUL:                  #969696
+URxvt.colorIT:                  #686868
+!Black
+*color0:                        #3D3D3D
+*color8:                        #4D4D4D 
+!Red
+*color1:                        #6673BF
+*color9:                        #899AFF 
+!Green
+*color2:                        #3EA290
+*color10:                       #52AD91
+!Yellow
+*color3:                        #B0EAD9
+*color11:                       #98C9BB
+!Blue
+*color4:                        #31658C
+*color12:                       #477AB3
+!Magenta
+*color5:                        #596196
+*color13:                       #7882BF
+!Cyan
+*color6:                        #8292B2
+*color14:                       #95A7CC
+!White
+*color7:                        #C8CACC
+*color15:                       #EDEFF2   
 
 !URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
 URxvt*cursorColor:        #ff8939
-URxvt*cursorColor2:       #151515fffff
+URxvt*cursorColor2:       #151515
 URxvt.scrollBar: false

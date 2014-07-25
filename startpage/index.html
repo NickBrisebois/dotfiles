@@ -2,61 +2,58 @@
 <html>
 <head>
 	<title>Home</title>
-    <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="main">
 
-	<pre style="letter-spacing: 0;line-height: 12px;">
-	
-    ███╗   ██╗██╗ ██████╗██╗  ██╗     ██████╗ 
-    ████╗  ██║██║██╔════╝██║ ██╔╝     ██╔══██╗
-    ██╔██╗ ██║██║██║     █████╔╝█████╗██████╔╝
-    ██║╚██╗██║██║██║     ██╔═██╗╚════╝██╔══██╗
-    ██║ ╚████║██║╚██████╗██║  ██╗     ██████╔╝
-    ╚═╝  ╚═══╝╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═════╝ 
-                                              
-    </pre>
-    <div id="stuff">  
+	<div id="links">
 
 		<div id="top">	
-			<a class="tab" href="#stuff">Stuff</a>
-			<a class="tab" onClick="setInvisible('stuff', 'about')" href="#about">About</a>
+			<a class="tab" href="#links">Links</a>
+			<a class="tab" href="#search">Search</a>
 		</div>
 
 		<div id="content"> 
-			<p>Stuff I've Made</p>
-			<a href="http://nick-b.ca/projects/Javascript/Finished/ZLT/index.html">ZLT Game</a>
-			<a href="http://nick-b.ca/projects/Javascript/Finished/FlappyTheFish/" class="green">Flappy The Fish</a>
-			<a href="http://nick-b.ca/projects/Javascript/Finished/ImgurRouletteNew/index.html" class="orange">Imgur Roulette (NSFW)</a>
+			<a href="http://www.4chan.org/g">/g/</a>
+			<a href="http://www.reddit.com" class="reddit">Reddit</a>
+			<a href="https://thepiratebay.se/" class="tpb">TPB</a>
 		</div>
 
 	</div>
 
-	<div id="about">
+	<div id="search">
 
 		<div id="top">	
-			<a class="tab" href="#stuff" onClick="setInvisible('about', 'stuff')">Stuff</a>
-			<a class="tab" href="#about">About</a>
+			<a class="tab" href="#links">Links</a>
+			<a class="tab" href="#search">Search</a>
 		</div>
 
 		<div id="content">
-		<p>Hi, I'm a guy living in Canada. I mostly just keep backups of all my projects here. You can see them <a href="http://www.nick-b.ca/projects" class="green">here</a>.
+			<input type="text" id="google"/>
 		</div>
 
 	</div>
 
 </div>
 
-<script type="text/javascript">
-	function setInvisible(div, newdiv) {
-		//This works well enough for two tabs
-		document.getElementById(div).style.display = "none";
-		document.getElementById(newdiv).style.display = "block";
-	}
-</script>
+	<script type="text/javascript">
+
+	//Shitty search javascript
+	var searchBox = document.getElementById("google")
+	searchBox.addEventListener("keydown", function(e) {
+		if(!e) {var e = window.event; }
+
+		if(e.keyCode == 13) {
+			console.log(searchBox.value);
+			window.location.href = "http://google.ca/?#q=" + searchBox.value;
+			searchBox.value = "";
+		}
+
+	}, false);
+
+	</script>
 
 </body>
 </html>

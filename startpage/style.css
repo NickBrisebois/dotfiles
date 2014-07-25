@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+html, body {
+	background-color: #191919;
+	font-family: 'Inconsolata';
+	font-size: 13px;
+	color: #ccc;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+
+pre {
+	color: #7A6E59;
+    margin-left: -12px;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+	position: absolute;
+	top: 35%;
+	width: 100%;
+}
+
+a {
+	color: #2363A5;
+	text-decoration: none;
+}
+
+.main {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: -100px;
+	margin-bottom: 20px;
+}
+
+.main a.tab{
+	width: 100px;
+	margin: 0 auto;
+	font-size: 14px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 1px;
+	display: inline;
+	color: #eee;
+	background-color: transparent;
+	font-family: 'Inconsolata';
+}
+
+/* Active Tab Colours */
+#stuff a[href="#stuff"] {background-color: #262626;}
+#about a[href="#about"]{background-color: #262626;}
+
+
+#top {background-color: #1E1E1E;}
+
+/* Tabs */
+#stuff {
+	background-color: #262626;
+	position: absolute;
+	top: 1px;
+	margin-top:15px;
+	width: 500px;
+	padding-bottom: 20px;
+}
+
+#stuff a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#about {
+	background-color: #262626;
+	position: absolute;
+	top: 1px;
+	margin-top:15px;
+	width: 500px;
+	display: none;
+	padding-bottom: 20px;
+}
+
+#about p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#content {margin-top: 20px;}
+
+
+.green {
+	color: #768741;
+}
+
+.orange {
+	color: #897242;
+}

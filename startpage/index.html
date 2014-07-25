@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+	<pre style="letter-spacing: 0;line-height: 12px;">
+	
+    ███╗   ██╗██╗ ██████╗██╗  ██╗     ██████╗ 
+    ████╗  ██║██║██╔════╝██║ ██╔╝     ██╔══██╗
+    ██╔██╗ ██║██║██║     █████╔╝█████╗██████╔╝
+    ██║╚██╗██║██║██║     ██╔═██╗╚════╝██╔══██╗
+    ██║ ╚████║██║╚██████╗██║  ██╗     ██████╔╝
+    ╚═╝  ╚═══╝╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═════╝ 
+                                              
+    </pre>
+    <div id="stuff">  
+
+		<div id="top">	
+			<a class="tab" href="#stuff">Stuff</a>
+			<a class="tab" onClick="setInvisible('stuff', 'about')" href="#about">About</a>
+		</div>
+
+		<div id="content"> 
+			<p>Stuff I've Made</p>
+			<a href="http://nick-b.ca/projects/Javascript/Finished/ZLT/index.html">ZLT Game</a>
+			<a href="http://nick-b.ca/projects/Javascript/Finished/FlappyTheFish/" class="green">Flappy The Fish</a>
+			<a href="http://nick-b.ca/projects/Javascript/Finished/ImgurRouletteNew/index.html" class="orange">Imgur Roulette (NSFW)</a>
+		</div>
+
+	</div>
+
+	<div id="about">
+
+		<div id="top">	
+			<a class="tab" href="#stuff" onClick="setInvisible('about', 'stuff')">Stuff</a>
+			<a class="tab" href="#about">About</a>
+		</div>
+
+		<div id="content">
+		<p>Hi, I'm a guy living in Canada. I mostly just keep backups of all my projects here. You can see them <a href="http://www.nick-b.ca/projects" class="green">here</a>.
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	function setInvisible(div, newdiv) {
+		//This works well enough for two tabs
+		document.getElementById(div).style.display = "none";
+		document.getElementById(newdiv).style.display = "block";
+	}
+</script>
+
+</body>
+</html>

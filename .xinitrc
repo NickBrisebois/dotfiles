@@ -14,17 +14,20 @@ conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 #clock -sf 'S%D %A %H:%M' > "$PANEL_FIFO" &
 
 compton &
-#thunar --daemon &
 nitrogen --restore &
 unclutter &
 start-pulseaudio-x11 &
+manjaro-settings-manager-daemon &
+
+sxhkd & 
+exec bspwm
 
 PANEL_FIFO="/tmp/panel-fifo"
 
-session=${1:-sxhkd & exec bspwm & panel}
+#session=${1:-sxhkd & exec bspwm}
 
-case $session in 
-    bspwm ) sxhkd & exec bspwm;;
-    *) exec $1;;
-esac
+#case $session in 
+#    bspwm ) sxhkd & exec bspwm;;
+#    *) exec $1;;
+#esac
 

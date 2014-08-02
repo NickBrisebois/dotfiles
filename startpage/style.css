@@ -1,117 +1,99 @@
-html, body {
-	background-color: #191919;
-	font-family: "Liberation Sans";
-	font-size: 13px;
-	color: #eee;
-	text-align: center;
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+html, body{
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	position: absolute;
-	top: 35%;
-	width: 100%;
+	background-color: #1b1b1b;
+	background-image: url('binding_dark.png');
+	color: #FFFFFF;
+	font-size: 13px;
 }
 
 * {
+	font-family: 'Inconsolata';
 	font-weight: 100;
-	text-decoration: none;
 }
 
-.main {
-	position: static;
-	background-color: #262626;
-	width: 500px;
-	margin: 0 auto;
-	margin-bottom: 20px;
+#container {
+	position: absolute;
+	padding: 0 20px 0 20px;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 600px;
 }
 
-.main a.tab{
-	width: 100px;
-	margin: 0 auto;
-	font-size: 14px;
-	padding-left: 5%;
-	padding-right: 5%;
-	display: inline;
-	color: #eee;
-	background-color: transparent;
-	font-family: "Liberation Mono";
+#header {
+	border: 2px solid #332d29;
+	background-color: #1b1b1b;
+	margin: 4px;
+	padding: 8px;
 }
 
-
-#top {
-	background-color: #1E1E1E;
+#header:hover {
+	border: 2px solid #504339;
 }
 
-a {
-	color: #2363A5;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-.reddit {
-	color: #768741;
-}
-
-.tpb {
-	color: #897242;
-}
 
 #links {
-	background-color: #262626;
-	position: absolute;
-	top: 1px;
-	z-index: 1;
-	margin-top:15px;
-	width: 500px;
-	height: 70px;
+	display: -moz-box;
+	display: -webkit-box;
+	width: 100%;
 }
 
-#links:target {
-	z-index: 1;
+.linksbox {
+	-moz-box-flex: 1;	
+	-webkit-box-flex: 1;
+	margin: 4px;
+	padding: 8px 8px 8px 8px;
+	background-color: #1b1b1b;
+	border: 2px solid #332d29;
 }
 
-#links a[href="#links"] {
-	background-color: #262626;
+.linksbox:hover {
+	border: 2px solid #504339;
 }
 
-#search {
-	position: absolute;
-	top: 1px;
-	margin-top: 15px;
-	width: 500px;
-	height: 70px;
-	background-color: #262626;
-	text-align: center;
+.linksbox a{
+	display: block;
+	color: #6673BF;
 }
 
-#search:target {
-	z-index: 1;
+h3 {
+	font-size: 14px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
-#search a[href="#search"]{
-	background-color: #262626;
+.blue {
+	color: #31658C;
+	padding: 0;
 }
 
-#content {
-	margin-top: 20px;
+.green {
+	padding: 0;
+	color: #3EA290;
 }
 
-#google {
-	margin-top: -10px;
-	width: 80%;
-	border: 2px solid #222;
-	background-color: transparent;
+.pink {
+	padding: 0;
+	color: #F665AE;
 }
 
-input[type="text"] {
-	color: #fff;
+form {
+	display: inline;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+input 	{
+	display: inline;
+	background: none;
+	display: inline;
+	border: none;
+	color: #FFF;
+	width: 70%;
+	font-size: 14px;
 }

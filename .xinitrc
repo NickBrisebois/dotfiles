@@ -18,6 +18,7 @@ nitrogen --restore &
 unclutter &
 start-pulseaudio-x11 &
 manjaro-settings-manager-daemon &
+clipit &
 
 sxhkd & 
 exec bspwm

@@ -27,6 +27,9 @@ html, body{
 }
 
 #header {
+    -webkit-box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-shadow: 1px 1px 20px 0px #000;
+    box-shadow: 1px 1px 20px 0px #000;
 	border: 2px solid #332d29;
 	background-color: #1b1b1b;
 	margin: 4px;
@@ -45,7 +48,10 @@ html, body{
 }
 
 .linksbox {
-	-moz-box-flex: 1;	
+    -webkit-box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-shadow: 1px 1px 20px 0px #000;
+    box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-flex: 1;	
 	-webkit-box-flex: 1;
 	margin: 4px;
 	padding: 8px 8px 8px 8px;

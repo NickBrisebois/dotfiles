@@ -7,7 +7,8 @@ xsetroot -cursor_name left_ptr
 mkfifo "$PANEL_FIFO"
  
 bspc config top_padding 20
- 
+bspc config bottom_padding 20
+
 bspc control --subscribe > "$PANEL_FIFO" &
 xtitle -sf 'T%s' > "$PANEL_FIFO" &
 conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
@@ -19,6 +20,7 @@ unclutter &
 start-pulseaudio-x11 &
 manjaro-settings-manager-daemon &
 clipit &
+plank &
 
 sxhkd & 
 exec bspwm

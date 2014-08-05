@@ -12,23 +12,29 @@
     opacity: 0.3;
 }
 
-/* tab backgrounds are ugly */
-.tab-background {opacity:0!important;}
+#nav-bar-icon {
+    opacity: 0.1 !important;
+}
+
+#nav-bar, #urlbar-container, #search-container, #openLocation {
+     /*background-color: #2A2A2A !important;*/
+     opacity: 0.9 !important;
+}
 
 #TabsToolbar {
     -moz-appearance:none !important;
-    background: #090909 !important;
     padding: 0 !important;
     margin: 0 -16px 0px -13px !important;
 }
 
 tabs {
+    opacity: 0.8 !important;
     max-height: 20px !important;
     min-height: 20px !important;
     font-family: leem !important;
-    background: #181512 !important;
-    /*font-size: 10px !important;*/
+    font-size: 11px !important;
     text-align: center !important;
+    background-color: #1F1F1F !important;
     border:0px solid #161616!important;
     border-width: 0px !important;
     margin: 0 0 0 0 !important;
@@ -36,17 +42,17 @@ tabs {
 }
 
  tab, tabbrowser-tabs { 
-    background: #181512 !important;
+    font-family: Amble !important;
     border:0px solid #222222 !important;
     margin:0;
 }
 
 .tabbrowser-tab[selected] {
-    background: #332d29 !important; 
     color: #333333 !important;
 }
 
 #toolbar {
+    background-color: #1F1F1F !important;
     border-width: 0px !important;
 }
 

@@ -14,42 +14,57 @@ Urxvt.boldFont:
 
 URxvt.internalBorder: 8
 URxvt.externalBorder: 0
-!
-!! kori's colorscheme
-!
 
-URxvt.background:               #1b1b1b
-URxvt.foreground:               #FFFFFF
-URxvt.colorBD:                  #CFCFCF
-URxvt.colorUL:                  #969696
-URxvt.colorIT:                  #686868
+#ObliivousGmn
+#GmnFrost
+
+# -------- BASE -------- #
+  *foreground: 	 #9BBBC6
+  *background: 	 #1C1C23
+  *cursorColor:  #1C1C23
+  *colorUL:      #1E828C
+# ---------------------- #
+
 !Black
-*color0:                        #3D3D3D
-*color8:                        #4D4D4D 
+*color0:               #323246
+*color8:               #323246
+
 !Red
-*color1:                        #6673BF
-*color9:                        #899AFF 
+*color1:               #5A7882
+*color9:               #5A7882
+
 !Green
-*color2:                        #3EA290
-*color10:                       #52AD91
+*color2:               #8C8CA0
+*color10:              #8C8CA0
+
 !Yellow
-*color3:                        #B0EAD9
-*color11:                       #98C9BB
+*color3:               #1E828C
+*color11:              #1E828C
+
 !Blue
-*color4:                        #31658C
-*color12:                       #477AB3
+*color4:               #3C788C
+*color12:              #3C788C
+
 !Magenta
-*color5:                        #596196
-*color13:                       #7882BF
+*color5:               #6EA0B4
+*color13:              #6EA0B4
+
 !Cyan
-*color6:                        #8292B2
-*color14:                       #95A7CC
+*color6:               #6E8CA0
+*color14:              #6E8CA0
+
 !White
-*color7:                        #C8CACC
-*color15:                       #EDEFF2   
+*color7:               #96BEC8
+*color15:              #96BEC8
+  
 
 !URxvt*borderColor:        #151515
 URxvt*colorBD:            #ffffff
 URxvt*cursorColor:        #ff8939
 URxvt*cursorColor2:       #151515
 URxvt.scrollBar: false
+
+URxvt.transparent:          true
+URxvt.shading:              40
+URxvt.blurRadius:           5
+URxvt.fading:               30

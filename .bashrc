@@ -9,7 +9,7 @@ PATH=$PATH:/home/nick/.bin:/home/nick/.config/bspwm/
 export PATH
 
 # environment variables
-export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'leafpad'; else echo 'vim'; fi)"	# gedit, nano
+export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'vim'; else echo 'vim'; fi)"	# gedit, nano
 
 # pacman aliases (if desired, adapt for your favourite AUR helper)
 alias pac="sudo /usr/bin/pacman -S"		# default action	- install one or more packages

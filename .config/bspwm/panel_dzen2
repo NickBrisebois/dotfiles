@@ -2,9 +2,6 @@
 #
 # Example panel for dzen2
 
-font_family='amble'
-font_size=11
-
 . panel_colors
 
 adaptive_centering=0

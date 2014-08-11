@@ -113,10 +113,10 @@ alt + Escape
 
 #Volume Keys
 XF86AudioRaiseVolume
-    pulseaudio-ctl up 
+    amixer -D pulse sset Master 2%+
 
 XF86AudioLowerVolume
-    pulseaudio-ctl down   
+    amixer -D pulse sset Master 2%-
 
 XF86AudioMute 
     pulseaudio-ctl mute

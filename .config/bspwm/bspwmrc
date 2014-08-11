@@ -15,7 +15,7 @@ i=1
 for monitor in $(bspc query -M); do
 bspc monitor $monitor \
         -n "$i" \
-        -d {•,•,•}
+        -d {•,•,•,•,•}
         #-d 
         #-d $i/{I,II}
     let i++

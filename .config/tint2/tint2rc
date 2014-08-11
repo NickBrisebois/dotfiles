@@ -29,7 +29,7 @@ border_color = #000000 0
 # PANEL
 #---------------------------------------------
 panel_monitor = 2
-panel_position = bottom center horizontal
+panel_position = top center horizontal
 panel_size = 100% 26
 panel_margin = 0 0
 panel_padding = 2 1
@@ -43,7 +43,7 @@ panel_layer = bottom
 # TASKBAR
 #---------------------------------------------
 #taskbar_mode = multi_desktop
-taskbar_mode = single_desktop
+#taskbar_mode = single_desktop
 taskbar_padding = 0 0 0
 taskbar_background_id = 0
 #taskbar_active_background_id = 0
@@ -52,20 +52,20 @@ taskbar_background_id = 0
 # TASKS
 #---------------------------------------------
 task_icon = 0
-task_text = 1
-task_maximum_size = 150 25
+task_text = 0
+task_maximum_size = 0 0 
 task_centered = 1
 task_padding = 5 0
 task_font = Sans 8
 task_font_color = #ffffff 80
-task_background_id = 3
-task_icon_asb = 100 0 0
+task_background_id = 1000
+task_icon_asb = 0 0 0
 # replace STATUS by 'urgent', 'active' or 'iconfied'
 #task_urgent_background_id = 2
 #task_urgent_font_color = #ffffff 85
 #task_urgent_icon_asb = 100 0 0
 # example:
-task_active_background_id = 2
+task_active_background_id = 1000
 task_active_font_color = #ffffff 100
 task_active_icon_asb = 100 0 0
 urgent_nb_of_blink = 8

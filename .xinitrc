@@ -18,19 +18,21 @@ compton &
 nitrogen --restore &
 unclutter &
 start-pulseaudio-x11 &
-manjaro-settings-manager-daemon &
 clipit &
 plank &
 
 sxhkd & 
-exec bspwm
+exec bspwm &
 
 PANEL_FIFO="/tmp/panel-fifo"
+
+panel &
 
 #session=${1:-sxhkd & exec bspwm}
 
 #case $session in 
 #    bspwm ) sxhkd & exec bspwm;;
+#    xfce ) xfce4-session;;
 #    *) exec $1;;
 #esac
 

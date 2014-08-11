@@ -10,14 +10,14 @@
     <focusNew>yes</focusNew>
     <!-- always try to focus new windows when they appear. other rules do
        apply -->
-    <followMouse>yes</followMouse>
+    <followMouse>no</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>yes</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>1</focusDelay>
+    <focusDelay>1000</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
     <raiseOnFocus>yes</raiseOnFocus>
@@ -117,15 +117,21 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+      <name>5</name>
+      <name>6</name>
+      <name>7</name>
+      <name>8</name>
+      <name>9</name>
+      <name>10</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -150,10 +156,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>30</top>
+    <bottom>50</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -184,11 +190,10 @@
       <action name="Execute">
         <command>urxvt</command>
       </action>
-   </keybind>
-   <keybind key="A-m">
-       <action name="Iconify"/>
     </keybind>
-
+    <keybind key="A-m">
+      <action name="Iconify"/>
+    </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>mocp --toggle-pause</command>
@@ -786,7 +791,7 @@
   # end of the example
 -->
     <application class="*" type="normal">
-      <decor>yes</decor>
+      <decor>no</decor>
       <position force="yes">
         <x>center</x>
         <y>center</y>

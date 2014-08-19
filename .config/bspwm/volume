@@ -7,7 +7,7 @@
 IF="Master"         # audio channel: Master|PCM
 SECS="1"            # sleep $SECS
 BG="#151515"        # background colour of window
-FG="#eeeeee"        # foreground colour of text/icon
+FG="#616161"        # foreground colour of text/icon
 BAR_FG="#616161"    # foreground colour of volume bar
 BAR_BG="#111111"    # background colour of volume bar
 XPOS="3585"          # horizontal positioning
@@ -15,11 +15,11 @@ YPOS="25"          # vertical positioning
 HEIGHT="30"         # window height
 WIDTH="250"         # window width
 BAR_WIDTH="180"     # width of volume bar
-ICON=~/.icons/xbm8x8/spkr_04.xbm
+ICON=~/.config/bspwm/images/spkr_01.xbm
 FONT="-*-clean-*-*-*-*-*-*-*-*-*-*-*-*"
-ICON_VOL=~/.icons/xbm8x8/spkr_04.xbm
-ICON_VOL_MUTE=~/.icons/xbm8x8/spkr_02.xbm
-ICON=$ICON_VOL
+ICON_VOL=~/.config/bspwm/images/spkr_02.xbm
+ICON_VOL_MUTE=~/.config/bspwm/images/volume0.xbm
+ICON=ICON_VOL
 
 #Probably do not customize
 PIPE="/tmp/dvolpipe"

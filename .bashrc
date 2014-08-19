@@ -34,6 +34,7 @@ alias aur="yaourt"
 alias pkS="packer"
 
 alias thunard="dbus-launch thunar"
+alias mu="ncmpcpp"
 
 #-------------------------------
 # function: type "path" in terminal for ordered $PATH display:

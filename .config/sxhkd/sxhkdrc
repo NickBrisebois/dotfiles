@@ -123,13 +123,13 @@ XF86AudioMute
 
 #Media Keys
 XF86AudioPlay
-    mocp --toggle-pause
+    ncmpcpp toggle
 
 XF86AudioNext
-    mocp --next
+    ncmpcpp next
 
 XF86AudioPrev
-    mocp --previous
+    ncmpcpp prev
 
 alt + g 
     thunar

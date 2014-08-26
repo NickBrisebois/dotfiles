@@ -1,9 +1,9 @@
-sw_volume: 18
+sw_volume: 100
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
 current: 0
-time: 102
+time: 146
 random: 0
 repeat: 0
 single: 0
@@ -12,38 +12,16 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Deadmau5/Deadmau5 - 4x4=12 (2010)/01 Some Chords.mp3
-1:Deadmau5/Deadmau5 - 4x4=12 (2010)/02 Sofi Needs A Ladder (Ft. Sofi).mp3
-2:Deadmau5/Deadmau5 - 4x4=12 (2010)/03 A City In Florida.mp3
-3:Deadmau5/Deadmau5 - 4x4=12 (2010)/04 Bad Selection.mp3
-4:Deadmau5/Deadmau5 - 4x4=12 (2010)/05 Animal Rights (Ft. Wolfgang Gartn.mp3
-5:Deadmau5/Deadmau5 - 4x4=12 (2010)/06 I Said (Ft. Chris Lake) (Michael.mp3
-6:Deadmau5/Deadmau5 - 4x4=12 (2010)/07 Cthulhu Sleeps.mp3
-7:Deadmau5/Deadmau5 - 4x4=12 (2010)/08 Right This Second.mp3
-8:Deadmau5/Deadmau5 - 4x4=12 (2010)/09 Raise Your Weapon (Ft. Greta Svab.mp3
-9:Deadmau5/Deadmau5 - 4x4=12 (2010)/10 One Trick Pony (Ft. Sofi).mp3
-10:Deadmau5/Deadmau5 - 4x4=12 (2010)/11 Everything Before.mp3
-11:Deadmau5/While 1 under 2/CD • I •/1-01 Avaritia.mp3
-12:Deadmau5/While 1 under 2/CD • I •/1-02 Coelacanth I.mp3
-13:Deadmau5/While 1 under 2/CD • I •/1-04 My Pet Coelacanth.mp3
-14:Deadmau5/While 1 under 2/CD • I •/1-05 Infra Turbo Pigcart Racer.mp3
-15:Deadmau5/While 1 under 2/CD • I •/1-06 Terrors In My Head.mp3
-16:Deadmau5/While 1 under 2/CD • I •/1-07 Creep.mp3
-17:Deadmau5/While 1 under 2/CD • I •/1-08 Somewhere Up Here.mp3
-18:Deadmau5/While 1 under 2/CD • I •/1-09 Phantoms Can't Hang.mp3
-19:Deadmau5/While 1 under 2/CD • I •/1-10 Gula.mp3
-20:Deadmau5/While 1 under 2/CD • II •/2-01 Acedia.mp3
-21:Deadmau5/While 1 under 2/CD • II •/2-02 Invidia.mp3
-22:Deadmau5/While 1 under 2/CD • II •/2-03 Errors In My Bread.mp3
-23:Deadmau5/While 1 under 2/CD • II •/2-05 Silent Picture.mp3
-24:Deadmau5/While 1 under 2/CD • II •/2-06 Rlyehs Lament.mp3
-25:Deadmau5/While 1 under 2/CD • II •/2-07 Superbia.mp3
-26:Deadmau5/While 1 under 2/CD • II •/2-08 Mercedes.mp3
-27:Deadmau5/While 1 under 2/CD • II •/2-09 Bleed.mp3
-28:Deadmau5/While 1 under 2/CD • II •/2-10 Ira.mp3
-29:Deadmau5/While 1 under 2/CD • II •/2-11 Monday.mp3
-30:Deadmau5/While 1 under 2/CD • II •/2-12 A Moment To Myself.mp3
-31:Deadmau5/While 1 under 2/CD • II •/2-13 Pets.mp3
-32:Deadmau5/While 1 under 2/CD • II •/2-14 Coelacanth II.mp3
-33:Deadmau5/While 1 under 2/CD • II •/2-15 Seeya (feat. Colleen D'Agostino.mp3
+0:Porter Robinson/Worlds/01 -  Divinity (feat. Amy Millan).mp3
+1:Porter Robinson/Worlds/02 -  Sad Machine.mp3
+2:Porter Robinson/Worlds/03 -  Years of War (feat. Breanne Duren & Sean Caskey).mp3
+3:Porter Robinson/Worlds/04 -  Flicker.mp3
+4:Porter Robinson/Worlds/05 -  Fresh Static Snow.mp3
+5:Porter Robinson/Worlds/06 -  Polygon Dust (feat. Lemaitre).mp3
+6:Porter Robinson/Worlds/07 -  Hear the Bells (feat. Imaginary Cities).mp3
+7:Porter Robinson/Worlds/08 -  Natural Light.mp3
+8:Porter Robinson/Worlds/09 -  Lionhearted (feat. Urban Cone).mp3
+9:Porter Robinson/Worlds/10 -  Sea of Voices.mp3
+10:Porter Robinson/Worlds/11 -  Fellow Feeling.mp3
+11:Porter Robinson/Worlds/12 -  Goodbye To a World.mp3
 playlist_end

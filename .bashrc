@@ -35,6 +35,7 @@ alias pkS="packer"
 
 alias thunard="dbus-launch thunar"
 alias mu="ncmpcpp"
+alias mocp="ncmpcpp"
 
 #-------------------------------
 # function: type "path" in terminal for ordered $PATH display:
@@ -196,15 +197,6 @@ compton) vim ~/.compton.conf && killall compton && compton -b ;;
 esac
 }
 
-jump () {
-    case $1 in
-        proj) cd ~/Documents/Projects/ ;;
-        img) cd ~/Images ;;
-        vid) cd ~/Videos ;;
-        conf) cd ~/.config ;;
-    *) echo "Unknown location: $1" ;;
-    esac
-}
 
 #PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "
 

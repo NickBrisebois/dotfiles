@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc config border_width 1
+bspc config border_width 3
 bspc config window_gap   8
 bspc config normal_frame_opacity 0.5
 bspc config focused_Frame_opacity 0.3

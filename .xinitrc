@@ -11,7 +11,7 @@ xtitle -sf 'T%s' > "$PANEL_FIFO" &
 conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 #clock -sf 'S%D %A %H:%M' > "$PANEL_FIFO" &
 
-compton &
+compton -e 0.2 &
 nitrogen --restore &
 unclutter &
 start-pulseaudio-x11 &

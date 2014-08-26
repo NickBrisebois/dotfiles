@@ -565,6 +565,80 @@ mtime: 1398893398
 song_end
 end: Adventure Club/Adventure Club Music Pack
 end: Adventure Club
+directory: Alex Metric
+mtime: 1408687180
+begin: Alex Metric
+directory: Ammunition EP Part 2
+mtime: 1408687288
+begin: Alex Metric/Ammunition EP Part 2
+song_begin: 01 Prophecies.mp3
+Time: 325
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Prophecies
+Album: Ammunition EP Part 2
+Track: 1/0
+Date: 2012
+Genre: Electro House
+mtime: 1408687287
+song_end
+song_begin: 02 Motion Study.mp3
+Time: 305
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Motion Study
+Album: Ammunition EP Part 2
+Track: 2
+Date: 2012
+Genre: Electro House
+mtime: 1408687288
+song_end
+song_begin: 03 Rave Weapon.mp3
+Time: 349
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Rave Weapon
+Album: Ammunition EP Part 2
+Track: 3
+Date: 2012
+Genre: Electro House
+mtime: 1408687288
+song_end
+song_begin: 04 Rave Weapon (Aeroplane Droid Mix).mp3
+Time: 359
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Rave Weapon (Aeroplane Droid Mix)
+Album: Ammunition EP Part 2
+Track: 4
+Date: 2012
+Genre: Electro House
+mtime: 1408687288
+song_end
+song_begin: 05 Rave Weapon (Mark Starr Remix).mp3
+Time: 275
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Rave Weapon (Mark Starr Remix)
+Album: Ammunition EP Part 2
+Track: 5
+Date: 2012
+Genre: Electro House
+mtime: 1408687286
+song_end
+song_begin: 06 Rave Weapon (UZ Remix).mp3
+Time: 265
+Artist: Alex Metric
+AlbumArtist: Alex Metric
+Title: Rave Weapon (UZ Remix)
+Album: Ammunition EP Part 2
+Track: 6
+Date: 2012
+Genre: Electro House
+mtime: 1408687287
+song_end
+end: Alex Metric/Ammunition EP Part 2
+end: Alex Metric
 directory: Anamanaguchi
 mtime: 1407475145
 begin: Anamanaguchi
@@ -7327,6 +7401,25 @@ mtime: 1373434650
 song_end
 end: Guster/Satellite
 end: Guster
+directory: Hardwell
+mtime: 1408567796
+begin: Hardwell
+directory: Spaceman
+mtime: 1408567838
+begin: Hardwell/Spaceman
+song_begin: Hardwell - Spaceman (Original Mix).mp3
+Time: 376
+Artist: Hardwell
+AlbumArtist: Hardwell
+ArtistSort: Hardwell
+AlbumArtistSort: Hardwell
+Title: Spaceman (Original Mix)
+Date: 2012
+Genre: Electro House
+mtime: 1408567826
+song_end
+end: Hardwell/Spaceman
+end: Hardwell
 directory: Hucci
 mtime: 1407475180
 begin: Hucci
@@ -7443,6 +7536,24 @@ mtime: 1395081562
 song_end
 end: Hucci/Novacane EP
 end: Hucci
+directory: Illenium
+mtime: 1408645650
+begin: Illenium
+song_begin: So Wrong.mp3
+Time: 302
+Artist: Illenium
+Title: So Wrong
+mtime: 1408645620
+song_end
+song_begin: Make Me Do.mp3
+Time: 309
+Artist: ILLENIUM
+Title: Make Me Do
+Album: EDM.com Free Downloads
+Genre: Pantheon
+mtime: 1408645623
+song_end
+end: Illenium
 directory: Infected Mushroom
 mtime: 1407475191
 begin: Infected Mushroom
@@ -11509,8 +11620,132 @@ song_end
 end: Nero/Welcome Reality (Deluxe Edition)
 end: Nero
 directory: ODESZA
-mtime: 1407475213
+mtime: 1408508247
 begin: ODESZA
+directory: My Friends Never Die
+mtime: 1408508225
+begin: ODESZA/My Friends Never Die
+song_begin: 01 My Friends Never Die.mp3
+Time: 172
+Artist: ODESZA
+Title: My Friends Never Die
+Album: My Friends Never Die
+Track: 1/5
+Genre: Electronic
+Disc: /
+mtime: 1396475966
+song_end
+song_begin: 02 If There_s Time.mp3
+Time: 196
+Artist: ODESZA
+Title: If There's Time
+Album: My Friends Never Die
+Track: 2/5
+Genre: Electronic
+Disc: /
+mtime: 1396475976
+song_end
+song_begin: 03 Without You.mp3
+Time: 184
+Artist: ODESZA
+Title: Without You
+Album: My Friends Never Die
+Track: 3/5
+Genre: Electronic
+Disc: /
+mtime: 1396475986
+song_end
+song_begin: 04 Home.mp3
+Time: 148
+Artist: ODESZA
+Title: Home
+Album: My Friends Never Die
+Track: 4/5
+Genre: Electronic
+Disc: /
+mtime: 1396475972
+song_end
+song_begin: 05 Keep Her Close.mp3
+Time: 214
+Artist: ODESZA
+Title: Keep Her Close
+Album: My Friends Never Die
+Track: 5/5
+Genre: Electronic
+Disc: /
+mtime: 1396475982
+song_end
+end: ODESZA/My Friends Never Die
+directory: My Friends Never Die Remixes EP
+mtime: 1408508243
+begin: ODESZA/My Friends Never Die Remixes EP
+song_begin: 01 My Friends Never Die (Little People Remix).mp3
+Time: 271
+Artist: ODESZA
+Title: My Friends Never Die (Little People Remix)
+Album: My Friends Never Die Remixes
+Track: 1/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476046
+song_end
+song_begin: 02 If There_s Time (Kodak to Graph Remix).mp3
+Time: 336
+Artist: ODESZA
+Title: If There's Time (Kodak to Graph Remix)
+Album: My Friends Never Die Remixes
+Track: 2/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476074
+song_end
+song_begin: 03 Without You (1990 Remix).mp3
+Time: 218
+Artist: ODESZA
+Title: Without You (1990 Remix)
+Album: My Friends Never Die Remixes
+Track: 3/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476062
+song_end
+song_begin: 04 Home (Ki_Theory Remix).mp3
+Time: 248
+Artist: ODESZA
+Title: Home (Ki:Theory Remix)
+Album: My Friends Never Die Remixes
+Track: 4/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476094
+song_end
+song_begin: 05 Keep Her Close (Tor Remix).mp3
+Time: 237
+Artist: ODESZA
+Title: Keep Her Close (Tor Remix)
+Album: My Friends Never Die Remixes
+Track: 5/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476106
+song_end
+song_begin: 06 Without You (Vindata Remix).mp3
+Time: 192
+Artist: ODESZA
+Title: Without You (Vindata Remix)
+Album: My Friends Never Die Remixes
+Track: 6/6
+Date: 2013
+Genre: Electronic
+Disc: /
+mtime: 1396476118
+song_end
+end: ODESZA/My Friends Never Die Remixes EP
 directory: Summer's Gone
 mtime: 1407475215
 begin: ODESZA/Summer's Gone
@@ -11671,6 +11906,10 @@ Disc: /
 mtime: 1403743592
 song_end
 end: ODESZA/Summer's Gone
+song_begin: ODESZA - Home.mp3
+Time: 163
+mtime: 1408508110
+song_end
 end: ODESZA
 directory: Overtracked
 mtime: 1407475215
@@ -15173,6 +15412,94 @@ Composer: Kaylan Brown
 mtime: 1405972269
 song_end
 end: Skrux
+directory: Slow Magic
+mtime: 1408563794
+begin: Slow Magic
+directory: Triangle
+mtime: 1408563734
+begin: Slow Magic/Triangle
+song_begin: 01 - Slow Magic - Corvette Cassette.mp3
+Time: 204
+Artist: Slow Magic
+Title: Corvette Cassette
+Album: Triangle
+Track: 1
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563733
+song_end
+song_begin: 02 - Slow Magic - Toddler Tiger.mp3
+Time: 148
+Artist: Slow Magic
+Title: Toddler Tiger
+Album: Triangle
+Track: 2
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563734
+song_end
+song_begin: 03 - Slow Magic - Feel Flows.mp3
+Time: 199
+Artist: Slow Magic
+Title: Feel Flows
+Album: Triangle
+Track: 3
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563733
+song_end
+song_begin: 04 - Slow Magic - Youths.mp3
+Time: 198
+Artist: Slow Magic
+Title: Youths
+Album: Triangle
+Track: 4
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563732
+song_end
+song_begin: 05 - Slow Magic - Moon.mp3
+Time: 199
+Artist: Slow Magic
+Title: Moon
+Album: Triangle
+Track: 5
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563733
+song_end
+song_begin: 06 - Slow Magic - Circle.mp3
+Time: 221
+Artist: Slow Magic
+Title: Circle
+Album: Triangle
+Track: 6
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563733
+song_end
+song_begin: 07 - Slow Magic - Sorry Safari.mp3
+Time: 166
+Artist: Slow Magic
+Title: Sorry Safari
+Album: Triangle
+Track: 7
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563734
+song_end
+song_begin: 08 - Slow Magic - Music.mp3
+Time: 212
+Artist: Slow Magic
+Title: Music
+Album: Triangle
+Track: 8
+Date: 2012
+Genre: Indie / Rock / Alternative
+mtime: 1408563732
+song_end
+end: Slow Magic/Triangle
+end: Slow Magic
 directory: Squarepusher
 mtime: 1407475254
 begin: Squarepusher

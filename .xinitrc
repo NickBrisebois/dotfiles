@@ -17,12 +17,11 @@ unclutter &
 start-pulseaudio-x11 &
 clipit &
 plank &
-panel &
+mpd-notification &
 
 sxhkd & 
 exec bspwm
 
-PANEL_FIFO="/tmp/panel-fifo"
 
 #session=${1:-sxhkd & exec bspwm}
 

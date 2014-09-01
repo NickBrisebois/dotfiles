@@ -2,9 +2,9 @@ sw_volume: 100
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 0
-time: 146
-random: 0
+current: 38
+time: 121
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -12,16 +12,158 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Porter Robinson/Worlds/01 -  Divinity (feat. Amy Millan).mp3
-1:Porter Robinson/Worlds/02 -  Sad Machine.mp3
-2:Porter Robinson/Worlds/03 -  Years of War (feat. Breanne Duren & Sean Caskey).mp3
-3:Porter Robinson/Worlds/04 -  Flicker.mp3
-4:Porter Robinson/Worlds/05 -  Fresh Static Snow.mp3
-5:Porter Robinson/Worlds/06 -  Polygon Dust (feat. Lemaitre).mp3
-6:Porter Robinson/Worlds/07 -  Hear the Bells (feat. Imaginary Cities).mp3
-7:Porter Robinson/Worlds/08 -  Natural Light.mp3
-8:Porter Robinson/Worlds/09 -  Lionhearted (feat. Urban Cone).mp3
-9:Porter Robinson/Worlds/10 -  Sea of Voices.mp3
-10:Porter Robinson/Worlds/11 -  Fellow Feeling.mp3
-11:Porter Robinson/Worlds/12 -  Goodbye To a World.mp3
+0:James Egbert/James Egbert - The Void (2014)/01. James Egbert - The Crest (Original Mix).mp3
+1:James Egbert/James Egbert - The Void (2014)/04. James Egbert - Falling Or Fallen (Original Mix).mp3
+2:James Egbert/James Egbert - The Void (2014)/05. James Egbert - Smoke Signal (Original Mix).mp3
+3:James Egbert/James Egbert - The Void (2014)/07. James Egbert - Evening's Gradient (Original Mix).mp3
+4:James Egbert/James Egbert - The Void (2014)/08. James Egbert - Autumn's Fading Sun (Original Mix).mp3
+5:James Egbert/James Egbert - The Void (2014)/09. James Egbert - Broken (Original Mix).mp3
+6:James Egbert/James Egbert - The Void (2014)/10. James Egbert - Pep Talk (Original Mix).mp3
+7:James Egbert/James Egbert - The Void (2014)/11. James Egbert - You & Me (Original Mix).mp3
+8:James Egbert/James Egbert - The Void (2014)/13. James Egbert - Zenith (Original Mix).mp3
+9:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 01 - Radio Attack.mp3
+10:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 02 - Nuno.mp3
+11:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 03 - LifeDeath (with Mikah 9).mp3
+12:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 04 - Smile In Your Face.mp3
+13:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 05 - Point To B.mp3
+14:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 06 - Five Minutes Away.mp3
+15:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 07 - Living Life (with Rec Eenter).mp3
+16:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 08 - Eve Of Dextruct.mp3
+17:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 09 - Last Light (with Sam Prekop).mp3
+18:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 10 - Cliche Intro.mp3
+19:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 11 - Back In Time.mp3
+20:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 12 - Hot Winter's Day.mp3
+21:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 13 - Blacklist (with MF Doom & Aesop Rock).mp3
+22:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 14 - Untitled.mp3
+23:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 15 - Afternoon Love-In.mp3
+24:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 16 - 7th Message.mp3
+25:Prefuse 73/The 92 vs 02 Collection EP/Prefuse 73 - The '92 vs. '02 Collection - 01 - Desks.Pencils.Bottles.mp3
+26:Prefuse 73/The 92 vs 02 Collection EP/Prefuse 73 - The '92 vs. '02 Collection - 02 - When Irony Wears Thin.mp3
+27:Prefuse 73/The 92 vs 02 Collection EP/Prefuse 73 - The '92 vs. '02 Collection - 03 - It Never Entered.mp3
+28:Prefuse 73/The 92 vs 02 Collection EP/Prefuse 73 - The '92 vs. '02 Collection - 04 - Love You Bring.mp3
+29:Prefuse 73/One Word Extinguisher/02-prefuse_73-the_end_of_biters-esc.mp3
+30:Prefuse 73/One Word Extinguisher/09-prefuse_73-busy_signal-esc.mp3
+31:Prefuse 73/One Word Extinguisher/01-prefuse_73-the_wrong_side_of_reflection_(intro)-esc.mp3
+32:Prefuse 73/One Word Extinguisher/03-prefuse_73-plastic-esc.mp3
+33:Prefuse 73/One Word Extinguisher/04-prefuse_73-uprock_and_invigorate-esc.mp3
+34:Prefuse 73/One Word Extinguisher/05-prefuse_73-the_color_of_tempo-esc.mp3
+35:Prefuse 73/One Word Extinguisher/06-prefuse_73-daves_bonus_beats-esc.mp3
+36:Prefuse 73/One Word Extinguisher/07-prefuse_73-detchibe-esc.mp3
+37:Prefuse 73/One Word Extinguisher/08-prefuse_73-altoid_addiction_(interlude)-esc.mp3
+38:Prefuse 73/One Word Extinguisher/10-prefuse_73-one_word_extinguisher-esc.mp3
+39:Prefuse 73/One Word Extinguisher/12-prefuse_73-huevos_with_jeff_and_rony-esc.mp3
+40:Prefuse 73/One Word Extinguisher/13-prefuse_73-female_demands-esc.mp3
+41:Prefuse 73/One Word Extinguisher/14-prefuse_73-why_i_love_you-esc.mp3
+42:Prefuse 73/One Word Extinguisher/15-prefuse_73-southerners_(interlude)-esc.mp3
+43:Prefuse 73/One Word Extinguisher/16-prefuse_73-perverted_undertone-esc.mp3
+44:Prefuse 73/One Word Extinguisher/17-prefuse_73-invigorate_(interlude)-esc.mp3
+45:Prefuse 73/One Word Extinguisher/18-prefuse_73-choking_you-esc.mp3
+46:Prefuse 73/One Word Extinguisher/19-prefuse_73-storm_returns-esc.mp3
+47:Prefuse 73/One Word Extinguisher/20-prefuse_73-trains_on_top_of_the_game-esc.mp3
+48:Prefuse 73/One Word Extinguisher/21-prefuse_73-styles_that_fade_away_with_a_collonade_rep-esc.mp3
+49:Prefuse 73/One Word Extinguisher/22-prefuse_73-untitled-esc.mp3
+50:Prefuse 73/One Word Extinguisher/23-prefuse_73-untitled-esc.mp3
+51:Prefuse 73/One Word Extinguisher/11-prefuse_73-90_percent_of_my_mind_is_with_you-esc.mp3
+52:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 01 - Pagina Uno.Introduccion.mp3
+53:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 02 - Pagina Dos.mp3
+54:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 03 - Pagina Tres.mp3
+55:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 04 - Pagina Cuatro.mp3
+56:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 05 - Pagina Cinco.mp3
+57:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 06 - Pagina Seis.mp3
+58:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 07 - Pagina Siete.mp3
+59:Prefuse 73/Reads The Books EP/Prefuse 73 - Reads the Books E.P. - 08 - Pagina Ocho.mp3
+60:Prefuse 73/Surrounded by Silence/01 I've Said All I Need to Say About Them Intro.mp3
+61:Prefuse 73/Surrounded by Silence/02 Hide Ya Face.mp3
+62:Prefuse 73/Surrounded by Silence/03 Bad Memory Interlude One.mp3
+63:Prefuse 73/Surrounded by Silence/04 TV Versus Detchibe.mp3
+64:Prefuse 73/Surrounded by Silence/05 Expressing Views Is Obviously Illegal.mp3
+65:Prefuse 73/Surrounded by Silence/06 Pastel Assassins.mp3
+66:Prefuse 73/Surrounded by Silence/07 Pagina Dos.mp3
+67:Prefuse 73/Surrounded by Silence/08 Silence Interlude.mp3
+68:Prefuse 73/Surrounded by Silence/09 Now You're Leaving.mp3
+69:Prefuse 73/Surrounded by Silence/10 Gratis.mp3
+70:Prefuse 73/Surrounded by Silence/11 We Got Our Own Way.mp3
+71:Prefuse 73/Surrounded by Silence/12 Mantra.mp3
+72:Prefuse 73/Surrounded by Silence/13 Sabbatical With Options.mp3
+73:Prefuse 73/Surrounded by Silence/14 It's Crowded.mp3
+74:Prefuse 73/Surrounded by Silence/15 Just the Thought.mp3
+75:Prefuse 73/Surrounded by Silence/16 La Correcion Exchange.mp3
+76:Prefuse 73/Surrounded by Silence/17 Hide Ya Face [Reminder Version] [Version].mp3
+77:Prefuse 73/Surrounded by Silence/18 Morale Crusher.mp3
+78:Prefuse 73/Surrounded by Silence/19 Minutes Away Without You.mp3
+79:Prefuse 73/Surrounded by Silence/20 Rain Edit Interlude.mp3
+80:Prefuse 73/Surrounded by Silence/21 And I'm Gone.mp3
+81:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 01 - For Her Non-Place.mp3
+82:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 02 - Preparation One.mp3
+83:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 03 - Thorough Light.mp3
+84:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 04 - Spacious And Dissonant Part 2.mp3
+85:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 05 - Pitu.mp3
+86:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 06 - Preparation Two.mp3
+87:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 07 - Over Ensembles.mp3
+88:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 08 - The Last.mp3
+89:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 09 - Sunbeamstress.mp3
+90:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 10 - Humidity Interlude.mp3
+91:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 11 - The Ground We Lift.mp3
+92:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 12 - Preparation Three.mp3
+93:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 13 - Let It Ring Ensembles.mp3
+94:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 14 - Out We Will Go.mp3
+95:Prefuse 73/Interregnums/Prefuse 73 - Interregnums - 15 - Prepared As It Was.mp3
+96:Prefuse 73/01 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+97:Prefuse 73/02 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+98:Prefuse 73/03 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+99:Prefuse 73/04 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+100:Prefuse 73/05 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+101:Prefuse 73/06 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+102:Prefuse 73/07 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+103:Prefuse 73/08 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+104:Prefuse 73/09 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+105:Prefuse 73/10 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+106:Prefuse 73/11 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+107:Prefuse 73/12 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+108:Prefuse 73/13 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+109:Prefuse 73/14 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+110:Prefuse 73/15 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+111:Prefuse 73/16 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+112:Prefuse 73/17 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+113:Prefuse 73/18 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+114:Prefuse 73/19 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+115:Prefuse 73/20 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+116:Prefuse 73/21 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+117:Prefuse 73/22 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+118:Prefuse 73/23 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+119:Prefuse 73/24 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+120:Prefuse 73/25 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+121:Prefuse 73/26 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+122:Prefuse 73/27 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+123:Prefuse 73/28 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+124:Prefuse 73/29 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+125:Prefuse 73/30 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+126:Prefuse 73/31 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+127:Prefuse 73/32 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+128:Prefuse 73/33 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+129:Prefuse 73/34 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+130:Prefuse 73/35 - prefuse 73 - live @ slim's_san francisco ca usa (aud) 2007-12-08.mp3
+131:Prefuse 73/Preparations/Prefuse 73 - Preparations - 01 - From The East Intro.mp3
+132:Prefuse 73/Preparations/Prefuse 73 - Preparations - 02 - Beaten Thursdays.mp3
+133:Prefuse 73/Preparations/Prefuse 73 - Preparations - 03 - Aborted Hugs.mp3
+134:Prefuse 73/Preparations/Prefuse 73 - Preparations - 04 - Class Of 73 Bells - Featuring School Of Seven Bells.mp3
+135:Prefuse 73/Preparations/Prefuse 73 - Preparations - 05 - Girlfriend Boyfriend.mp3
+136:Prefuse 73/Preparations/Prefuse 73 - Preparations - 06 - Smoking Red - Featuring John Stanier.mp3
+137:Prefuse 73/Preparations/Prefuse 73 - Preparations - 07 - Prog Version Slowly Crushed.mp3
+138:Prefuse 73/Preparations/Prefuse 73 - Preparations - 08 - Noreaster Cheer.mp3
+139:Prefuse 73/Preparations/Prefuse 73 - Preparations - 09 - Let It Ring.mp3
+140:Prefuse 73/Preparations/Prefuse 73 - Preparations - 10 - 17 Seconds Interlude - Featuring Tobias Lilja.mp3
+141:Prefuse 73/Preparations/Prefuse 73 - Preparations - 11 - I Knew You Were Gonna Go.mp3
+142:Prefuse 73/Preparations/Prefuse 73 - Preparations - 12 - Pomade Suite Version One.mp3
+143:Prefuse 73/Preparations/Prefuse 73 - Preparations - 13 - Spaced + Dissonant.mp3
+144:Prefuse 73/Preparations/Prefuse 73 - Preparations - 14 - Preparation Outro Version.mp3
+145:Prefuse 73/The Class Of 73 Bells/Prefuse 73 - The Class Of 73 Bells - 03 - The Classical Sounds Of 73 Bells.mp3
+146:Prefuse 73/The Class Of 73 Bells/Prefuse 73 - The Class Of 73 Bells - 04 - En Blanco (A Prefuse  Epstein Production).mp3
+147:Prefuse 73/The Class Of 73 Bells/Prefuse 73 - The Class Of 73 Bells - 01 - The Class Of 73 Bells (Radio Edit).mp3
+148:Prefuse 73/The Class Of 73 Bells/Prefuse 73 - The Class Of 73 Bells - 02 - Smoking Red.mp3
+149:Prefuse 73/01 Overkill Choir.mp3
+150:Prefuse 73/02 Relief Choir.mp3
+151:Prefuse 73/03 Preparation's Kids Choir (Can't Dance No More Version).mp3
+152:Prefuse 73/04 Always Alone Choir.mp3
+153:Prefuse 73/05 Simple Loop Choir (Bad Memory Version).mp3
 playlist_end

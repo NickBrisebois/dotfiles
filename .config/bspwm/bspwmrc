@@ -32,5 +32,4 @@ bspc rule -a Lxappearance floating=true center=true
 bspc rule -a Steam floating=true 
 
 
-/home/nick/.config/bspwm/panel &
  

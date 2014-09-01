@@ -133,3 +133,9 @@ XF86AudioPrev
 
 super + g 
     thunar
+
+super + Print
+    ~/.bin/imgur-screenshot.sh
+
+Print
+    scrot -e 'mv $f ~/Pictures/screenshots/'; notify-send "Took screenshot"

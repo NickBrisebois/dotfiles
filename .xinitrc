@@ -17,6 +17,7 @@ unclutter &
 start-pulseaudio-x11 &
 clipit &
 plank &
+transset-df -n plank 0.50 &
 mpd-notification &
 
 sxhkd & 

@@ -5,7 +5,7 @@
 . panel_colors
 
 adaptive_centering=0
-screen_width=1910
+screen_width=1920
 NORMIFS=$IFS
 FIELDIFS=':'
 PADDING=' '

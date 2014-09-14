@@ -9,8 +9,6 @@ for monitor in $(bspc query -M); do
 bspc monitor $monitor \
         -n "$i" \
         -d {•,•,•,•,•}
-        #-d 
-        #-d $i/{I,II}
     let i++
 done
 NMON=$i
@@ -29,7 +27,7 @@ bspc rule -a Feh floating=true center=true
 bspc rule -a magic floating=true center=true #Floating terminal
 bspc rule -a Nitrogen floating=true center=true
 bspc rule -a Lxappearance floating=true center=true
-bspc rule -a Steam floating=true 
+bspc rule -a Steam pseudo_tiled=true
 
 
  

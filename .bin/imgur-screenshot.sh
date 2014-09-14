@@ -16,7 +16,7 @@ imgur_secret=""
 login="false"
 credentials_file="$HOME/.config/imgur-screenshot/credentials.conf"
 
-file_name_format="imgur-%Y_%m_%d-%H:%M:%S.png" # when using scrot, must end with .png!
+file_name_format="%Y_%m_%d-%H:%M:%S.png" # when using scrot, must end with .png!
 file_dir="$HOME/Pictures"
 
 upload_connect_timeout="5"

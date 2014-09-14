@@ -1,0 +1,57 @@
+{
+  "name": "ATLauncher",
+  "author": "RyanTheAllmighty",
+  "tabsOnRight": true,
+  "baseColor": {
+    "value": "#282d32"
+  },
+  "textColor": {
+    "value": "#ffffff"
+  },
+  "buttonColor": {
+    "value": "#0"
+  },
+  "selectionColor": {
+    "value": "#88cc"
+  },
+  "dropdownSelectionColor": {
+    "value": "#6464c8"
+  },
+  "hoverBorderColor": {
+    "value": "#50aa6b"
+  },
+  "modSelectionBGColor": {
+    "value": "#32373c"
+  },
+  "modInfoColor": {
+    "value": "#32373c"
+  },
+  "tabBackgroundColor": {
+    "value": "#1e2328"
+  },
+  "normalInstanceColor": {
+    "value": "#ffffff"
+  },
+  "corruptedInstanceColor": {
+    "value": "#ff0000"
+  },
+  "consoleTextColor": {
+    "value": "#ffffff"
+  },
+  "logInfoColor": {
+    "value": "#89c236"
+  },
+  "logWarnColor": {
+    "value": "#ffff4c"
+  },
+  "logErrorColor": {
+    "value": "#ee2222"
+  },
+  "logDebugColor": {
+    "value": "ff00ff"
+  },
+  "defaultFont": "SansSerif",
+  "consoleFont": "SansSerif",
+  "tabFont": "Oswald-Regular",
+  "buttonFont": "SansSerif"
+}

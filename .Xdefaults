@@ -7,7 +7,7 @@ Xft.hintstyle: hintslight
 
 Urxvt.visualBell: false
 
-URxvt.font:xft:Dina:size=9:Regular
+URxvt.font:xft:inconsolata:size=9:Regular
 Urxvt.boldFont:
 
 !Padding

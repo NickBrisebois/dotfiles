@@ -17,8 +17,8 @@ conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 #clock -sf 'S%D %A %H:%M' > "$PANEL_FIFO" &
  
 . /home/nick/.config/bspwm/panel_colors
-FONT_FAMILY='Amble'
-FONT_SIZE=11
+FONT_FAMILY='amble'
+FONT_SIZE=12
 
 
 (

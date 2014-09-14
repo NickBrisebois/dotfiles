@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/manjaro/.config'
-let g:netrw_dirhist_2='/home/nick/.ncmpcpp'
-let g:netrw_dirhist_3='/home/nick/.config/awesome'
-let g:netrw_dirhist_4='/usr/share/slim/themes'
-let g:netrw_dirhist_5='/home/nick/.config'
-let g:netrw_dirhist_6='/home/nick/Documents/projects/c#/treeGenerator'
-let g:netrw_dirhist_7='/usr/share'
-let g:netrw_dirhist_8='/usr/share/xsessions'
-let g:netrw_dirhist_9='/usr/share/lightdm/lightdm.conf.d'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/etc/X11'

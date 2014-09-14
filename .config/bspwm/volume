@@ -11,7 +11,7 @@ FG="#616161"        # foreground colour of text/icon
 BAR_FG="#616161"    # foreground colour of volume bar
 BAR_BG="#111111"    # background colour of volume bar
 XPOS="2745"         # horizontal positioning
-YPOS="760"           # vertical positioning
+YPOS="810"           # vertical positioning
 HEIGHT="30"         # window height
 WIDTH="250"         # window width
 BAR_WIDTH="180"     # width of volume bar
@@ -69,7 +69,9 @@ MUTE="$(cut -d '[' -f 4 <<<"$AMIXOUT")"
 VOL="$(cut -d '[' -f 2 <<<"$AMIXOUT" | sed 's/%.*//g')"
 if [ "$MUTE" = "off]" ]; then
   ICON=$ICON_VOL_MUTE
+  FG="#111111"
 else
+  FG="#616161"
   ICON=$ICON_VOL
 fi
 

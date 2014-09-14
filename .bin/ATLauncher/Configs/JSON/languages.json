@@ -1,0 +1,42 @@
+[
+    {
+        "name": "English",
+        "localizedName": "English"
+    },
+    {
+        "name": "Swedish",
+        "localizedName": "Svenska"
+    },
+    {
+        "name": "German",
+        "localizedName": "Deutsch"
+    },
+    {
+        "name": "Italian",
+        "localizedName": "Italiano"
+    },
+    {
+        "name": "Dutch",
+        "localizedName": "Nederlands"
+    },
+    {
+        "name": "Turkish",
+        "localizedName": "Turkce"
+    },
+    {
+        "name": "Spanish",
+        "localizedName": "Espanol"
+    },
+    {
+        "name": "French",
+        "localizedName": "Francais"
+    },
+    {
+        "name": "Russian",
+        "localizedName": "Russian"
+    },
+    {
+        "name": "Slovak",
+        "localizedName": "Slovak"
+    }
+]

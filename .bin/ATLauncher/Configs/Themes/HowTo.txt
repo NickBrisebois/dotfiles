@@ -1,1 +1,0 @@
-To create themes for the ATLauncher please see http://www.atlauncher.com/help/themes/ - changing the ATLauncher.json file will ALWAYS revert changes so make a copy of the file if your playing around.

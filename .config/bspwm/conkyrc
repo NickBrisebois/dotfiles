@@ -10,7 +10,14 @@ if_up_strictness address
 
 TEXT
 
-C^fg()${if_running mpd}^i(/home/nick/dotfiles/.config/bspwm/images/music.xbm)  ^fg(\#C8CACC)[${mpd_status}] ${mpd_title} - ${mpd_artist} ${else} ^fg()^i(/home/nick/dotfiles/.config/bspwm/images/pause.xbm)  ^fg(\#696969)No music playing^fg()${endif}  \
-^fg()^i(/home/nick/dotfiles/.config/bspwm/images/wifi_02.xbm)  ^fg(\#C8CACC)${wireless_essid wlp4s0}  \
-^fg()^i(/home/nick/dotfiles/.config/bspwm/images/clock.xbm)  ^fg(\#C8CACC)${time %I:%M%P}  \
+.panel_colors
+
+
+C\
+${if_mpd_playing}\
+f : [${mpd_status}] ${mpd_artist} - ${mpd_title} ;\
+${endif}\
+1 : ${wireless_essid wlp4s0} ;\
+2 : ${time %a %I:%M%P} ;\
+
 

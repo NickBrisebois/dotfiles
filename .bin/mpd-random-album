@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Chooses a random album from mpd database and plays it
+
+ALBUMS=`mpc list album`
+NUM_ALBUMS=`echo "$ALBUMS" | wc -l`
+
+# Get random number < $NUM_ALBUMS
+RAND=`cat /proc/sys/kernel/random/uuid | cut -c1-4 | od -d | head -1 | cut -d' ' -f2`
+LINE=`expr $RAND % $NUM_ALBUMS + 1`
+
+# Get just the one line
+ALBUM=`echo "$ALBUMS" | head -$LINE | tail -1`
+
+mpc clear && mpc findadd album "$ALBUM" && mpc play

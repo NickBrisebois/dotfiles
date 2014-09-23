@@ -1,28 +1,34 @@
-#
-if [ $(pgrep -cx panel) -gt 1 ] ; then
-printf "%s\n" "The panel is already running." >&2
-    exit 1
-fi
- 
-trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+#! /bin/sh
 
-PANEL_FIFO="/tmp/panel-fifo"
+source ~/.config/bspwm/panel.cfg
+
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_HEIGHT=18
+FONT1="-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1"
+FONT2="-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
- 
+
 bspc control --subscribe > "$PANEL_FIFO" &
 xtitle -sf 'T%s' > "$PANEL_FIFO" &
-conky -c $HOME/.config/bspwm/conkyrc > "$PANEL_FIFO" &
-#clock -sf 'S%D %A %H:%M' > "$PANEL_FIFO" &
- 
-. /home/nick/.config/bspwm/panel_colors
-FONT_FAMILY='amble'
-FONT_SIZE=12
+#conky -c ~/.config/bspwm/conkyrc > "$PANEL_FIFO" &
+clock -sf 'S%I:%M %p' > "$PANEL_FIFO" &
 
-
-(
-cat "$PANEL_FIFO" | $HOME/.config/bspwm/panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | 
-dzen2 -title-name dzen2-panel -xs 1 -x 5 -y 5 -w 1910 -h $PANEL_HEIGHT -dock -ta l -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" -e &)&& sleep 0.1s && transset-df -n dzen2-panel 0.8
+cat "$PANEL_FIFO" \
+    | panel_bar \
+    | bar \
+        -g 1905x$PANEL_HEIGHT+1085+5\
+        -f "$FONT1","$FONT2"\
+        -F "$FOREGROUND"\
+        -B "$BACKGROUND" -u 0 &
 
 wait

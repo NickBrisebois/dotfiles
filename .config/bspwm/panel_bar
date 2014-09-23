@@ -1,0 +1,103 @@
+#! /bin/sh
+#
+# Example panel for LemonBoy's bar
+
+source ~/.config/bspwm/panel.cfg
+
+
+num_mon=$(bspc query -M | wc -l)
+
+while read -r line ; do
+	case $line in
+		S*) 
+			art=`[[ $(mpc -f %artist% | awk '{print $1}' ) == "volume:100%" ]] || echo -e "%{F$ICON_FG}$MUSIC %{F$TEXT2_FG}$(mpc -f %artist% | awk 'NR==1') -"`
+			tit=`[[ $(mpc -f %title% | awk '{print $1}' ) == "volume:100%" ]] || echo -e "%{F$TEXT_FG} $(mpc -f %title% | awk 'NR==1')"`
+			vol=`amixer sget Master | sed -n "0,/.*\[\([0-9]\+\)%\].*/s//\1/p"`
+			wifissid=`if [[ $(iwgetid -r) == "" ]]; then echo -e "Wifi Down"; else iwgetid -r; fi`
+			wifistr=`panel_wifi`
+			package=`pacman -Qq | wc -l`
+			clk=`date "+%I:%M %p"`
+			sys_infos="%{F$ICON_FG}${SOUNDIC} %{F$TEXT_FG}${vol}%%  %{F$ICON_FG}${wifistr}%{F$TEXT_FG} ${wifissid}  %{F$ICON_FG}${CLKIC} %{F$TEXT_FG}${clk} "
+        	;;
+        C*)
+            #Conky 
+            conky_infos=""
+            IFS=';'
+            set -- ${line#?}
+            while [ $# -gt 0 ] ; do
+                item=$1
+                name=${item#?}
+                case $item in 
+                    f*) 
+                        conky_infos="⮕${conky_infos}%{F$FIRST_BG}⮂%{F-}%{B$FIRST_BG}${name}%{F$SECOND_BG}⮂%{F-}%{B-}"
+                        ;;
+                    1*)
+                        conky_infos="⮷${conky_infos}%{B$SECOND_BG}${name}%{F$FIRST_BG}⮂%{F-}%{B-}"
+                        ;;
+                    2*)
+                        conky_infos="⮖${conky_infos}%{B$FIRST_BG}${name}%{B-}"
+                        ;;
+                esac
+                shift
+            done
+            ;;
+		T*)
+			# xtitle output
+			title="%{F$TITLE_FG}%{B$TITLE_BG} ${line#?} %{B-}%{F-}"
+			;;
+		W*)
+			# bspwm internal state
+			wm_infos=""
+			IFS=':'
+			set -- ${line#?}
+			while [ $# -gt 0 ] ; do
+				item=$1
+				name=${item#?}
+				case $item in
+					M*)
+						# active monitor
+						#if [ $num_mon -gt 1 ] ; then
+							#wm_infos="$wm_infos%{F$ACTIVE_MONITOR_FG}%{B$ACTIVE_MONITOR_BG} [${name}] %{B-}%{F-}"
+						#fi
+						;;
+					m*)
+						# inactive monitor
+						#if [ $num_mon -gt 1 ] ; then
+							#wm_infos="$wm_infos%{F$ACTIVE_MONITOR_FG}%{B$ACTIVE_MONITOR_BG} [${name}] %{B-}%{F-""}"
+						#fi
+						;;
+					O*)
+						# focused occupied desktop
+						wm_infos="${wm_infos}%{F$FOCUSED_OCCUPIED_FG}%{B$FOCUSED_OCCUPIED_BG}%{U$FOREGROUND}%{+u} +%{-u}%{B-}%{F-}"
+						;;
+					F*)
+						# focused free desktop
+						wm_infos="${wm_infos}%{F$FOCUSED_FREE_FG}%{B$FOCUSED_FREE_BG}%{U$FOREGROUND}%{+u} -%{-u}%{B-}%{F-}"
+						;;
+					U*)
+						# focused urgent desktop
+						wm_infos="${wm_infos}%{F$FOCUSED_URGENT_FG}%{B$FOCUSED_URGENT_BG}%{U$FOREGROUND}%{+u} -%{-u}%{B-}%{F-}"
+						;;
+					o*)
+						# occupied desktop
+						wm_infos="${wm_infos}%{F$OCCUPIED_FG}%{B$OCCUPIED_BG} +%{B-}%{F-}"
+						;;
+					f*)
+						# free desktop
+						wm_infos="${wm_infos}%{F$FREE_FG}%{B$FREE_BG} -%{B-}%{F-}"
+						;;
+					u*)
+						# urgent desktop
+						wm_infos="${wm_infos}%{F$URGENT_FG}%{B$URGENT_BG} -%{B-}%{F-}"
+						;;
+					L*)
+						# layout
+						wm_infos="$wm_infos%{F$FREE_BG}%{F-}"
+						;;
+				esac
+				shift
+			done
+			;;
+	esac
+	printf "%s\n" "%{c}${wm_infos}%{l}${title}%{r}${art}${tit}  ${sys_infos}"
+done

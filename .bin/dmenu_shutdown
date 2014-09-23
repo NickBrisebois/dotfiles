@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -f $HOME/.dmenurc ]; then
+    . $HOME/.dmenurc
+else
+    DMENU='dmenu -i'
+fi
+
+result=`printf "shutdown\nreboot\nsuspend\nhibernate" | eval $DMENU`
+case $result in
+    shutdown)
+        gksu shutdown -h now
+        ;;
+    reboot)
+        gksu reboot
+        ;;
+    suspend)
+		gksu systemctl suspend
+        ;;
+    hibernate)
+        gksu pm-hibernate
+        ;;
+    *)
+        ;;
+    esac

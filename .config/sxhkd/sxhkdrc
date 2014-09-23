@@ -3,8 +3,8 @@
 #
 
 #Quit bspwm
-super + alt + Escape
-	bspc quit
+super + shift + q
+	/home/nick/.bin/dmenu_shutdown
 
 #Kill Window
 super + x
@@ -105,7 +105,11 @@ super + shift + Return
 
 #Run launcher
 super + d 
-	dmenu_run -i -x 4 -y 25 -w 250 -q -l 5 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#111111" -nf "#616161" -sb "#111111" -sf "#616161"
+	dmenu_run -i -x 4 -y 25 -w 250 -q -l 5 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#151515" -nf "#616161" -sb "#151515" -sf "#616161" 
+
+#Run music dmenu
+super + shift + d
+    /home/nick/.bin/dmenu_mpd
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -121,6 +125,14 @@ XF86AudioLowerVolume
 XF86AudioMute 
     /home/nick/.config/bspwm/volume --toggle
 
+#MPD select random album
+super + shift + p
+    /home/nick/.bin/mpd-random-album
+
+#MPD shuffle all music
+super + p
+    mpc listall | shuf | mpc add; mpc next
+
 #Media Keys
 XF86AudioPlay
     mpc toggle
@@ -131,11 +143,7 @@ XF86AudioNext
 XF86AudioPrev
     mpc prev
 
-super + g 
-    thunar
-
+#Screenshot then upload to imgur
 super + Print
     ~/.bin/imgur-screenshot.sh
 
-Print
-    scrot -e 'mv $f ~/Pictures/screenshots/'; notify-send "Took screenshot"

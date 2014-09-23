@@ -1,0 +1,16 @@
+#!/bin/bash
+# Create reminders using dmenu and notify-send.
+#
+# Input something like "90m kill cat" and receive
+# a notification after 90 minutes.
+
+if [ -f $HOME/.dmenurc ]; then
+    . $HOME/.dmenurc
+else
+    DMENU='dmenu -i'
+fi
+
+result=$(echo | eval $DMENU -p RemindMe)
+delay=$(echo "$result" | awk '{printf $1'})
+text=$(echo "$result" | cut -d ' ' -f 2-)
+(sleep $delay && notify-send -u "CRITICAL" -t 0 -a "Reminder" "Reminder " "$text ($delay)") &

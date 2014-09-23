@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Solves a simple algebraic term, displays it using notify-send and copys it to
+# clipboard using xclip.
+# TODO: nicer output of floats
+
+if [ -f $HOME/.dmenurc ]; then
+    . $HOME/.dmenurc
+else
+    DMENU='dmenu -i'
+fi
+term=`echo | eval $DMENU -p 'Solve'`
+result=`echo "scale=4; $term" | bc -l`
+
+#notify-send -u normal -a "Solve" "$term" "$result"
+notify-send -u normal -a "Solve" "$term" "= $result"
+echo "$result" | xclip -selection "clipboard" -i

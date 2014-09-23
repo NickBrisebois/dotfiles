@@ -1,0 +1,14 @@
+#!/bin/bash
+# Display an OSD when the track is changed
+function setNewOSD ()
+{
+  tmp=/tmp/mpd-new-track.sh
+  currentTrack=`mpc | head -1`
+  lastTrack=`cat $tmp`
+  echo "$currentTrack" > $tmp
+  [ "$currentTrack" != "$lastTrack" ] && mpd-osd &
+}
+while sleep 1
+  do
+  setNewOSD
+done

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#
+# Lists all artists/albums in mpd collections and plays the selected
+#
+
+if [ -f $HOME/.dmenurc ]; then
+    . $HOME/.dmenurc
+else
+    DMENU='dmenu -i -dim 0.30 -x 4 -y 25 -w 250 -q -l 10  -fn "DejaVu Sans Mono:size=8" -nb "#111111" -nf "#616161" -sb "#111111" -sf "#616161"'
+fi
+
+artists=$(mpc list Artist | awk '{ print "I: " $0 }')
+albums=$(mpc list Album | awk '{ print "A: " $0 }')
+search=$artists"\n"$albums
+
+result=`echo "$search" | eval $DMENU -p Music`
+
+# User canceled input -> exit
+[[ $result == "" ]] && exit 0
+
+mode=`echo $result | cut -c 1`
+
+# Cut leading "I: " or "A: "
+result=`echo $result | cut -c 4-`
+
+if [ $mode == "I" ]; then
+	# Add artist
+    mpc -q clear
+    mpc -q findadd artist "$result"
+    mpc -q play
+else
+	# Add album
+    mpc -q clear
+    mpc -q findadd album "$result"
+    mpc -q play
+fi

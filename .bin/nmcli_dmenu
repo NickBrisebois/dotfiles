@@ -1,0 +1,306 @@
+#!/usr/bin/env python
+"""NetworkManager command line dmenu script.
+
+To add new connections or enable/disable networking requires policykit
+permissions setup per:
+https://wiki.archlinux.org/index.php/NetworkManager#Set_up_PolicyKit_permissions
+
+OR running the script as root
+
+Add dmenu formatting options and default terminal if desired to
+~/.config/networkmanager-dmenu/config.ini
+
+"""
+import itertools
+from os.path import expanduser
+from subprocess import Popen, PIPE
+import sys
+try:
+    import configparser as configparser
+except ImportError:
+    import ConfigParser as configparser
+
+
+def dmenu_cmd(num_lines, prompt):
+    """Parse config.ini if it exists and add options to the dmenu command
+
+    Args: args - num_lines: number of lines to display
+                 prompt: prompt to show
+    Returns: command invocation (as a list of strings) for
+                dmenu -l <num_lines> -p <prompt> -i ...
+
+    """
+    dmenu_command = "dmenu"
+    conf = configparser.ConfigParser()
+    conf.read(expanduser("~/.config/networkmanager-dmenu/config.ini"))
+    try:
+        args = conf.items('dmenu')
+    except configparser.NoSectionError:
+        conf = False
+    if not conf:
+        return [dmenu_command, "-l", str(num_lines), "-p", str(prompt), "-i"]
+    else:
+        args_dict = dict(args)
+        if "dmenu_command" in args_dict:
+            dmenu_command = args_dict["dmenu_command"]
+            del args_dict["dmenu_command"]
+        extras = (["-" + str(k), str(v)] for (k, v) in args_dict.items())
+        return [dmenu_command, "-l", str(num_lines), "-p", str(prompt), "-i"] \
+            + list(itertools.chain.from_iterable(extras))
+
+
+def current_conns():
+    """Get list of current NetworkManager connections (ssid:security)
+
+    Returns: list of strings: ['firecat4153:WPA2', 'firecat4153x:WEP'...]
+
+    """
+    conns = ["nmcli", "-t", "-f", "name,type", "connection"]
+    return Popen(conns, stdout=PIPE).communicate()[0].decode().split('\n')
+
+
+def current_ssids():
+    """Get list of current SSIDs seen by NetworkManager and order by signal
+    strength
+
+    Returns: list -
+        ["firecat4153:WPA2","firecat4153-guest:", "firecat4153x:WPA2"]
+
+    """
+    scan = ["nmcli", "-t", "-f", "ssid,security,signal",
+            "device", "wifi", "list"]
+    res = Popen(scan, stdout=PIPE).communicate()[0].decode().split("\n")
+    del res[-1]
+    res = [i.rsplit(':', 1) for i in res]
+    res = sorted(res, key=lambda x: x[1], reverse=True)
+    res = unique_ssid(res)
+    return [i[0].replace("'", "") for i in res]
+
+
+def unique_ssid(conns):
+    """Filters the list of ids, so that duplicate ids will only show the one
+    with the greatest strength. The list of ssids is already sorted by strength
+    so this just deletes any duplicates after the first item.
+
+    """
+    ssids = []
+    for conn in conns:
+        if conn[0] in ssids:
+            del conns[conns.index(conn)]
+        else:
+            ssids.append(conn[0])
+    return conns
+
+
+def vpn_connections(conns):
+    """Parse list of current connections for VPNs
+
+    Args: conns - ['ssid:security', 'firecat4153:WPA2', ...]
+    Returns: list of VPN connection names ['pia_us_west',...]
+
+    """
+    conns = [i.split(':') for i in conns if i]
+    return [i[0] for i in conns if i and 'vpn' in i[1]]
+
+
+def get_network_status():
+    """Get current status of networking
+
+    Returns: string 'Enable' or 'Disable',
+
+    """
+    stat = ["nmcli", "networking"]
+    res = Popen(stat, stdout=PIPE).communicate()[0]
+    if 'enabled' in res.decode():
+        return 'Disable'
+    else:
+        return 'Enable'
+
+
+def get_active_connections():
+    """Get currently active connections
+
+    Returns: list of strings
+
+    """
+    status = ["nmcli", "-t", "-f", "name", "connection",
+              "show", "--active"]
+    active = Popen(status, stdout=PIPE).communicate()[0]
+    active = active.decode().split('\n')
+    del active[-1]
+    return active
+
+
+def mark_active(conns, active):
+    """Given a list of connections, mark currently active connections
+
+    Args: conns - list of strings
+    Returns: list of strings (active prepended with a '**')
+
+    """
+    conn_t = [i.rsplit(":", 1)[0] for i in conns]
+    act = [i for i in conn_t if i and i in active]
+    for i, conn in enumerate(conn_t):
+        if conn in act:
+            conns[i] = "**{}".format(conns[i])
+    return conns
+
+
+def other_actions():
+    """Return list of other actions that can be taken
+
+    """
+    return ["{} Networking".format(get_network_status()),
+            "Launch Connection Manager"]
+
+
+def get_selection(ssids, vpns, other):
+    """Combine the arg lists and send to dmenu for selection.
+
+    Args: args - ssids: list of strings
+                 vpns: list of strings
+                 other: list of strings
+    Returns: selection (string)
+
+    """
+    active = get_active_connections()
+    vpns = ["{}:VPN".format(i) for i in vpns]
+    inp = mark_active(ssids, active) + [""] + \
+        mark_active(vpns, active) + [""] + other
+    inp_bytes = "\n".join(inp).encode()
+    sel = Popen(dmenu_cmd(len(inp), "Actions"),
+                stdin=PIPE,
+                stdout=PIPE).communicate(input=inp_bytes)[0].decode()
+    if not sel.strip():
+        sys.exit()
+    return sel.strip()
+
+
+def toggle_existing(conn):
+    """Get conn status, then toggle connection up or down if it's not
+    'activated'
+
+    Args: conn - string
+
+    """
+    conn_status = ["nmcli", "-t", "-f", "GENERAL", "connection", "show", conn]
+    res = Popen(conn_status, stdout=PIPE).communicate()[0]
+    if 'activated' not in res.decode():
+        updown = 'up'
+    else:
+        updown = 'down'
+    conn_string = ["nmcli", "connection", updown, "id", conn]
+    Popen(conn_string, stdout=PIPE).communicate()
+
+
+def toggle_networking(sel):
+    """Enable/disable networking
+
+    Args: sel - string ('Enable Networking' or 'Disable Networking')
+
+    """
+    if sel.startswith('Enable'):
+        updown = 'on'
+    else:
+        updown = 'off'
+    net = ["nmcli", "networking", updown]
+    Popen(net, stdout=PIPE).communicate()
+
+
+def launch_connection_editor():
+    """Launch nmtui or the gui nm-connection-editor
+
+    """
+    conf = configparser.ConfigParser()
+    terminal = "xterm"
+    gui_if_available = "True"
+    conf.read(expanduser("~/.config/networkmanager-dmenu/config.ini"))
+    try:
+        editor = conf.items("editor")
+    except configparser.NoSectionError:
+        conf = False
+    if conf:
+        opts = {str(k): str(v) for (k, v) in editor}
+        if "terminal" in opts:
+            terminal = opts["terminal"]
+        if "gui_if_available" in opts:
+            gui_if_available = opts["gui_if_available"]
+    if gui_if_available == "True":
+        try:
+            Popen(["nm-connection-editor"]).communicate()
+        except OSError:
+            Popen([terminal, "-e", "nmtui"]).communicate()
+    else:
+        Popen([terminal, "-e", "nmtui"]).communicate()
+
+
+def get_passphrase():
+    """Get a password
+
+    Returns: string
+
+    """
+    return Popen(dmenu_cmd(0, "Passphrase"),
+                 stdin=PIPE, stdout=PIPE).communicate()[0].decode()
+
+
+def set_new_connection(ssid, pw):
+    """Setup a new NetworkManager connection
+
+    Args: ssid - string
+          pw - string
+
+    """
+    pw = str(pw).strip()
+    new_conn = ["nmcli", "device", "wifi", "connect", ssid, "password", pw]
+    res = Popen(new_conn, stdout=PIPE).communicate()
+    # Delete connection if it fails somehow.
+    # With nmcli 0.9.10, you occasionally get an error message:
+    # "Error: Failed to add/activate new connection: Unknown error", which
+    # doesn't always mean the connection failed, so test for 'activated' or
+    # 'activating' in the connection status as well
+    status = ["nmcli", "-t", "-f", "GENERAL", "connection", "show", ssid]
+    active = Popen(status, stdout=PIPE).communicate()[0]
+    # Delete connections with errors
+    if "Error" in res and \
+            ('activating' not in active or 'activated' not in active):
+        delete = ["nmcli", "connection", "delete", ssid]
+        Popen(delete, stdout=PIPE).communicate()
+
+
+def run():
+    conns = current_conns()
+    vpns = vpn_connections(conns)
+    ssids = current_ssids()
+    other = other_actions()
+    sel = get_selection(ssids, vpns, other)
+    if sel in other:
+        # Parse other actions
+        if 'Networking' in sel:
+            toggle_networking(sel)
+        elif 'Launch' in sel:
+            launch_connection_editor()
+        sys.exit()
+    elif sel in ssids:
+        # Set ssid, security if selection is an SSID
+        ssid, security = sel.split(":")
+        ssid = ssid.strip("'").strip().replace("**", "")
+        security = security.strip()
+    elif sel.replace(":VPN", "").replace("**", "") in vpns:
+        # Select VPN connection (sel="pia_us_west:VPN")
+        ssid = sel.replace(":VPN", "").replace("**", "")
+    else:
+        sys.exit()
+    # Decide if selection is existing connection or new
+    if ssid in [i.split(':')[0] for i in conns if i]:
+        toggle_existing(ssid)
+    else:
+        if security:
+            pw = get_passphrase()
+        else:
+            pw = ""
+        set_new_connection(ssid, pw)
+
+
+if __name__ == '__main__':
+    run()

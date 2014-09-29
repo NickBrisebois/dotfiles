@@ -6,14 +6,15 @@ i=1
 for monitor in $(bspc query -M); do
 bspc monitor $monitor \
         -n "$i" \
-        -d {1,2,3,4,5}
+        -d $i/{1,2,3,4,5}
     let i++
 done
 NMON=$i
 unset i
 
-bspc config top_padding 23   # Space for panel
-bspc config right_padding 26 # Space for plank
+bspc config bottom_padding 23   # Space for panel
+bspc config focused_border_color            "#4D4D4D"
+bspc config normal_border_color             "#282729"
 
 bspc config split_ratio         0.50
 bspc config borderless_monocle  true
@@ -25,6 +26,8 @@ bspc rule -a feh floating=true center=true
 bspc rule -a magic floating=true center=true #Floating terminal
 bspc rule -a Nitrogen floating=true center=true
 bspc rule -a Lxappearance floating=true center=true
-bspc rule -a Steam pseudo_tiled=true
+bspc rule -a transmission-gtk desktop=1/4
+bspc rule -a Steam desktop=2/1
 
-/home/nick/dotfiles/.config/bspwm/panel &
+# Just in case it's already running (it happens sometimes)
+pkill panel

@@ -4,11 +4,17 @@ Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.buffered: true
+URxvt*depth: 32
+URxvt*geometry: 75x20
 
 Urxvt.visualBell: false
 
-URxvt.font:xft:inconsolata:size=9:Regular
+URxvt*font: xft:Fira Mono OT:regular:size=8
 Urxvt.boldFont:
+URxvt.letterSpace: -1
+
 
 !Padding
 

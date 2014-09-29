@@ -8,9 +8,9 @@ nitrogen --restore &
 unclutter &
 start-pulseaudio-x11 &
 clipit &
-plank &
-transset-df -n plank 0.50 &
-mpd-notification &
+#plank &
+#mpd-notification &
+/home/nick/.bin/mpd-notify &
 xscreensaver &
 
 sxhkd & 

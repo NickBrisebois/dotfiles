@@ -20,6 +20,9 @@ super + b
 super + {s,f}
 	bspc window -t {floating,fullscreen}
 
+super + shift s 
+    bspc window -t pseudo_tiled
+
 super + {grave,Tab}
 	bspc {window,desktop} -f last
 
@@ -97,7 +100,7 @@ super + ctrl + {Left,Down,Up,Right}
 
 #Normal terminal
 super + Return
-   urxvt 
+   urxvt -cd ~
 
 #Floating terminal
 super + shift + Return
@@ -105,25 +108,29 @@ super + shift + Return
 
 #Run launcher
 super + d 
-	dmenu_run -i -x 4 -y 25 -w 250 -q -l 5 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#151515" -nf "#616161" -sb "#151515" -sf "#616161" 
+    dmenu_run -i -s 2 -b -w 800 -h 22 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#282729" -nf "#707880" -sb "#151515" -sf "#707880" -class "reg_dmenu"
+
+#choose wifi
+super + w 
+    /home/nick/.bin/nmcli_dmenu
 
 #Run music dmenu
 super + shift + d
     /home/nick/.bin/dmenu_mpd
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + q
 	pkill -USR1 -x sxhkd
 
 #Volume Keys
 XF86AudioRaiseVolume
-    /home/nick/.config/bspwm/volume -i 2
+    /home/nick/.bin/volume -i 2
 
 XF86AudioLowerVolume
-    /home/nick/.config/bspwm/volume -d 2
+    /home/nick/.bin/volume -d 2
 
 XF86AudioMute 
-    /home/nick/.config/bspwm/volume --toggle
+    /home/nick/.bin/volume --toggle
 
 #MPD select random album
 super + shift + p

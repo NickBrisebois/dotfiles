@@ -12,11 +12,11 @@
 
 SCREEN_WIDTH=$(sres -W)
 
-WIDTH=150
-LINES=17
+WIDTH=145
+LINES=8
 
-XPOS=1194
-XPOS=$((SCREEN_WIDTH-WIDTH-PADDING_RIGHT))
+YPOS=1835
+XPOS=$((SCREEN_WIDTH-10))
 
 TODAY=$(expr `date +'%d'` + 0)
 MONTH=`date +'%m'`
@@ -28,6 +28,4 @@ cal | sed -re "s/^(.*[A-Za-z][A-Za-z]*.*)$/^fg($HIGHLIGHT)\1^fg()/;s/(^|[ ])($TO
 
 # next month, hilight header
 [ $MONTH -eq 12 ] && YEAR=`expr $YEAR + 1`
-cal `expr \( $MONTH + 1 \) % 12` $YEAR \
-    | sed -e "s/^\(.*[A-Za-z][A-Za-z]*.*\)$/\1/"
 ) | dzen2 -p -bg $BACKGROUND -fg $FOREGROUND -fn "${FONT}:pixelsize=${FONT_SIZE}" -x $XPOS -y $YPOS -w $WIDTH -l $LINES -sa c -e 'onstart=uncollapse;button1=exit;button3=exit' -title-name 'dzen-popup-cal'

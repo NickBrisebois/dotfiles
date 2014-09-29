@@ -3,7 +3,7 @@
 source ~/.config/bspwm/panel.cfg
 
 PANEL_FIFO=/tmp/panel-fifo
-PANEL_HEIGHT=18
+PANEL_HEIGHT=22
 FONT1="-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1"
 FONT2="-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1"
 export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
@@ -25,10 +25,7 @@ clock -sf 'S%I:%M %p' > "$PANEL_FIFO" &
 
 cat "$PANEL_FIFO" \
     | panel_bar \
-    | bar \
-        -g 1905x$PANEL_HEIGHT+1085+5\
-        -f "$FONT1","$FONT2"\
-        -F "$FOREGROUND"\
-        -B "$BACKGROUND" -u 0 &
+    | bar -g 1920x$PANEL_HEIGHT+1080 -f "$FONT1","$FONT2" -b -u "3" -F "$FOREGROUND" -B "$BACKGROUND" | sh & 
+
 
 wait

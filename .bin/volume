@@ -3,16 +3,18 @@
 # volume - dzen volume bar
 #
 
+. ~/dotfiles/.config/bspwm/panel.cfg
+
 #Customize this stuff
 IF="Master"         # audio channel: Master|PCM
 SECS="1"            # sleep $SECS
-BG="#151515"        # background colour of window
-FG="#616161"        # foreground colour of text/icon
+BG="#$BOLDER_BLACK"        # background colour of window
+FG="#$WHITE"        # foreground colour of text/icon
 BAR_FG="#616161"    # foreground colour of volume bar
 BAR_BG="#111111"    # background colour of volume bar
-XPOS="2770"         # horizontal positioning
-YPOS="810"           # vertical positioning
-HEIGHT="30"         # window height
+XPOS="2777"         # horizontal positioning
+YPOS="1812"           # vertical positioning
+HEIGHT="25"         # window height
 WIDTH="220"         # window width
 BAR_WIDTH="180"     # width of volume bar
 ICON=~/.config/bspwm/images/spkr_01.xbm
@@ -35,6 +37,7 @@ usage() {
   echo "Options:"
   echo "     -i, --increase - increase volume by \`argument'"
   echo "     -d, --decrease - decrease volume by \`argument'"
+  echo "     -n, --notify   - display without any change"
   echo "     -t, --toggle   - toggle mute on and off"
   echo "     -h, --help     - display this"
   exit 
@@ -54,6 +57,10 @@ case "$1" in
     ;;
   '-t'|'--toggle')
     AMIXARG="toggle"
+    ;;
+  '-n'|'--notify')
+    #Don't increase, just display volumebar
+    AMIXARG="0%+"
     ;;
   ''|'-h'|'--help')
     usage

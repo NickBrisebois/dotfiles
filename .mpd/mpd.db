@@ -1,6 +1,6 @@
 info_begin
 format: 1
-mpd_version: 0.18.14
+mpd_version: 0.18.16
 fs_charset: UTF-8
 tag: Artist
 tag: ArtistSort
@@ -651,6 +651,185 @@ mtime: 1408687287
 song_end
 end: Alex Metric/Ammunition EP Part 2
 end: Alex Metric
+directory: Alt-j
+mtime: 1411774781
+begin: Alt-j
+directory: Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]
+mtime: 1411774817
+begin: Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]
+song_begin: 01 - Intro.mp3
+Time: 278
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Intro
+Album: This Is All Yours
+Track: 01/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774817
+song_end
+song_begin: 02 - Arrival In Nara.mp3
+Time: 253
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Arrival In Nara
+Album: This Is All Yours
+Track: 02/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774812
+song_end
+song_begin: 03 - Nara.mp3
+Time: 296
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Nara
+Album: This Is All Yours
+Track: 03/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774812
+song_end
+song_begin: 04 - Every Other Freckle.mp3
+Time: 216
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Every Other Freckle
+Album: This Is All Yours
+Track: 04/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774810
+song_end
+song_begin: 05 - Left Hand Free.mp3
+Time: 174
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Left Hand Free
+Album: This Is All Yours
+Track: 05/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774813
+song_end
+song_begin: 06 - Garden Of England.mp3
+Time: 68
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Garden Of England
+Album: This Is All Yours
+Track: 06/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774803
+song_end
+song_begin: 07 - Choice Kingdom.mp3
+Time: 258
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Choice Kingdom
+Album: This Is All Yours
+Track: 07/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774812
+song_end
+song_begin: 08 - Hunger Of The Pine.mp3
+Time: 300
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Hunger Of The Pine
+Album: This Is All Yours
+Track: 08/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774811
+song_end
+song_begin: 09 - Warm Foothills.mp3
+Time: 225
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Warm Foothills
+Album: This Is All Yours
+Track: 09/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774806
+song_end
+song_begin: 10 - The Gospel Of John Hurt.mp3
+Time: 316
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: The Gospel Of John Hurt
+Album: This Is All Yours
+Track: 10/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774808
+song_end
+song_begin: 11 - Pusher.mp3
+Time: 209
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Pusher
+Album: This Is All Yours
+Track: 11/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774812
+song_end
+song_begin: 12 - Bloodflood Pt. II.mp3
+Time: 320
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Bloodflood Pt. II
+Album: This Is All Yours
+Track: 12/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774809
+song_end
+song_begin: 13 - Leaving Nara.mp3
+Time: 962
+Artist: Alt-J
+AlbumArtist: Alt-J
+Title: Leaving Nara
+Album: This Is All Yours
+Track: 13/13
+Date: 2014
+Genre: Misc
+Disc: 1/1
+mtime: 1411774813
+song_end
+playlist_begin: Alt-J - This Is All Yours.cue
+mtime: 1411774782
+playlist_end
+end: Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]
+song_begin: 04 Breezeblocks.m4a
+Time: 227
+Artist: Alt-J
+Album: An Awesome Wave
+Title: Breezeblocks
+Track: 4
+Genre: Alternative
+Date: 2012
+Disc: 1/1
+AlbumArtist: alt-J
+mtime: 1411775068
+song_end
+end: Alt-j
 directory: Anamanaguchi
 mtime: 1407475145
 begin: Anamanaguchi
@@ -6815,6 +6994,585 @@ mtime: 1407693964
 song_end
 end: Flashbulb/Nothing is Real
 end: Flashbulb
+directory: Flobots
+mtime: 1411863897
+begin: Flobots
+directory: Fight With Tools (2007)
+mtime: 1411863850
+begin: Flobots/Fight With Tools (2007)
+song_begin: Flobots - 13 iraq_(bonus_track).mp3
+Time: 212
+Artist: Flobots
+Title: Iraq (Bonus Track)
+Album: Fight With Tools
+Track: 13/13
+Date: 2008-00-00
+Genre: Hip-Hop
+mtime: 1411863843
+song_end
+song_begin: Flobots - 01 - There's a war going on for your mind.mp3
+Time: 83
+Artist: Flobots
+AlbumArtist: Flobots
+Title: There's a War Going On for Your Mind
+Album: Fight With Tools
+Track: 1/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863837
+song_end
+song_begin: Flobots - 02 - Mayday!!!.mp3
+Time: 277
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Mayday!!!
+Album: Fight With Tools
+Track: 2/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863843
+song_end
+song_begin: Flobots - 03 - Same thing.mp3
+Time: 209
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Same Thing
+Album: Fight With Tools
+Track: 3/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863841
+song_end
+song_begin: Flobots - 04 - Stand up.mp3
+Time: 279
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Stand Up
+Album: Fight With Tools
+Track: 4/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863832
+song_end
+song_begin: Flobots - 05 - Fight with tools.mp3
+Time: 291
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Fight With Tools
+Album: Fight With Tools
+Track: 5/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863850
+song_end
+song_begin: Flobots - 06 - Handlebars.mp3
+Time: 207
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Handlebars
+Album: Fight With Tools
+Track: 6/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863827
+song_end
+song_begin: Flobots - 07 - Never had it.mp3
+Time: 308
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Never Had It
+Album: Fight With Tools
+Track: 7/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863844
+song_end
+song_begin: Flobots - 08 - Combat.mp3
+Time: 126
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Combat
+Album: Fight With Tools
+Track: 8/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863839
+song_end
+song_begin: Flobots - 09 - The rhythm method (move!).mp3
+Time: 233
+Artist: Flobots
+AlbumArtist: Flobots
+Title: The Rhythm Method (Move!)
+Album: Fight With Tools
+Track: 9/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863827
+song_end
+song_begin: Flobots - 10 - Anne Braden.mp3
+Time: 261
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Anne Braden
+Album: Fight With Tools
+Track: 10/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863834
+song_end
+song_begin: Flobots - 11 - We are winning.mp3
+Time: 207
+Artist: Flobots
+AlbumArtist: Flobots
+Title: We Are Winning
+Album: Fight With Tools
+Track: 11/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863838
+song_end
+song_begin: Flobots - 12 - Rise.mp3
+Time: 251
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Rise
+Album: Fight With Tools
+Track: 12/13
+Date: 2007
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863829
+song_end
+end: Flobots/Fight With Tools (2007)
+directory: Flobots Present... Platypus (2005)
+mtime: 1411863844
+begin: Flobots/Flobots Present... Platypus (2005)
+song_begin: 01 Prelude.mp3
+Time: 44
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Prelude
+Album: Flobots Present... Platypus
+Track: 1
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863823
+song_end
+song_begin: 02 Jetpack.mp3
+Time: 231
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Jetpack
+Album: Flobots Present... Platypus
+Track: 2
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863843
+song_end
+song_begin: 03 One Love.mp3
+Time: 227
+Artist: Flobots
+AlbumArtist: Flobots
+Title: One Love
+Album: Flobots Present... Platypus
+Track: 3
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863840
+song_end
+song_begin: 04 Handlebars.mp3
+Time: 207
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Handlebars
+Album: Flobots Present... Platypus
+Track: 4
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863842
+song_end
+song_begin: 06 No W.mp3
+Time: 179
+Artist: Flobots
+AlbumArtist: Flobots
+Title: No W
+Album: Flobots Present... Platypus
+Track: 6
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863835
+song_end
+song_begin: 07 Something Grown Together.mp3
+Time: 119
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Something Grown Together
+Album: Flobots Present... Platypus
+Track: 7
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863839
+song_end
+song_begin: 05 The Moon.mp3
+Time: 214
+Artist: Flobots
+AlbumArtist: Flobots
+Title: The Moon
+Album: Flobots Present... Platypus
+Track: 5
+Date: 2005
+Genre: Hip-Hop
+Disc: 1/1
+mtime: 1411863844
+song_end
+end: Flobots/Flobots Present... Platypus (2005)
+directory: Johnny 5 & Yak - Onomatopoeia (2001)
+mtime: 1411863849
+begin: Flobots/Johnny 5 & Yak - Onomatopoeia (2001)
+song_begin: Free-Written.mp3
+Time: 304
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Free-Written
+Album: Onomatopoeia
+Track: 1/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863845
+song_end
+song_begin: The Form.mp3
+Time: 260
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: The Form
+Album: Onomatopoeia
+Track: 2/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863845
+song_end
+song_begin: Onomatopoeia.mp3
+Time: 299
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Onomatopoeia
+Album: Onomatopoeia
+Track: 3/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863846
+song_end
+song_begin: Blue Planet Kingdom Come.mp3
+Time: 60
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Blue Planet Kingdom Come
+Album: Onomatopoeia
+Track: 4/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863837
+song_end
+song_begin: Headz N Da Sand.mp3
+Time: 231
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Headz N Da Sand
+Album: Onomatopoeia
+Track: 5/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863838
+song_end
+song_begin: The Last Straw (Part Two Thousand).mp3
+Time: 277
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: The Last Straw (Part Two Thousand)
+Album: Onomatopoeia
+Track: 6/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863847
+song_end
+song_begin: Imitator.mp3
+Time: 107
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Imitator
+Album: Onomatopoeia
+Track: 7/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863841
+song_end
+song_begin: 101101010010100.mp3
+Time: 459
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: 101101010010100
+Album: Onomatopoeia
+Track: 8/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863841
+song_end
+song_begin: S.P.A.R..mp3
+Time: 272
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: S.P.A.R.
+Album: Onomatopoeia
+Track: 9/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863837
+song_end
+song_begin: L'ennui.mp3
+Time: 298
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: L'ennui
+Album: Onomatopoeia
+Track: 10/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863840
+song_end
+song_begin: Naturalsounds.mp3
+Time: 40
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Naturalsounds
+Album: Onomatopoeia
+Track: 11/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863821
+song_end
+song_begin: Magic #.mp3
+Time: 231
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Magic #
+Album: Onomatopoeia
+Track: 12/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863849
+song_end
+song_begin: Simulacra.mp3
+Time: 259
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Simulacra
+Album: Onomatopoeia
+Track: 13/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863848
+song_end
+song_begin: Bonus Track.mp3
+Time: 150
+Artist: Flobots (Jonny 5 + Yak)
+AlbumArtist: Flobots (Jonny 5 + Yak)
+ArtistSort: Jonny 5 + Yak
+AlbumArtistSort: Jonny 5 + Yak
+Title: Bonus Track
+Album: Onomatopoeia
+Track: 22/22
+Date: 2001
+Genre: Hip-Hop
+Disc: 1/2
+mtime: 1411863843
+song_end
+end: Flobots/Johnny 5 & Yak - Onomatopoeia (2001)
+directory: Survival Story (2010)
+mtime: 1411863850
+begin: Flobots/Survival Story (2010)
+song_begin: 01-flobots-cracks_in_the_surface.mp3
+Time: 176
+Artist: Flobots
+Title: Cracks In The Surface
+Album: Survival Story
+Track: 1/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863836
+song_end
+song_begin: 02-flobots-the_effect.mp3
+Time: 267
+Artist: Flobots
+Title: The Effect
+Album: Survival Story
+Track: 2/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863836
+song_end
+song_begin: 03-flobots-defend_atlantis.mp3
+Time: 303
+Artist: Flobots
+Title: Defend Atlantis
+Album: Survival Story
+Track: 3/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863832
+song_end
+song_begin: 04-flobots-if_i.mp3
+Time: 224
+Artist: Flobots
+Title: If I
+Album: Survival Story
+Track: 4/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863850
+song_end
+song_begin: 05-flobots-white_flag_warrior_(feat_tim_mcilrath_of_rise_against).mp3
+Time: 221
+Artist: Flobots
+Title: White Flag Warrior (Feat. Tim McIlrath Of Rise Against)
+Album: Survival Story
+Track: 5/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863829
+song_end
+song_begin: 06-flobots-by_the_time_you_get_this_message.mp3
+Time: 337
+Artist: Flobots
+Title: By The Time You Get This Message
+Album: Survival Story
+Track: 6/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863841
+song_end
+song_begin: 07-flobots-airplane_mode.mp3
+Time: 343
+Artist: Flobots
+Title: Airplane Mode
+Album: Survival Story
+Track: 7/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863833
+song_end
+song_begin: 08-flobots-whips_and_chains.mp3
+Time: 237
+Artist: Flobots
+Title: Whip$ & Chain$
+Album: Survival Story
+Track: 8/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863831
+song_end
+song_begin: 09-flobots-good_soldier.mp3
+Time: 246
+Artist: Flobots
+Title: Good Soldier
+Album: Survival Story
+Track: 9/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863834
+song_end
+song_begin: 10-flobots-superhero.mp3
+Time: 202
+Artist: Flobots
+Title: Superhero
+Album: Survival Story
+Track: 10/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863842
+song_end
+song_begin: 11-flobots-infatuation_(feat_matt_morris).mp3
+Time: 266
+Artist: Flobots
+Title: Infatuation (Feat. Matt Morris)
+Album: Survival Story
+Track: 11/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863839
+song_end
+song_begin: 12-flobots-panacea_for_the_poison.mp3
+Time: 245
+Artist: Flobots
+Title: Panacea For The Poison
+Album: Survival Story
+Track: 12/12
+Date: 2010-03-16
+Genre: Hip-Hop
+mtime: 1411863842
+song_end
+end: Flobots/Survival Story (2010)
+song_begin: Happy Together (Cover).mp3
+Time: 242
+Artist: Flobots
+AlbumArtist: Flobots
+Title: Happy Together (Cover)
+Album: Rare
+Track: 1
+Date: 2005
+Genre: Hip-Hop
+mtime: 1411863842
+song_end
+end: Flobots
 directory: Flume And Chet Faker
 mtime: 1407475172
 begin: Flume And Chet Faker
@@ -9844,7 +10602,7 @@ directory: Kill Paris
 mtime: 1410148737
 begin: Kill Paris
 directory: Kill Paris - To A New Earth (2013)
-mtime: 1410148799
+mtime: 1410784752
 begin: Kill Paris/Kill Paris - To A New Earth (2013)
 song_begin: 01 - Slap Me.mp3
 Time: 197
@@ -10603,7 +11361,7 @@ directory: Lemaitre
 mtime: 1410742192
 begin: Lemaitre
 directory: Relativity 2
-mtime: 1410742115
+mtime: 1410784752
 begin: Lemaitre/Relativity 2
 song_begin: 1-01 Keep Close.mp3
 Time: 255
@@ -10714,7 +11472,7 @@ mtime: 1410742097
 song_end
 end: Lemaitre/Relativity 3 - EP
 directory: The Friendly Sound
-mtime: 1410742164
+mtime: 1410784752
 begin: Lemaitre/The Friendly Sound
 song_begin: The Friendly Sound - Lemaitre.mp3
 Time: 241
@@ -12386,7 +13144,7 @@ directory: Mr. Bill
 mtime: 1410567801
 begin: Mr. Bill
 directory: IRL (2014)
-mtime: 1410567775
+mtime: 1410784752
 begin: Mr. Bill/IRL (2014)
 song_begin: 01. Mr. Bill - IRL.mp3
 Time: 121
@@ -12829,7 +13587,7 @@ song_end
 end: Nero/Welcome Reality (Deluxe Edition)
 end: Nero
 directory: ODESZA
-mtime: 1408508247
+mtime: 1411959056
 begin: ODESZA
 directory: My Friends Never Die
 mtime: 1409539615
@@ -12955,6 +13713,166 @@ Disc: /
 mtime: 1396476118
 song_end
 end: ODESZA/My Friends Never Die Remixes EP
+directory: ODESZA - In Return [2014] [MP3 320kbps]
+mtime: 1411959101
+begin: ODESZA/ODESZA - In Return [2014] [MP3 320kbps]
+song_begin: 01 Always This Late.mp3
+Time: 161
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Always This Late
+Album: In Return
+Track: 1/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959098
+song_end
+song_begin: 02 Say My Name (feat. Zyra).mp3
+Time: 263
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Say My Name (feat. Zyra)
+Album: In Return
+Track: 2/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959099
+song_end
+song_begin: 03 Bloom.mp3
+Time: 196
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Bloom
+Album: In Return
+Track: 3/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959099
+song_end
+song_begin: 04 All We Need (feat. Shy Girls).mp3
+Time: 211
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: All We Need (feat. Shy Girls)
+Album: In Return
+Track: 4/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959098
+song_end
+song_begin: 05 Sundara.mp3
+Time: 136
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Sundara
+Album: In Return
+Track: 5/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959100
+song_end
+song_begin: 06 White Lies (feat. Jenni Potts).mp3
+Time: 277
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: White Lies (feat. Jenni Potts)
+Album: In Return
+Track: 6/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959101
+song_end
+song_begin: 07 Kusanagi.mp3
+Time: 208
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Kusanagi
+Album: In Return
+Track: 7/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959100
+song_end
+song_begin: 08 Echoes (feat. Py).mp3
+Time: 264
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Echoes (feat. Py)
+Album: In Return
+Track: 8/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959099
+song_end
+song_begin: 09 It_s Only (feat. Zyra).mp3
+Time: 268
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: It’s Only (feat. Zyra)
+Album: In Return
+Track: 9/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959100
+song_end
+song_begin: 10 Koto.mp3
+Time: 194
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Koto
+Album: In Return
+Track: 10/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959098
+song_end
+song_begin: 11 Memories That You Call (feat. Monsoonsiren).mp3
+Time: 248
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Memories That You Call (feat. Monsoonsiren)
+Album: In Return
+Track: 11/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959096
+song_end
+song_begin: 12 Sun Models (feat. Madelyn Grant).mp3
+Time: 160
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: Sun Models (feat. Madelyn Grant)
+Album: In Return
+Track: 12/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959097
+song_end
+song_begin: 13 For Us (feat. Briana Marela).mp3
+Time: 349
+Artist: ODESZA
+AlbumArtist: ODESZA
+Title: For Us (feat. Briana Marela)
+Album: In Return
+Track: 13/13
+Date: 2014
+Genre: Electronic
+Disc: 1/1
+mtime: 1411959098
+song_end
+end: ODESZA/ODESZA - In Return [2014] [MP3 320kbps]
 directory: Summer's Gone
 mtime: 1407475215
 begin: ODESZA/Summer's Gone
@@ -17969,6 +18887,218 @@ mtime: 1391403940
 song_end
 end: Run DMT/Run DMT
 end: Run DMT
+directory: SALM
+mtime: 1411767134
+begin: SALM
+directory: SALM - Endless Stairs
+mtime: 1411762137
+begin: SALM/SALM - Endless Stairs
+song_begin: 01 - Toy Spark Gun.mp3
+Time: 222
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM feat. Black, Dan
+AlbumArtistSort: SALM
+Title: Toy Spark Gun
+Album: Endless Stairs
+Track: 1/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b/4658babc-774d-4d15-840b-fc7d496d93ba
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 3c4dca24-162d-466a-9eff-8874580d31bd
+mtime: 1411762093
+song_end
+song_begin: 02 - After The Rain.mp3
+Time: 141
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: After The Rain
+Album: Endless Stairs
+Track: 2/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 91bd1ec8-0e07-4b76-ab06-a90053a93531
+mtime: 1411762100
+song_end
+song_begin: 03 - On My Mind.mp3
+Time: 176
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM feat. DWNTWN
+AlbumArtistSort: SALM
+Title: On My Mind
+Album: Endless Stairs
+Track: 3/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b/8da7a748-f46b-4cfc-9e9e-6d42331f6631
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 09de5e27-b5f6-4226-83fc-da807b0a46be
+mtime: 1411762082
+song_end
+song_begin: 04 - Kairos.mp3
+Time: 237
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Kairos
+Album: Endless Stairs
+Track: 4/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: b706c9d9-ddd3-472c-8ae0-a371fea6ff01
+mtime: 1411762130
+song_end
+song_begin: 05 - Somebody's Gonna Love Me.mp3
+Time: 228
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM feat. Lola
+AlbumArtistSort: SALM
+Title: Somebody's Gonna Love Me
+Album: Endless Stairs
+Track: 5/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b/7031a37b-d099-4982-a8bd-d648f58543b3
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 38945cf5-ee6f-472b-a2ea-b164495d6d10
+mtime: 1411762134
+song_end
+song_begin: 06 - Prophet 21.mp3
+Time: 277
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Prophet 21
+Album: Endless Stairs
+Track: 6/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 6e914b34-27a4-4a97-842b-a96be3220f41
+mtime: 1411762136
+song_end
+song_begin: 07 - Tunnel Of Love.mp3
+Time: 261
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Tunnel Of Love
+Album: Endless Stairs
+Track: 7/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 7b734974-b6bd-4ec3-b6da-3fd63c08f6e1
+mtime: 1411762105
+song_end
+song_begin: 08 - Losing Game.mp3
+Time: 260
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM feat. Joseph, Adam
+AlbumArtistSort: SALM
+Title: Losing Game
+Album: Endless Stairs
+Track: 8/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b/a1d7e752-9d8b-46f2-bf47-7399edfa3a06
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 6b8c1d0a-b5e0-4775-97f3-cbfce4630068
+mtime: 1411762131
+song_end
+song_begin: 09 - Architecture.mp3
+Time: 309
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Architecture
+Album: Endless Stairs
+Track: 9/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 5042eb35-b0cb-4efb-a952-2e0946ee0e44
+mtime: 1411762117
+song_end
+song_begin: 10 - Endless Stairs.mp3
+Time: 252
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Endless Stairs
+Album: Endless Stairs
+Track: 10/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 3bc402a2-cb12-4c3a-891a-51cbb8b7c32d
+mtime: 1411762137
+song_end
+song_begin: 11 - Julius.mp3
+Time: 336
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM
+AlbumArtistSort: SALM
+Title: Julius
+Album: Endless Stairs
+Track: 11/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 1ec4f062-66dd-4626-a8c7-e8b3d7edd452
+mtime: 1411762124
+song_end
+song_begin: 12 - Versailles No Bara.mp3
+Time: 362
+Artist: SALM
+AlbumArtist: SALM
+ArtistSort: SALM feat. Kikuchi, Rinko
+AlbumArtistSort: SALM
+Title: Versailles No Bara
+Album: Endless Stairs
+Track: 12/12
+Date: 2014
+Disc: 1/1
+MUSICBRAINZ_ALBUMARTISTID: 60550bca-5038-4eee-a70e-23488000071b
+MUSICBRAINZ_ARTISTID: 60550bca-5038-4eee-a70e-23488000071b/05f1859d-a898-4491-aed1-77b27ef77bb2
+MUSICBRAINZ_ALBUMID: 313f4a54-08d8-4731-ba1d-4431bc2a5eb7
+MUSICBRAINZ_TRACKID: 95cdf3f1-f523-47e6-b5c3-37bd6c347b83
+mtime: 1411762115
+song_end
+end: SALM/SALM - Endless Stairs
+end: SALM
 directory: Savant
 mtime: 1407475234
 begin: Savant
@@ -19013,6 +20143,194 @@ mtime: 1394918992
 song_end
 end: Suril/Unknown Album
 end: Suril
+directory: The Black Dog
+mtime: 1411760842
+begin: The Black Dog
+directory: The Black Dog - Tranklements (2013) [FLAC]
+mtime: 1411762968
+begin: The Black Dog/The Black Dog - Tranklements (2013) [FLAC]
+song_begin: The Black Dog -  Tranklements - 01 Alien Boys.flac
+Time: 365
+Title: Alien Boys
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 1
+AlbumArtist: The Black Dog
+mtime: 1411762954
+song_end
+song_begin: The Black Dog -  Tranklements - 02 Bolt No.6.flac
+Time: 28
+Title: Bolt No.6
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 2
+AlbumArtist: The Black Dog
+mtime: 1411762809
+song_end
+song_begin: The Black Dog -  Tranklements - 03 Atavistic Resurgence.flac
+Time: 327
+Title: Atavistic Resurgence
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 3
+AlbumArtist: The Black Dog
+mtime: 1411762930
+song_end
+song_begin: The Black Dog -  Tranklements - 04 Bolt 11b.flac
+Time: 45
+Title: Bolt 11b
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 4
+AlbumArtist: The Black Dog
+mtime: 1411762933
+song_end
+song_begin: The Black Dog -  Tranklements - 05 Cult Menality.flac
+Time: 386
+Title: Cult Menality
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 5
+AlbumArtist: The Black Dog
+mtime: 1411762968
+song_end
+song_begin: The Black Dog -  Tranklements - 06 Hymn For SoYo.flac
+Time: 233
+Title: Hymn For SoYo
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 6
+AlbumArtist: The Black Dog
+mtime: 1411762967
+song_end
+song_begin: The Black Dog -  Tranklements - 07 Bolt 3533f.flac
+Time: 78
+Title: Bolt 3533f
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 7
+AlbumArtist: The Black Dog
+mtime: 1411762956
+song_end
+song_begin: The Black Dog -  Tranklements - 08 Pray Crash I.flac
+Time: 260
+Title: Pray Crash I
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 8
+AlbumArtist: The Black Dog
+mtime: 1411762921
+song_end
+song_begin: The Black Dog -  Tranklements - 09 Pray Crash II.flac
+Time: 223
+Title: Pray Crash II
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 9
+AlbumArtist: The Black Dog
+mtime: 1411762941
+song_end
+song_begin: The Black Dog -  Tranklements - 10 Bolt 57w.flac
+Time: 20
+Title: Bolt 57w
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 10
+AlbumArtist: The Black Dog
+mtime: 1411762788
+song_end
+song_begin: The Black Dog -  Tranklements - 11 Internal Collapse.flac
+Time: 334
+Title: Internal Collapse
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 11
+AlbumArtist: The Black Dog
+mtime: 1411762940
+song_end
+song_begin: The Black Dog -  Tranklements - 12 First Cut.flac
+Time: 487
+Title: First Cut
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 12
+AlbumArtist: The Black Dog
+mtime: 1411762946
+song_end
+song_begin: The Black Dog -  Tranklements - 13 Bolt 93.flac
+Time: 37
+Title: Bolt 93
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 13
+AlbumArtist: The Black Dog
+mtime: 1411762097
+song_end
+song_begin: The Black Dog -  Tranklements - 14 Death Bingo.flac
+Time: 350
+Title: Death Bingo
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 14
+AlbumArtist: The Black Dog
+mtime: 1411762965
+song_end
+song_begin: The Black Dog -  Tranklements - 15 Mind Object.flac
+Time: 288
+Title: Mind Object
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 15
+AlbumArtist: The Black Dog
+mtime: 1411762957
+song_end
+song_begin: The Black Dog -  Tranklements - 16 Spatchka.flac
+Time: 432
+Title: Spatchka
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 16
+AlbumArtist: The Black Dog
+mtime: 1411762961
+song_end
+song_begin: The Black Dog -  Tranklements - 17 Single Light Focus (Live At Tresor).flac
+Time: 376
+Title: Single Light Focus (Live At Tresor)
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 17
+AlbumArtist: The Black Dog
+mtime: 1411762964
+song_end
+song_begin: The Black Dog -  Tranklements - 18 Funked Industry.flac
+Time: 270
+Title: Funked Industry
+Artist: The Black Dog
+Date: 2013
+Album: Tranklements
+Track: 18
+AlbumArtist: The Black Dog
+mtime: 1411762911
+song_end
+end: The Black Dog/The Black Dog - Tranklements (2013) [FLAC]
+end: The Black Dog
 directory: The Chain Gang of 1974
 mtime: 1407475241
 begin: The Chain Gang of 1974

@@ -2,6 +2,11 @@
 # bspwm hotkeys
 #
 
+#Toggle Panel
+super + g 
+    {bspc config bottom_padding 25; /home/nick/dotfiles/.config/bspwm/panel,\
+    pkill panel; pkill panel_bar; bspc config bottom_padding 0}
+
 #Quit bspwm
 super + shift + q
 	/home/nick/.bin/dmenu_shutdown
@@ -66,6 +71,12 @@ super + alt + {Left,Down,Up,Right}
 super + alt + {h,j,k,l}
 	bspc window -e {left -20,down +20,down -20,left +20}
 
+ctrl + {h,l,k,j}
+    xdo move {-x -20,-x +20,-y -20,-y +20}
+
+ctrl + shift + {h,j,l,k}
+    xdo resize {-w -20,-h -20,-w +20,-h +20}
+
 super + {v, c}
     bspc window -p {right, down}
 
@@ -108,7 +119,7 @@ super + shift + Return
 
 #Run launcher
 super + d 
-    dmenu_run -i -s 2 -b -w 800 -h 22 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#282729" -nf "#707880" -sb "#151515" -sf "#707880" -class "reg_dmenu"
+    dmenu_run -i -s 3 -b -w 800 -h 22 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#282729" -nf "#707880" -sb "#151515" -sf "#707880" -class "reg_dmenu"
 
 #choose wifi
 super + w 

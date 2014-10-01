@@ -27,6 +27,7 @@ alias pacimpl="sudo /usr/bin/pacman -D --asdep"	# 'mark as [impl]icit'	- mark on
 # '[r]emove [o]rphans' - recursively remove ALL orphaned packages
 alias pacro="/usr/bin/pacman -Qtdq > /dev/null && sudo /usr/bin/pacman -Rns \$(/usr/bin/pacman -Qtdq | sed -e ':a;N;$!ba;s/\n/ /g')"
 
+
 scrot() {
     cd ~/Pictures/screenshots/;
     scrot $1;
@@ -193,7 +194,7 @@ conf() {
 
 case $1 in
 bspwm)	cd ~/dotfiles/.config/bspwm; ls;;
-sxhkd)	cd ~/dotfiles/.config/sxhkd; vim ~/.config/sxhkd/sxhkdrc ;;
+sxhkd)  vim ~/.config/sxhkd/sxhkdrc; cd ~; pkill sxhkd; sxhkd & disown ;;
 openbox) cd ~/.config/openbox; vim rc.xml ;;
 pacman)	sudo vim /etc/pacman.conf ;;
 vim)	vim ~/.vimrc ;;

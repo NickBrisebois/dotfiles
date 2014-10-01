@@ -6437,3 +6437,458 @@ Sep 29 00:02 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP
 Sep 29 00:02 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Sep 29 00:02 : player: played "Alt-j/04 Breezeblocks.m4a"
 Sep 29 00:02 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/07 - Choice Kingdom.mp3"
+Sep 29 00:05 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/05 - Left Hand Free.mp3"
+Sep 29 00:10 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/08 - Hunger Of The Pine.mp3"
+Sep 29 00:16 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/10 - The Gospel Of John Hurt.mp3"
+Sep 29 08:30 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/03 - Nara.mp3"
+Sep 29 08:35 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/12 - Bloodflood Pt. II.mp3"
+Sep 29 08:35 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/11 - Pusher.mp3"
+Sep 29 08:35 : player: played "Mr. Bill/IRL (2014)/06. Mr. Bill - A Simple Song.mp3"
+Sep 29 08:39 : player: played "Lemaitre/The Friendly Sound/Nishio - Lemaitre.mp3"
+Sep 29 08:43 : player: played "Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3"
+Sep 29 14:10 : player: played "Lemaitre/Relativity 2/1-05 Appreciate.mp3"
+Sep 29 14:39 : player: played "Lemaitre/Relativity 2/1-02 Time To Realize.mp3"
+Sep 29 14:43 : player: played "Relativity 3 - EP/03 Fiction.mp3"
+Sep 29 14:47 : player: played "Relativity 3 - EP/04 Cut To Black.mp3"
+Sep 29 14:56 : player: played "Lemaitre/Relativity 3 - EP/03 Fiction.mp3"
+Sep 29 15:00 : player: played "Relativity 3 - EP/01 Continuum.mp3"
+Sep 29 15:04 : player: played "Lemaitre/Relativity 2/1-04 Steady State.mp3"
+Sep 29 15:07 : player: played "Lemaitre/The Friendly Sound/118 - Lemaitre.mp3"
+Sep 29 15:12 : player: played "Lemaitre/The Friendly Sound/Strobes Pt. 2 - Lemaitre.mp3"
+Sep 29 15:12 : player: played "Lemaitre/Relativity 3 - EP/02 Iron Pyrite.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/11 - Pusher.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/01 - Intro.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/07 - Choice Kingdom.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/06 - Garden Of England.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/03 - Nara.mp3"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/10 - The Gospel Of John Hurt.mp3"
+Sep 29 15:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Sep 29 15:12 : player: played "Alt-j/04 Breezeblocks.m4a"
+Sep 29 15:12 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/12 - Bloodflood Pt. II.mp3"
+Sep 29 15:13 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/09 - Warm Foothills.mp3"
+Sep 29 15:13 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/02 - Arrival In Nara.mp3"
+Sep 29 15:13 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/04 - Every Other Freckle.mp3"
+Sep 29 15:13 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/13 - Leaving Nara.mp3"
+Sep 29 15:15 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/05 - Left Hand Free.mp3"
+Sep 29 15:20 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/08 - Hunger Of The Pine.mp3"
+Sep 29 15:24 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/04 - Every Other Freckle.mp3"
+Sep 29 15:32 : player: played "Flobots/Fight With Tools (2007)/Flobots - 02 - Mayday!!!.mp3"
+Sep 29 15:35 : player: played "Flobots/Fight With Tools (2007)/Flobots - 11 - We are winning.mp3"
+Sep 29 15:39 : player: played "Flobots/Survival Story (2010)/05-flobots-white_flag_warrior_(feat_tim_mcilrath_of_rise_against).mp3"
+Sep 29 15:39 : player: played "Flobots/Flobots Present... Platypus (2005)/01 Prelude.mp3"
+Sep 29 15:43 : player: played "Flobots/Survival Story (2010)/08-flobots-whips_and_chains.mp3"
+Sep 29 15:47 : player: played "Flobots/Flobots Present... Platypus (2005)/05 The Moon.mp3"
+Sep 29 15:51 : player: played "Flobots/Flobots Present... Platypus (2005)/03 One Love.mp3"
+Sep 29 15:54 : player: played "Flobots/Fight With Tools (2007)/Flobots - 13 iraq_(bonus_track).mp3"
+Sep 29 15:58 : player: played "Flobots/Survival Story (2010)/12-flobots-panacea_for_the_poison.mp3"
+Sep 29 16:02 : player: played "Flobots/Flobots Present... Platypus (2005)/02 Jetpack.mp3"
+Sep 29 16:07 : player: played "Flobots/Survival Story (2010)/03-flobots-defend_atlantis.mp3"
+Sep 29 16:12 : player: played "Flobots/Fight With Tools (2007)/Flobots - 07 - Never had it.mp3"
+Sep 29 16:14 : player: played "Flobots/Flobots Present... Platypus (2005)/06 No W.mp3"
+Sep 29 16:20 : player: played "Flobots/Survival Story (2010)/07-flobots-airplane_mode.mp3"
+Sep 29 16:23 : player: played "Flobots/Fight With Tools (2007)/Flobots - 03 - Same thing.mp3"
+Sep 29 16:25 : player: played "Flobots/Fight With Tools (2007)/Flobots - 01 - There's a war going on for your mind.mp3"
+Sep 29 16:29 : player: played "Flobots/Fight With Tools (2007)/Flobots - 09 - The rhythm method (move!).mp3"
+Sep 29 16:31 : player: played "Flobots/Fight With Tools (2007)/Flobots - 08 - Combat.mp3"
+Sep 29 16:33 : player: played "Flobots/Survival Story (2010)/10-flobots-superhero.mp3"
+Sep 29 16:33 : player: played "Flobots/Fight With Tools (2007)/Flobots - 12 - Rise.mp3"
+Sep 29 16:35 : player: played "Flobots/Survival Story (2010)/06-flobots-by_the_time_you_get_this_message.mp3"
+Sep 29 16:35 : player: played "Flobots/Fight With Tools (2007)/Flobots - 10 - Anne Braden.mp3"
+Sep 29 16:35 : player: played "Flobots/Survival Story (2010)/02-flobots-the_effect.mp3"
+Sep 29 16:36 : player: played "Flobots/Survival Story (2010)/11-flobots-infatuation_(feat_matt_morris).mp3"
+Sep 29 16:36 : player: played "Flobots/Survival Story (2010)/09-flobots-good_soldier.mp3"
+Sep 29 16:36 : player: played "Flobots/Flobots Present... Platypus (2005)/04 Handlebars.mp3"
+Sep 29 16:37 : player: played "Flobots/Survival Story (2010)/04-flobots-if_i.mp3"
+Sep 29 16:38 : player: played "Flobots/Happy Together (Cover).mp3"
+Sep 29 16:38 : player: played "Flobots/Fight With Tools (2007)/Flobots - 05 - Fight with tools.mp3"
+Sep 29 16:38 : player: played "Flobots/Survival Story (2010)/01-flobots-cracks_in_the_surface.mp3"
+Sep 29 16:38 : player: played "Flobots/Fight With Tools (2007)/Flobots - 06 - Handlebars.mp3"
+Sep 29 16:38 : player: played "Flobots/Fight With Tools (2007)/Flobots - 04 - Stand up.mp3"
+Sep 29 16:40 : player: played "Flobots/Flobots Present... Platypus (2005)/07 Something Grown Together.mp3"
+Sep 29 16:44 : player: played "Flobots/Flobots Present... Platypus (2005)/03 One Love.mp3"
+Sep 29 16:49 : player: played "Flobots/Fight With Tools (2007)/Flobots - 07 - Never had it.mp3"
+Sep 29 16:53 : player: played "Flobots/Survival Story (2010)/12-flobots-panacea_for_the_poison.mp3"
+Sep 29 16:54 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 29 16:55 : player: played "Flobots/Flobots Present... Platypus (2005)/07 Something Grown Together.mp3"
+Sep 29 16:56 : player: played "Flobots/Survival Story (2010)/09-flobots-good_soldier.mp3"
+Sep 29 17:00 : player: played "Flobots/Happy Together (Cover).mp3"
+Sep 29 17:04 : player: played "Flobots/Survival Story (2010)/08-flobots-whips_and_chains.mp3"
+Sep 29 17:05 : player: played "Flobots/Fight With Tools (2007)/Flobots - 01 - There's a war going on for your mind.mp3"
+Sep 29 17:09 : player: played "Flobots/Survival Story (2010)/07-flobots-airplane_mode.mp3"
+Sep 29 17:09 : player: played "Flobots/Flobots Present... Platypus (2005)/04 Handlebars.mp3"
+Sep 29 17:09 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Sep 29 17:13 : player: played "Volor Flex/Tramp/15 You In Me.m4a"
+Sep 29 17:17 : player: played "Nero/Welcome Reality (Deluxe Edition)/08 In the Way.mp3"
+Sep 29 17:26 : player: played "Deadmau5/While 1 under 2/CD • I •/1-06 Terrors In My Head.mp3"
+Sep 29 17:27 : player: played "Modest Mouse/Good News for People Who Love Bad News/03 - Float On.mp3"
+Sep 29 17:27 : player: played "Krewella ft. Pegboard Nerds/GET WET AVAILABLE 9_24/12 This Is Not The End.mp3"
+Sep 29 17:31 : player: played "Aphex Twin/2005 - AFX - Analord, Volume 1-11/AFX - Analord 01/03 - MC-4 Acid.mp3"
+Sep 29 17:36 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+Sep 29 17:36 : player: played "Parov Stelar/The Art of Sampling (Deluxe Edition)_CD2/2-08 This Game (feat. Anduze) (Moonb.mp3"
+Sep 29 17:36 : player: played "Phoenix/Wolfgang Amadeus Phoenix/01 Lisztomania.mp3"
+Sep 29 17:36 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Sep 29 17:38 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 29 17:40 : player: played "Lets Be Friends/EP 1/03 Allow It.m4a"
+Sep 29 17:41 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+Sep 29 17:43 : player: played "Prefuse 73/Surrounded by Silence/01 I've Said All I Need to Say About Them Intro.mp3"
+Sep 29 17:45 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Sep 29 17:46 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+Sep 29 17:48 : player: played "Parov Stelar/The Art of Sampling (Deluxe Edition)_CD1/1-10 Love - Remix.mp3"
+Sep 29 17:50 : player: played "Hucci/Novacane EP/07 Hustle.mp3"
+Sep 29 17:50 : player: played "Daft Punk/Random Access Memories/04 - Within.mp3"
+Sep 29 18:40 : player: played "Pendulum/Pendulum/Immersion [2009]/Crush.mp3"
+Sep 29 18:40 : player: played "Daft Punk/Random Access Memories/04 - Within.mp3"
+Sep 29 18:40 : player: played "edIT/Certified Air Raid Material/01 Questions.mp3"
+Sep 29 18:40 : player: played "SALM/SALM - Endless Stairs/04 - Kairos.mp3"
+Sep 29 18:40 : player: played "Mosh/Empire/02 Yokai.mp3"
+Sep 29 18:41 : player: played "Nero/Welcome Reality (Deluxe Edition)/10 Crush On You.mp3"
+Sep 29 18:45 : player: played "CloZee/Jafump T/02 Eyes In Eyes (feat. LF).mp3"
+Sep 29 18:45 : player: played "Modest Mouse/Good News for People Who Love Bad News/13 - Blame It on the Tetons.mp3"
+Sep 29 18:50 : player: played "Relativity 3 - EP/01 Continuum.mp3"
+Sep 29 18:52 : player: played "DJ Okawari/Kaleidoscope (2011)/10. Temperature Of Tears.mp3"
+Sep 29 18:56 : player: played "Ratatat/Classics/04 Wildcat.mp3"
+Sep 29 18:58 : player: played "Com Truise/In Decay/11 Video Arkade.mp3"
+Sep 29 19:01 : player: played "Tycho/Awake/01 - Awake.mp3"
+Sep 29 19:04 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/05 - Left Hand Free.mp3"
+Sep 29 19:15 : player: played "The Black Dog/The Black Dog - Tranklements (2013) [FLAC]/The Black Dog -  Tranklements - 16 Spatchka.flac"
+Sep 29 19:15 : player: played "Kavinsky/Outrun/12 Roadgame.mp3"
+Sep 29 19:16 : player: played "Danger/09_17 2007/04 4h30 (Riot Kid remix).mp3"
+Sep 29 19:16 : player: played "Aphex Twin/1997 - Come to Daddy EP/07 Come to Daddy (Mummy Mix Version).mp3"
+Sep 29 19:23 : player: played "Blackmill/Miracle/Blackmill - Spirit Of Life.mp3"
+Sep 29 19:27 : player: played "Emancipator/Dusk to Dawn/03 Merlion.mp3"
+Sep 29 19:30 : player: played "Boards Of Canada/Tomorrow's Harvest/1-03 White Cyclosa.mp3"
+Sep 29 19:30 : player: played "M83/Hurry Up, We're Dreaming/08 Claudia Lewis.mp3"
+Sep 29 19:32 : player: played "DJ Okawari/Kaleidoscope (2011)/05. Flower Dance (Feat. Tabeyellow).mp3"
+Sep 29 19:38 : player: played "Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 02 - Nuno.mp3"
+Sep 29 19:39 : player: played "Keeno/Life Cycle/05 - A Wheel Within a Wheel.mp3"
+Sep 29 19:44 : player: played "Flobots/Fight With Tools (2007)/Flobots - 10 - Anne Braden.mp3"
+Sep 29 19:47 : player: played "Modest Mouse/Good News for People Who Love Bad News/04 - Ocean Breathes Salty.mp3"
+Sep 29 19:52 : player: played "Flobots/Fight With Tools (2007)/Flobots - 05 - Fight with tools.mp3"
+Sep 29 19:56 : player: played "Stan SB/Unknown Album/Let This Go.mp3"
+Sep 29 20:37 : player: played "Lemaitre/Relativity 3 - EP/01 Continuum.mp3"
+Sep 29 21:24 : player: played "Aphex Twin/2005 - AFX - Analord, Volume 1-11/AFX - Analord 06/04 - 2 Analogue Talks.mp3"
+Sep 29 21:24 : player: played "Hardwell/Singles/Three Triangles.mp3"
+Sep 29 21:24 : player: played "Tycho/Dive/07 Melanine.mp3"
+Sep 29 21:24 : player: played "Justice/†/1-08 Tthhee Pparrttyy.mp3"
+Sep 29 21:24 : player: played "Mosh/Monarchy/03 Taurus.mp3"
+Sep 29 21:24 : player: played "Ratatat/Classics/09 Nostrand.mp3"
+Sep 29 21:24 : player: played "Madeon/Madeon Remixes/03 David Latour - Friday Night (Made.mp3"
+Sep 29 21:28 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/11 Memories That You Call (feat. Monsoonsiren).mp3"
+Sep 29 21:33 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/02 Say My Name (feat. Zyra).mp3"
+Sep 29 21:36 : player: played "ODESZA/Summer's Gone/07 Tuytus.mp3"
+Sep 29 21:41 : player: played "ODESZA/Summer's Gone/12 IPlayYouListen.mp3"
+Sep 29 21:44 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/10 Koto.mp3"
+Sep 29 21:47 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/12 Sun Models (feat. Madelyn Grant).mp3"
+Sep 29 21:49 : client: Max connections reached
+Sep 29 21:49 : client: Max connections reached
+Sep 29 21:50 : client: Max connections reached
+Sep 29 21:50 : client: Max connections reached
+Sep 29 21:50 : client: Max connections reached
+Sep 29 21:51 : client: Max connections reached
+Sep 29 21:51 : client: Max connections reached
+Sep 29 21:51 : client: Max connections reached
+Sep 29 21:51 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/08 Echoes (feat. Py).mp3"
+Sep 29 21:51 : client: Max connections reached
+Sep 29 21:53 : client: Max connections reached
+Sep 29 21:53 : client: Max connections reached
+Sep 29 21:53 : client: Max connections reached
+Sep 29 21:53 : client: Max connections reached
+Sep 29 21:53 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : player: played "ODESZA/My Friends Never Die/01 My Friends Never Die.mp3"
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:54 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:55 : client: Max connections reached
+Sep 29 21:56 : client: Max connections reached
+Sep 29 21:56 : player: played "ODESZA/Summer's Gone/08 Rely.mp3"
+Sep 29 21:56 : player: played "ODESZA/Summer's Gone/08 Rely.mp3"
+Sep 29 21:56 : player: played "ODESZA/Summer's Gone/03 I Want You.mp3"
+Sep 29 23:15 : player: played "ODESZA/My Friends Never Die Remixes EP/02 If There_s Time (Kodak to Graph Remix).mp3"
+Sep 29 23:18 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/05 - Left Hand Free.mp3"
+Sep 29 23:21 : player: played "ODESZA/My Friends Never Die Remixes EP/03 Without You (1990 Remix).mp3"
+Sep 29 23:27 : player: played "ODESZA/ODESZA - In Return [2014] [MP3 320kbps]/13 For Us (feat. Briana Marela).mp3"
+Sep 29 23:27 : player: played "ODESZA/Summer's Gone/06 Today.mp3"
+Sep 29 23:30 : player: played "Mr. Bill/IRL (2014)/13. Mr. Bill - Slutteral Gump (Instrumental).mp3"
+Sep 29 23:30 : player: played "Mr. Bill/IRL (2014)/02. Mr. Bill - The Enabler & The Enabled.mp3"
+Sep 30 08:38 : player: played "Relativity 3 - EP/03 Fiction.mp3"
+Sep 30 08:42 : player: played "Relativity 3 - EP/02 Iron Pyrite.mp3"
+Sep 30 08:45 : player: played "Lemaitre/The Friendly Sound/Nishio - Lemaitre.mp3"
+Sep 30 08:49 : player: played "Lemaitre/Relativity 3 - EP/03 Fiction.mp3"
+Sep 30 08:52 : player: played "Lemaitre/Relativity 2/1-02 Time To Realize.mp3"
+Sep 30 08:56 : player: played "Lemaitre/The Friendly Sound/The Friendly Sound - Lemaitre.mp3"
+Sep 30 14:24 : pulse_output: failed to connect the stream: Connection terminated
+Sep 30 14:28 : player: played "Lemaitre/Relativity 3 - EP/01 Continuum.mp3"
+Sep 30 14:28 : player: played "Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3"
+Sep 30 14:32 : player: played "Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3"
+Sep 30 14:33 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 30 14:36 : player: played "Lemaitre/Relativity 2/1-01 Keep Close.mp3"
+Sep 30 14:40 : player: played "Relativity 3 - EP/04 Cut To Black.mp3"
+Sep 30 14:43 : player: played "Lemaitre/Relativity 2/1-04 Steady State.mp3"
+Sep 30 14:45 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Invalid MIT-MAGIC-COOKIE-1 keyxcb_connection_has_error() returned true
+Invalid MIT-MAGIC-COOKIE-1 keySep 30 14:47 : player: played "Lemaitre/The Friendly Sound/The Friendly Sound - Lemaitre.mp3"
+Sep 30 14:51 : player: played "Lemaitre/The Friendly Sound/118 - Lemaitre.mp3"
+Sep 30 14:54 : player: played "Relativity 3 - EP/02 Iron Pyrite.mp3"
+Sep 30 14:57 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Sep 30 14:58 : player: played "Lemaitre/Relativity 2/1-03 Splitting Colors.mp3"
+Sep 30 15:02 : player: played "Lemaitre/Relativity 3 - EP/02 Iron Pyrite.mp3"
+Sep 30 15:12 : player: played "Lemaitre/The Friendly Sound/Nishio - Lemaitre.mp3"
+Sep 30 15:13 : player: played "Relativity 3 - EP/03 Fiction.mp3"
+Sep 30 15:18 : player: played "Flobots/Happy Together (Cover).mp3"
+Sep 30 15:22 : player: played "Flobots/Flobots Present... Platypus (2005)/03 One Love.mp3"
+Sep 30 15:26 : player: played "Flobots/Survival Story (2010)/02-flobots-the_effect.mp3"
+Sep 30 15:32 : player: played "Flobots/Survival Story (2010)/07-flobots-airplane_mode.mp3"
+Sep 30 15:34 : player: played "Flobots/Flobots Present... Platypus (2005)/07 Something Grown Together.mp3"
+Sep 30 15:38 : player: played "Flobots/Fight With Tools (2007)/Flobots - 03 - Same thing.mp3"
+Sep 30 15:39 : player: played "Flobots/Fight With Tools (2007)/Flobots - 01 - There's a war going on for your mind.mp3"
+Sep 30 15:45 : player: played "Flobots/Survival Story (2010)/06-flobots-by_the_time_you_get_this_message.mp3"
+Sep 30 16:16 : player: played "Flobots/Fight With Tools (2007)/Flobots - 11 - We are winning.mp3"
+Sep 30 16:30 : player: played "Flobots/Happy Together (Cover).mp3"
+Sep 30 16:34 : player: played "Flobots/Survival Story (2010)/04-flobots-if_i.mp3"
+Sep 30 16:38 : player: played "Flobots/Flobots Present... Platypus (2005)/02 Jetpack.mp3"
+Sep 30 16:42 : player: played "Flobots/Fight With Tools (2007)/Flobots - 13 iraq_(bonus_track).mp3"
+Sep 30 18:03 : player: played "Flobots/Survival Story (2010)/08-flobots-whips_and_chains.mp3"
+Sep 30 18:06 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 30 18:07 : pulse_output: "alsa_audio" [pulse] failed to play: failed to connect the stream: Connection terminated
+Sep 30 18:08 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Sep 30 18:09 : player: played "Mr. Bill/IRL (2014)/06. Mr. Bill - A Simple Song.mp3"
+Sep 30 18:12 : player: played "Mr. Bill/IRL (2014)/04. Mr. Bill - The Oculist.mp3"
+Sep 30 18:17 : player: played "Mr. Bill/IRL (2014)/03. Mr. Bill - URL.mp3"
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/06 Sell Yourself.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/05 2024.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/03 Indy Kidz.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/01 Always Something.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/07 Rubber Ball.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/12 Flow.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/02 Aberdeen.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/11 Japanese Buffalo.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/08 Right Before My Eyes.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/04 Shake Me Down.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/10 Sabertooth Tiger.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/09 Around my Head.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/12 Cover Me Again.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/06 Back Against The Wall.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/10 Sail To The Sun.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/04 Tiny Little Robots.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/08 Judas.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/07 Drones In The Valley.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/02 James Brown.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/01 In One Ear.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/11 Free Love.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/03 Ain't No Rest For The Wicked.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/05 Lotus.mp3
+Sep 30 19:55 : update: added Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/09 Back Stabbin' Betty.mp3
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 19:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:01 : player: played "Mr. Bill/IRL (2014)/13. Mr. Bill - Slutteral Gump (Instrumental).mp3"
+Sep 30 20:04 : player: played "Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/02 Aberdeen.mp3"
+Sep 30 20:07 : player: played "Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/11 Japanese Buffalo.mp3"
+Sep 30 20:11 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/09 Back Stabbin' Betty.mp3"
+Sep 30 20:14 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/06 Back Against The Wall.mp3"
+Sep 30 20:15 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/12 Cover Me Again.mp3"
+Sep 30 20:19 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/05 Lotus.mp3"
+Sep 30 20:22 : player: played "Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/07 Rubber Ball.mp3"
+Sep 30 20:26 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/10 Sail To The Sun.mp3"
+Sep 30 20:29 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/03 Ain't No Rest For The Wicked.mp3"
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3
+Sep 30 20:31 : update: added The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3
+Sep 30 20:31 : player: played "Cage the Elephant/Cage The Elephant/Cage the Elephant (2008)/02 James Brown.mp3"
+Sep 30 20:35 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Sep 30 20:36 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 30 20:36 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 30 20:40 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Sep 30 20:44 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Sep 30 20:48 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Sep 30 20:50 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Sep 30 20:57 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Sep 30 20:58 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Sep 30 21:01 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Sep 30 21:05 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Sep 30 21:07 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Sep 30 21:11 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Sep 30 21:38 : player: played "Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/12 - Bloodflood Pt. II.mp3"
+Sep 30 21:41 : player: played "Madeon/Finale - Single/02 Finale (Dub Mix).mp3"
+Sep 30 21:47 : player: played "Bonobo/The North Borders/08 Don't Wait.mp3"
+Sep 30 21:51 : player: played "Metric/Fantasies/Gimme Sympathy.mp3"
+Sep 30 21:56 : player: played "Stan SB/Unknown Album/It's a Disaster.mp3"
+Sep 30 21:56 : player: played "Nero/Welcome Reality (Deluxe Edition)/03 My Eyes.mp3"
+Sep 30 21:58 : player: played "Flashbulb/Nothing is Real/The Flashbulb - Nothing Is Real - 10 Mysterious Wall.mp3"
+Sep 30 21:58 : player: played "Parov Stelar/The Princess/2-03 Booty Swing.mp3"
+Sep 30 22:00 : player: played "Aphex Twin/2001 - Drukqs/CD1/11 - Gwarek2.mp3"
+Sep 30 22:06 : player: played "edIT/Certified Air Raid Material/02 Battling Go-Go Yubari In Downtown.mp3"
+Sep 30 22:09 : player: played "Adventure Club/Adventure Club Music Pack/Daisy (Adventure Club Dubstep Remix).mp3"
+Sep 30 22:13 : player: played "Tristam & Rogue/Catalyst/05 Flamewar.mp3"
+Sep 30 22:22 : player: played "Infected Mushroom/Infected Mushroom - 1999 - The Gathering/09. Over Mode.mp3"
+Sep 30 22:28 : player: played "Blackmill/Singles/Blackmill feat. Veela - Life.mp3"
+Sep 30 22:34 : player: played "Aphex Twin/1994 - Classics/07 Phlange Phace.mp3"
+Sep 30 22:44 : player: played "Fall of Icarus/Endorphin EP/04 Hellsing.mp3"
+Sep 30 22:49 : player: played "Aphex Twin/1994 - Classics/07 Phlange Phace.mp3"
+Sep 30 22:54 : player: played "Fall of Icarus/Endorphin EP/04 Hellsing.mp3"
+Sep 30 22:57 : player: played "Flobots/Flobots Present... Platypus (2005)/04 Handlebars.mp3"
+Sep 30 23:01 : player: played "Aphex Twin/1995 - Richard D. James Album/10 - Logon-Rock Witch.mp3"
+Sep 30 23:02 : player: played "Krewella/Get Wet/09 Ring Of Fire.mp3"
+Sep 30 23:04 : player: played "Aphex Twin/2001 - Drukqs/CD2/11 - Ruglen Holon.mp3"
+Oct 01 00:01 : player: played "The Glitch Mob/Love Death Immortality/10 Beauty Of The Unhidden Heart (fea.mp3"
+Oct 01 00:05 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Oct 01 00:09 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Oct 01 00:13 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 00:17 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Oct 01 00:22 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 00:28 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Oct 01 00:35 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Oct 01 00:39 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 00:42 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 08:35 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Oct 01 08:37 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 08:41 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 08:45 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 08:49 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Oct 01 08:55 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Oct 01 09:00 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 09:04 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Oct 01 13:33 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Oct 01 13:40 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 13:46 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Oct 01 13:52 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Oct 01 13:57 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 14:03 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Oct 01 14:07 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Oct 01 14:11 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Oct 01 14:14 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 14:18 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 14:29 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 14:32 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Oct 01 14:38 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 14:42 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 14:44 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 14:48 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Oct 01 14:55 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Oct 01 14:56 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Oct 01 15:02 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Oct 01 15:03 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 15:06 : player: played "Porter Robinson/Worlds/10 -  Sea of Voices.mp3"
+Oct 01 15:15 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 15:16 : player: played "Aphex Twin/2003 - 26 Mixes For Cash/CD1/11 - Aphex Twin - The Beatniks , Une Femme N'est Pas Un Homme (Aphex Twin Mix).mp3"
+Oct 01 15:18 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/04. The M Machine - Data Palace.mp3"
+Oct 01 15:21 : player: played "Aphex Twin/1997 - Come to Daddy EP/01 Come to Daddy (Pappy Mix Version).mp3"
+Oct 01 15:22 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 15:23 : player: played "Aphex Twin/1997 - Come to Daddy EP/03 Come to Daddy (Little Lord Faulteroy Mix Version).mp3"
+Oct 01 15:26 : player: played "Aphex Twin/1995 - Richard D. James Album/03 - Peek 824545201.mp3"
+Oct 01 15:26 : player: played "Aphex Twin/2001 - Drukqs/CD2/14 - Beskhu3epnm.mp3"
+Oct 01 15:30 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 15:34 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/02. The M Machine - Ghosts In The Machine (Kill The Noise Remix).mp3"
+Oct 01 15:39 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/07. The M Machine - Shadow In The Rose Garden (Matt Lange Remix).mp3"
+Oct 01 16:05 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/09. The M Machine - Black (Trifonic Remix).mp3"
+Oct 01 16:11 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/05. The M Machine - Tiny Anthem (Shinichi Osawa Remix).mp3"
+Oct 01 16:13 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/08. The M Machine - Faces (Proxy Remix).mp3"
+Oct 01 16:13 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/06. The M Machine - Schadenfreude (Tantrum Desire Remix).mp3"
+Oct 01 16:17 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/03. The M Machine - A King Alone (Robotaki Remix).mp3"
+Oct 01 16:17 : player: played "edIT/Crying Over Pros For No Reason/10 Mildew.mp3"
+Oct 01 16:21 : player: played "Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/02 Aberdeen.mp3"
+Oct 01 16:21 : player: played "Cage the Elephant/Cage The Elephant/Thank You, Happy Birthday (2011)/11 Japanese Buffalo.mp3"
+Oct 01 16:25 : player: played "Flobots/Survival Story (2010)/09-flobots-good_soldier.mp3"
+Oct 01 16:28 : player: played "Flobots/Flobots Present... Platypus (2005)/04 Handlebars.mp3"
+Oct 01 16:31 : pulse_output: failed to connect the stream: Connection terminated
+Oct 01 16:44 : player: played "Flobots/Fight With Tools (2007)/Flobots - 13 iraq_(bonus_track).mp3"
+Oct 01 16:49 : player: played "Flobots/Survival Story (2010)/11-flobots-infatuation_(feat_matt_morris).mp3"
+Oct 01 16:50 : player: played "Flobots/Fight With Tools (2007)/Flobots - 01 - There's a war going on for your mind.mp3"
+Oct 01 16:55 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+Oct 01 16:55 : player: played "Flobots/Fight With Tools (2007)/Flobots - 04 - Stand up.mp3"
+xcb_connection_has_error() returned true
+Oct 01 16:56 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Oct 01 16:59 : player: played "Flobots/Survival Story (2010)/09-flobots-good_soldier.mp3"
+Oct 01 17:03 : player: played "Flobots/Fight With Tools (2007)/Flobots - 09 - The rhythm method (move!).mp3"
+Oct 01 17:06 : player: played "Flobots/Fight With Tools (2007)/Flobots - 06 - Handlebars.mp3"
+Oct 01 17:07 : player: played "Flobots/Flobots Present... Platypus (2005)/04 Handlebars.mp3"
+Oct 01 17:10 : pulse_output: "alsa_audio" [pulse] failed to play: disconnected
+xcb_connection_has_error() returned true
+Oct 01 17:10 : pulse_output: Failed to open "alsa_audio" [pulse]: failed to connect: Connection refused
+xcb_connection_has_error() returned true
+Oct 01 17:12 : player: played "Flobots/Survival Story (2010)/12-flobots-panacea_for_the_poison.mp3"
+Oct 01 17:22 : player: played "Flobots/Survival Story (2010)/06-flobots-by_the_time_you_get_this_message.mp3"
+Oct 01 17:26 : player: played "Flobots/Survival Story (2010)/05-flobots-white_flag_warrior_(feat_tim_mcilrath_of_rise_against).mp3"
+Oct 01 17:32 : player: played "Flobots/Fight With Tools (2007)/Flobots - 05 - Fight with tools.mp3"
+Oct 01 17:33 : player: played "Flobots/Survival Story (2010)/07-flobots-airplane_mode.mp3"
+Oct 01 17:34 : player: played "The M Machine/The M Machine - Metropolis Remixed 2013)/01. The M Machine - Moon Song (Digitalism Remix).mp3"
+Oct 01 17:38 : player: played "Digitalism/I Love You, Dude/06 Reeperbahn.mp3"
+Oct 01 17:42 : player: played "Digitalism/I Love You, Dude/02 2 Hearts.mp3"
+Oct 01 17:46 : player: played "Digitalism/I Love You, Dude/10 Encore.mp3"
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: moov atom not found
+Oct 01 17:48 : player: played "Digitalism/I Love You, Dude/08 Just Gazin'.mp3"
+Oct 01 17:48 : player: played "Keeno/Life Cycle/01 - As One (feat. Pat Fulgoni).mp3"
+Oct 01 17:53 : player: played "Keeno/Life Cycle/01 - As One (feat. Pat Fulgoni).mp3"
+Oct 01 17:59 : player: played "Keeno/Life Cycle/03 - Nocturne.mp3"
+Oct 01 18:05 : player: played "Keeno/Life Cycle/12 - Falling (feat. Zoë Klinck).mp3"

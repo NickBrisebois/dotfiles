@@ -12,13 +12,12 @@ done
 NMON=$i
 unset i
 
-bspc config bottom_padding 23   # Space for panel
 bspc config focused_border_color            "#4D4D4D"
 bspc config normal_border_color             "#282729"
 
 bspc config split_ratio         0.50
-bspc config borderless_monocle  true
-bspc config gapless_monocle     true
+bspc config borderless_monocle  false
+bspc config gapless_monocle     false
 bspc config focus_follows_pointer true
 bspc config adaptative_raise true
 
@@ -27,7 +26,10 @@ bspc rule -a magic floating=true center=true #Floating terminal
 bspc rule -a Nitrogen floating=true center=true
 bspc rule -a Lxappearance floating=true center=true
 bspc rule -a transmission-gtk desktop=1/4
+bspc rule -a chromium desktop=1/1
 bspc rule -a Steam desktop=2/1
 
 # Just in case it's already running (it happens sometimes)
 pkill panel
+pkill panel_bar
+

@@ -1,16 +1,18 @@
 #! /bin/sh
 
-source ~/.config/bspwm/panel.cfg
+source $HOME/dotfiles/.config/bspwm/panel.cfg
+. $HOME/dotfiles/.config/xy_conf
 
 PANEL_FIFO=/tmp/panel-fifo
 PANEL_HEIGHT=22
 FONT1="-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1"
 FONT2="-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+
 export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
-	printf "%s\n" "The panel is already running." >&2
-	exit 1
+    echo "Panel already running"
+    exit 1
 fi
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT

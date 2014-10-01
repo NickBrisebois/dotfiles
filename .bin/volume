@@ -4,6 +4,7 @@
 #
 
 . ~/dotfiles/.config/bspwm/panel.cfg
+. ~/dotfiles/.config/xy_conf
 
 #Customize this stuff
 IF="Master"         # audio channel: Master|PCM
@@ -12,10 +13,10 @@ BG="#$BOLDER_BLACK"        # background colour of window
 FG="#$WHITE"        # foreground colour of text/icon
 BAR_FG="#616161"    # foreground colour of volume bar
 BAR_BG="#111111"    # background colour of volume bar
-XPOS="2777"         # horizontal positioning
-YPOS="1812"           # vertical positioning
 HEIGHT="25"         # window height
 WIDTH="220"         # window width
+XPOS=$(($MAIN_X+$MAIN_MONITOR_W-$WIDTH-2))         # horizontal positioning
+YPOS=$(($MAIN_Y-154))           # vertical positioning
 BAR_WIDTH="180"     # width of volume bar
 ICON=~/.config/bspwm/images/spkr_01.xbm
 FONT="-*-clean-*-*-*-*-*-*-*-*-*-*-*-*"

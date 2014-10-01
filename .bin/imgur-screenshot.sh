@@ -34,7 +34,7 @@ fi
 edit_command="gimp %img"
 edit="false"
 edit_on_selection_fail="false"
-open_command="firefox %url"
+open_command="chromium %url"
 
 log_file="$HOME/.imgur-screenshot.log"
 

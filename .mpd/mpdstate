@@ -1,9 +1,9 @@
-sw_volume: 1
+sw_volume: 16
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 7
-time: 0
+current: 14
+time: 119
 random: 1
 repeat: 0
 single: 0
@@ -12,18 +12,19 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Alt-j/04 Breezeblocks.m4a
-1:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/01 - Intro.mp3
-2:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/02 - Arrival In Nara.mp3
-3:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/03 - Nara.mp3
-4:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/04 - Every Other Freckle.mp3
-5:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/05 - Left Hand Free.mp3
-6:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/06 - Garden Of England.mp3
-7:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/07 - Choice Kingdom.mp3
-8:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/08 - Hunger Of The Pine.mp3
-9:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/09 - Warm Foothills.mp3
-10:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/10 - The Gospel Of John Hurt.mp3
-11:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/11 - Pusher.mp3
-12:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/12 - Bloodflood Pt. II.mp3
-13:Alt-j/Alt-J - This Is All Yours (2014) CD RIP [MP3 @ 320 KBPS]/13 - Leaving Nara.mp3
+0:Keeno/Life Cycle/01 - As One (feat. Pat Fulgoni).mp3
+1:Keeno/Life Cycle/02 - Scripted (feat. Louisa Bass).mp3
+2:Keeno/Life Cycle/03 - Nocturne.mp3
+3:Keeno/Life Cycle/04 - Innocence.mp3
+4:Keeno/Life Cycle/05 - A Wheel Within a Wheel.mp3
+5:Keeno/Life Cycle/06 - Break the Silence.mp3
+6:Keeno/Life Cycle/07 - Another Night, Another Day.mp3
+7:Keeno/Life Cycle/08 - Frozen (feat. Louisa Bass).mp3
+8:Keeno/Life Cycle/09 - Out of Nowhere.mp3
+9:Keeno/Life Cycle/10 - Green Flash.mp3
+10:Keeno/Life Cycle/11 - Sleeplessness (feat. Whiney).mp3
+11:Keeno/Life Cycle/12 - Falling (feat. Zoë Klinck).mp3
+12:Keeno/Life Cycle/13 - Borderless (feat. Whiney).mp3
+13:Keeno/Life Cycle/14 - Moonrise (feat. AZEDIA).mp3
+14:Keeno/Life Cycle/15 - Life Cycle (Continuous Album Mix).mp3
 playlist_end

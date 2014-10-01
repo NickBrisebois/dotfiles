@@ -9,13 +9,14 @@
 #
 
 . ~/.dzen-popup-config.sh
+. ~/dotfiles/.config/xy_conf
 
 SCREEN_WIDTH=$(sres -W)
 
 WIDTH=145
 LINES=8
 
-YPOS=1835
+YPOS=$(($MAIN_Y-LINES*31))
 XPOS=$((SCREEN_WIDTH-10))
 
 TODAY=$(expr `date +'%d'` + 0)

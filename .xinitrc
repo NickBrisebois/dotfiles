@@ -5,6 +5,7 @@ xsetroot -cursor_name left_ptr
 
 compton &
 nitrogen --restore &
+wmname LG3D & 
 unclutter &
 start-pulseaudio-x11 &
 clipit &
@@ -12,15 +13,7 @@ clipit &
 #mpd-notification &
 /home/nick/.bin/mpd-notify &
 xscreensaver &
+wmname LG3D & 
 
-sxhkd & 
+sxhkd &
 exec bspwm
-
-#session=${1:-sxhkd & exec bspwm}
-
-#case $session in 
-#    bspwm ) sxhkd & exec bspwm;;
-#    xfce ) xfce4-session;;
-#    *) exec $1;;
-#esac
-

@@ -4,8 +4,9 @@
 
 source ~/.config/bspwm/panel.cfg
 
-
-num_mon=$(bspc query -M | wc -l)a
+if [ "$(screenfetch -n | grep 'bspwm')" != "" ]; then
+    num_mon=$(bspc query -M | wc -l)a
+fi
 
 nowplaying() {
     cur=`mpc current`

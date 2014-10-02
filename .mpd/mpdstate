@@ -1,9 +1,9 @@
-sw_volume: 16
+sw_volume: 23
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 14
-time: 119
+current: 19
+time: 120
 random: 1
 repeat: 0
 single: 0
@@ -12,19 +12,32 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Keeno/Life Cycle/01 - As One (feat. Pat Fulgoni).mp3
-1:Keeno/Life Cycle/02 - Scripted (feat. Louisa Bass).mp3
-2:Keeno/Life Cycle/03 - Nocturne.mp3
-3:Keeno/Life Cycle/04 - Innocence.mp3
-4:Keeno/Life Cycle/05 - A Wheel Within a Wheel.mp3
-5:Keeno/Life Cycle/06 - Break the Silence.mp3
-6:Keeno/Life Cycle/07 - Another Night, Another Day.mp3
-7:Keeno/Life Cycle/08 - Frozen (feat. Louisa Bass).mp3
-8:Keeno/Life Cycle/09 - Out of Nowhere.mp3
-9:Keeno/Life Cycle/10 - Green Flash.mp3
-10:Keeno/Life Cycle/11 - Sleeplessness (feat. Whiney).mp3
-11:Keeno/Life Cycle/12 - Falling (feat. Zoë Klinck).mp3
-12:Keeno/Life Cycle/13 - Borderless (feat. Whiney).mp3
-13:Keeno/Life Cycle/14 - Moonrise (feat. AZEDIA).mp3
-14:Keeno/Life Cycle/15 - Life Cycle (Continuous Album Mix).mp3
+0:Lemaitre/Relativity 2/1-01 Keep Close.mp3
+1:Lemaitre/Relativity 2/1-02 Time To Realize.mp3
+2:Lemaitre/Relativity 2/1-03 Splitting Colors.mp3
+3:Lemaitre/Relativity 2/1-04 Steady State.mp3
+4:Lemaitre/Relativity 2/1-05 Appreciate.mp3
+5:Lemaitre/Relativity 3 - EP/01 Continuum.mp3
+6:Lemaitre/Relativity 3 - EP/02 Iron Pyrite.mp3
+7:Lemaitre/Relativity 3 - EP/03 Fiction.mp3
+8:Lemaitre/Relativity 3 - EP/04 Cut To Black.mp3
+9:Lemaitre/The Friendly Sound/The Friendly Sound - Lemaitre.mp3
+10:Lemaitre/The Friendly Sound/Nishio - Lemaitre.mp3
+11:Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3
+12:Lemaitre/The Friendly Sound/Strobes Pt. 2 - Lemaitre.mp3
+13:Lemaitre/The Friendly Sound/118 - Lemaitre.mp3
+14:Relativity 3 - EP/01 Continuum.mp3
+15:Relativity 3 - EP/02 Iron Pyrite.mp3
+16:Relativity 3 - EP/03 Fiction.mp3
+17:Relativity 3 - EP/04 Cut To Black.mp3
+18:Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3
+19:Eekkoo/Eekkoo - Eekkoo EP/Function_Original_Mix.mp3
+20:James Egbert/James Egbert - The Void (2014)/04. James Egbert - Falling Or Fallen (Original Mix).mp3
+21:Slow Magic/Triangle/01 - Slow Magic - Corvette Cassette.mp3
+22:Unknown Artist/Unknown Album/0 - Slow Burn.wav
+23:Mr. Bill/IRL (2014)/01. Mr. Bill - IRL.mp3
+24:Various Artists/Grand Central LP/07 Bada Bing.mp3
+25:Slow Magic/Triangle/03 - Slow Magic - Feel Flows.mp3
+26:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 01 - Radio Attack.mp3
+27:Nero/Satisfy EP/01 - Satisfy.flac
 playlist_end

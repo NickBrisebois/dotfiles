@@ -3,7 +3,7 @@ audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
 current: 11
-time: 120
+time: 269
 random: 1
 repeat: 0
 single: 0

@@ -20,17 +20,22 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
+
 if [ "$(screenfetch -n | grep 'bspwm')" != "" ]; then
     bspc control --subscribe > "$PANEL_FIFO" &
+    xtitle -sf 'T%s' > "$PANEL_FIFO" &
+    PANEL_WIDTH="1080"
+else 
+    #When using 2bwm, I have tint2 running as well. 
+    PANEL_WIDTH='800'
 fi
 
-xtitle -sf 'T%s' > "$PANEL_FIFO" &
 #conky -c ~/.config/bspwm/conkyrc > "$PANEL_FIFO" &
 clock -sf 'S%I:%M %p' > "$PANEL_FIFO" &
 
 cat "$PANEL_FIFO" \
     | panel_bar \
-    | bar -g 1920x$PANEL_HEIGHT+1080 -f "$FONT1","$FONT2" -b -u "3" -F "$FOREGROUND" -B "$BACKGROUND" | sh & 
+    | bar -g $(($PANEL_WIDTH+1))x$PANEL_HEIGHT+$((`sres -W`-$PANEL_WIDTH-1)) -f "$FONT1","$FONT2" -b -u "3" -F "$FOREGROUND" -B "$BACKGROUND" | sh & 
 
 
 wait

@@ -8,7 +8,7 @@
 # modified by senft
 #
 
-. ~/.dzen-popup-config.sh
+. ~/dotfiles/.dzen-popup-config.sh
 . ~/dotfiles/.config/xy_conf
 
 SCREEN_WIDTH=$(sres -W)

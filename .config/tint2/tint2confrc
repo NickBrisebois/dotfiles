@@ -1,7 +1,0 @@
-#---------------------------------------------
-# TINT2CONF CONFIG FILE
-default_theme = /home/nick/.config/tint2/default.tint2rc
-cmd_property = python2 /usr/bin/tintwizard.py
-width = 946
-height = 465
-

@@ -2,7 +2,7 @@ sw_volume: 23
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 19
+current: 8
 time: 120
 random: 1
 repeat: 0
@@ -12,32 +12,16 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Lemaitre/Relativity 2/1-01 Keep Close.mp3
-1:Lemaitre/Relativity 2/1-02 Time To Realize.mp3
-2:Lemaitre/Relativity 2/1-03 Splitting Colors.mp3
-3:Lemaitre/Relativity 2/1-04 Steady State.mp3
-4:Lemaitre/Relativity 2/1-05 Appreciate.mp3
-5:Lemaitre/Relativity 3 - EP/01 Continuum.mp3
-6:Lemaitre/Relativity 3 - EP/02 Iron Pyrite.mp3
-7:Lemaitre/Relativity 3 - EP/03 Fiction.mp3
-8:Lemaitre/Relativity 3 - EP/04 Cut To Black.mp3
-9:Lemaitre/The Friendly Sound/The Friendly Sound - Lemaitre.mp3
-10:Lemaitre/The Friendly Sound/Nishio - Lemaitre.mp3
-11:Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3
-12:Lemaitre/The Friendly Sound/Strobes Pt. 2 - Lemaitre.mp3
-13:Lemaitre/The Friendly Sound/118 - Lemaitre.mp3
-14:Relativity 3 - EP/01 Continuum.mp3
-15:Relativity 3 - EP/02 Iron Pyrite.mp3
-16:Relativity 3 - EP/03 Fiction.mp3
-17:Relativity 3 - EP/04 Cut To Black.mp3
-18:Lemaitre/The Friendly Sound/Blue Shift - Lemaitre.mp3
-19:Eekkoo/Eekkoo - Eekkoo EP/Function_Original_Mix.mp3
-20:James Egbert/James Egbert - The Void (2014)/04. James Egbert - Falling Or Fallen (Original Mix).mp3
-21:Slow Magic/Triangle/01 - Slow Magic - Corvette Cassette.mp3
-22:Unknown Artist/Unknown Album/0 - Slow Burn.wav
-23:Mr. Bill/IRL (2014)/01. Mr. Bill - IRL.mp3
-24:Various Artists/Grand Central LP/07 Bada Bing.mp3
-25:Slow Magic/Triangle/03 - Slow Magic - Feel Flows.mp3
-26:Prefuse 73/Vocal Studies & Uprock Narratives/Prefuse 73 - Vocal Studies & Uprock Narratives - 01 - Radio Attack.mp3
-27:Nero/Satisfy EP/01 - Satisfy.flac
+0:SALM/SALM - Endless Stairs/01 - Toy Spark Gun.mp3
+1:SALM/SALM - Endless Stairs/02 - After The Rain.mp3
+2:SALM/SALM - Endless Stairs/03 - On My Mind.mp3
+3:SALM/SALM - Endless Stairs/04 - Kairos.mp3
+4:SALM/SALM - Endless Stairs/05 - Somebody's Gonna Love Me.mp3
+5:SALM/SALM - Endless Stairs/06 - Prophet 21.mp3
+6:SALM/SALM - Endless Stairs/07 - Tunnel Of Love.mp3
+7:SALM/SALM - Endless Stairs/08 - Losing Game.mp3
+8:SALM/SALM - Endless Stairs/09 - Architecture.mp3
+9:SALM/SALM - Endless Stairs/10 - Endless Stairs.mp3
+10:SALM/SALM - Endless Stairs/11 - Julius.mp3
+11:SALM/SALM - Endless Stairs/12 - Versailles No Bara.mp3
 playlist_end

@@ -36,28 +36,6 @@ while read -r line ; do
 			#bat="%{F$ICON_FG}Bat:%{F-} $(battery)"
 			sys_infos="%{A:/home/nick/.bin/volume -n:}%{F$ICON_FG}${SOUNDIC} %{F$TEXT_FG}${vol}%%%{A} :: %{F$ICON_FG}${wifistr}%{F$TEXT_FG} ${wifissid} :: %{F$ICON_FG}%{A:/home/nick/.bin/dzen-cal.sh:}${CLKIC} %{F$TEXT_FG}${clk} %{A}%{B-}"
         	;;
-        C*)
-            #Conky 
-            conky_infos=""
-            IFS=';'
-            set -- ${line#?}
-            while [ $# -gt 0 ] ; do
-                item=$1
-                name=${item#?}
-                case $item in 
-                    f*) 
-                        conky_infos="⮕${conky_infos}%{F$FIRST_BG}⮂%{F-}%{B$FIRST_BG}${name}%{F$SECOND_BG}⮂%{F-}%{B-}"
-                        ;;
-                    1*)
-                        conky_infos="⮷${conky_infos}%{B$SECOND_BG}${name}%{F$FIRST_BG}⮂%{F-}%{B-}"
-                        ;;
-                    2*)
-                        conky_infos="⮖${conky_infos}%{B$FIRST_BG}${name}%{B-}"
-                        ;;
-                esac
-                shift
-            done
-            ;;
 		T*)
 			# xtitle output
 			title="%{F$TITLE_FG}%{B$TITLE_BG} ${line#?} %{B-}%{F-}"
@@ -71,18 +49,6 @@ while read -r line ; do
 				item=$1
 				name=${item#?}
 				case $item in
-					M*)
-						# active monitor
-						#if [ $num_mon -gt 1 ] ; then
-							#wm_infos="$wm_infos%{F$ACTIVE_MONITOR_FG}%{B$ACTIVE_MONITOR_BG} [${name}] %{B-}%{F-}"
-						#fi
-						;;
-					m*)
-						# inactive monitor
-						#if [ $num_mon -gt 1 ] ; then
-							#wm_infos="$wm_infos%{F$ACTIVE_MONITOR_FG}%{B$ACTIVE_MONITOR_BG} [${name}] %{B-}%{F-""}"
-						#fi
-						;;
 					O*)
 						# focused occupied desktop
 						wm_infos="${wm_infos}%{F$FOCUSED_OCCUPIED_FG}%{B$FOCUSED_OCCUPIED_BG}%{U$UNDERLINE}%{+u} %{A:bspc desktop ${name} --focus:}+ %{-u}%{B-}%{F-}%{U-}%{A}"

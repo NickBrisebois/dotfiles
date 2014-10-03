@@ -196,6 +196,7 @@ case $1 in
 bspwm)	cd ~/dotfiles/.config/bspwm; ls;;
 sxhkd)  vim ~/.config/sxhkd/sxhkdrc; cd ~; pkill sxhkd; sxhkd & disown ;;
 openbox) cd ~/.config/openbox; vim rc.xml ;;
+2bwm) cd ~/dotfiles/.config/2bwm/; vim config.h ;; 
 pacman)	sudo vim /etc/pacman.conf ;;
 vim)	vim ~/.vimrc ;;
 xinit)	vim ~/.xinitrc ;;

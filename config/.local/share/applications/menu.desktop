@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tint2 Openbox Menu
+Comment=Tint2 Openbox Menu Hack
+X-GNOME-FullName=Openbox Menu
+Exec=xdotool key F2
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/x-home/.icons/menu.png
+Categories=Menu;
+MimeType=
+StartupNotify=true

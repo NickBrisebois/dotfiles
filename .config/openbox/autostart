@@ -1,7 +1,0 @@
-compton &
-tint2 &
-plank &
-nitrogen --restore &
-start-pulseaudio-x11 &
-volumeicon &
-nm-applet &

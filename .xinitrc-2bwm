@@ -1,0 +1,19 @@
+
+
+compton &
+nitrogen --restore &
+wmname LG3D & 
+unclutter &
+start-pulseaudio-x11 &
+clipit &
+#plank &
+urxvtd -q -o -f
+#mpd-notification &
+/home/nick/.bin/mpd-notify &
+xscreensaver &
+wmname LG3D & 
+tint2 &
+
+sxhkd -c $HOME/dotfiles/.config/2bwm/sxhkdrc &
+
+exec 2bwm 

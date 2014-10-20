@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PATH=$PATH:/home/nick/.bin:/home/nick/.config/bspwm/
+PATH=$PATH:/home/nick/.bin
 export PATH
 
 # environment variables
@@ -196,7 +196,7 @@ case $1 in
 bspwm)	cd ~/dotfiles/.config/bspwm; ls;;
 sxhkd)  vim ~/.config/sxhkd/sxhkdrc; cd ~; pkill sxhkd; sxhkd & disown ;;
 openbox) cd ~/.config/openbox; vim rc.xml ;;
-2bwm) cd ~/dotfiles/.config/2bwm/; vim config.h ;; 
+2bwm) cd ~/.config/2bwm-src/; vim config.h ;; 
 pacman)	sudo vim /etc/pacman.conf ;;
 vim)	vim ~/.vimrc ;;
 xinit)	vim ~/.xinitrc ;;
@@ -212,3 +212,7 @@ esac
 
 PS1="\[\e[1;34m\]\u\[\e[0m\] » [\[\e[1;32m\]\W\[\e[0m\]]\[\e[1;37m\]:\[\e[0m\] "
 BROWSER=/usr/bin/xdg-open
+
+#if [[ ! $TERM =~ screen ]]; then
+#    exec tmux
+#fi

@@ -8,12 +8,11 @@ start-pulseaudio-x11 &
 clipit &
 #plank &
 urxvtd -q -o -f
-#mpd-notification &
-/home/nick/.bin/mpd-notify &
+mpd-notification &
+volumeicon &
 xscreensaver &
-wmname LG3D & 
-tint2 &
-
+lxpanel &
 sxhkd -c $HOME/dotfiles/.config/2bwm/sxhkdrc &
+conky &
 
 exec 2bwm 

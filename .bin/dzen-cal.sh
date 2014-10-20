@@ -16,7 +16,7 @@ SCREEN_WIDTH=$(sres -W)
 WIDTH=145
 LINES=8
 
-YPOS=$(($MAIN_Y-LINES*31))
+YPOS=$(($MAIN_Y-LINES-15))
 XPOS=$((SCREEN_WIDTH-10))
 
 TODAY=$(expr `date +'%d'` + 0)

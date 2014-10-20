@@ -1,0 +1,32 @@
+#! /bin/sh
+
+source $HOME/.bin/panel.cfg
+. $HOME/dotfiles/.config/xy_conf
+
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_HEIGHT=18
+PANEL_WIDTH=1919
+FONT1="*-terminus-*-*--12-*-*-*-*-*-iso10646-1"
+FONT2="-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+
+export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+    echo "Panel already running"
+    exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+clock -sf 'S%I:%M %p' > "$PANEL_FIFO" &
+xtitle -sf 'T%s' > "$PANEL_FIFO" &
+
+cat "$PANEL_FIFO" \
+    | panel_bar \
+    | bar -g $(($PANEL_WIDTH))x$PANEL_HEIGHT+$((`sres -W`-$PANEL_WIDTH)) -f "$FONT1","$FONT2" -u "3" -F "$FOREGROUND" -B "$BACKGROUND" | sh & 
+
+
+wait

@@ -7,7 +7,5 @@ xsetroot -cursor_name left_ptr
 #exec bspwm
 #exec openbox-session
 
-exec 2bwm &
-
 # Start this after so sxhkd doesn't steal the keys
 . $HOME/.xinitrc-2bwm

@@ -2,31 +2,25 @@
 # 2bwm hotkeys
 #
 
+. ~/dotfiles/.config/xy_conf
+
 #Shutdown script
 #super + shift + esc
 #	/home/nick/.bin/dmenu_shutdown
 
 #Run launcher
 super + d 
-    dmenu_run -i -s 3 -b -w 800 -h 22 -p "» " -fn "DejaVu Sans Mono:size=8" -nb "#282729" -nf "#707880" -sb "#151515" -sf "#707880" -class "reg_dmenu"
-
-#choose wifi
-#super + w 
-#    /home/nick/.bin/nmcli_dmenu
-
-#Run music dmenu
-super + shift + d
-    /home/nick/.bin/dmenu_mpd
+    /home/nick/.bin/dmenu_gen
 
 #Volume Keys
-XF86AudioRaiseVolume
-    /home/nick/.bin/volume -i 2
+#XF86AudioRaiseVolume
+#    /home/nick/.bin/volume -i 2
 
-XF86AudioLowerVolume
-    /home/nick/.bin/volume -d 2
+#XF86AudioLowerVolume
+#    /home/nick/.bin/volume -d 2
 
-XF86AudioMute 
-    /home/nick/.bin/volume --toggle
+#XF86AudioMute 
+#    /home/nick/.bin/volume --toggle
 
 #MPD select random album
 super + shift + p

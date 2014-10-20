@@ -1,0 +1,48 @@
+#! /bin/sh
+#
+# Example panel for LemonBoy's bar
+
+source ~/.bin/panel.cfg
+
+groups() {
+    cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+    tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
+
+    echo "$cur/$tot"
+}
+
+nowplaying() {
+    cur=`mpc current`
+    # this line allow to choose whether the output will scroll or not
+    test "$1" = "scroll" && PARSER='skroll -n20 -d0.5 -r' || PARSER='cat'
+    test -n "$cur" && $PARSER <<< $cur || echo "%{F$ICON_FG}No Music Playing%{F-}"
+}
+
+#For on laptop (Commented out for desktop)
+#battery() {
+#    BATC=/sys/class/power_supply/BAT1/capacity
+#    BATS=/sys/class/power_supply/BAT1/status
+#
+#    test "`cat $BATS`" = "Charging" && echo -n '+' || echo -n '-'
+#
+#    sed -n p $BATC
+#}
+
+while read -r line ; do
+	case $line in
+		S*) 
+            music="%{F$ICON_FG}${MUSIC}%{F-} $(nowplaying)"
+			vol=`amixer sget Master | sed -n "0,/.*\[\([0-9]\+\)%\].*/s//\1/p"`
+			wifissid=`if [[ $(iwgetid -r) == "" ]]; then echo -e "Wifi Down"; else iwgetid -r; fi`
+			wifistr=`panel_wifi`
+			clk=`date "+%I:%M %p" `
+			#bat="%{F$ICON_FG}Bat:%{F-} $(battery)"
+			sys_infos="%{F$ICON_FG}${SOUNDIC} %{F$TEXT_FG}${vol} :: %{F$ICON_FG}${WIFIIC}%{F$TEXT_FG} ${wifissid} :: %{F$ICON_FG}${CLKIC} %{F$TEXT_FG}${clk}%{B-}"
+        	;;
+		T*)
+			# xtitle output
+			title="%{F$TITLE_FG}%{B$TITLE_BG} ${line#?} %{B-}%{F-}"
+			;;
+	esac
+    printf "%s\n" "%{l}${title}%{c}[$(groups)]%{r}%{B$INFO_BG} ${music} :: ${sys_infos}"
+done

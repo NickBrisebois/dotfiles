@@ -13,13 +13,15 @@ static const float    resize_keep_aspect_ratio= 1.03;
 ///---Offsets---///
 /*0)offsetx          1)offsety
  *2)maxwidth         3)maxheight */
-static const uint8_t offsets[] = {0,0,0,0};
+static const uint8_t offsets[] = {5,30,5,35};
 ///---Colors---///
 /*0)focuscol         1)unfocuscol
  *2)fixedcol         3)unkilcol
  *4)fixedunkilcol    5)outerbordercol
  *6)emptycol         */
-static const char *colors[] = {"#35586c","#333333","#7a8c5c","#ff6666","#cc9933","#0d131a","#000000"};
+static const char *colors[] = {"#202020","#606060","202020","#606060","#101010","#d2c5bc","#000000"};
+//default colours
+//static const char *colors[] = {"#35586c","#333333","#7a8c5c","#ff6666","#cc9933","#0d131a","#000000"};
 /*
  * If you are using a composition manager enable the COMPTON flag in the Makefile
  */
@@ -30,7 +32,7 @@ static const bool inverted_colors = true;
  * correct values are:
  * TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, MIDDLE
  * All these are relative to the current window. */
-#define CURSOR_POSITION MIDDLE
+#define CURSOR_POSITION BOTTOM_RIGHT
 ///---Borders---///
 /*0) Outer border size. If you put this negative it will be a square.
  *1) Full borderwidth    2) Magnet border size    
@@ -38,9 +40,9 @@ static const bool inverted_colors = true;
 static const uint8_t borders[] = {3,5,5,4};
 /* Windows that won't have a border.*/
 #define LOOK_INTO "WM_NAME"
-static const char *ignore_names[] = {"bar", "xclock"};
+static const char *ignore_names[] = {"bar", "xclock", "Conky"};
 ///--Menus and Programs---///
-static const char *menucmd[]   = { "/usr/bin/my_menu.sh", NULL };
+static const char *menucmd[]   = { "/usr/bin/nmcli_dmenu", NULL };
 static const char *gmrun[]     = { "/usr/bin/gmrun",NULL};
 static const char *terminal[]  = { "urxvtc", NULL };
 static const char *click1[]    = { "xdotool","click", "1", NULL };

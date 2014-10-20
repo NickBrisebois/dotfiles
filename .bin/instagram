@@ -1,0 +1,81 @@
+#!/bin/bash
+#
+# 2013 z3bra <willy at mailoo dot org>
+# INSTAGRAM - screenshot taker / manager
+#
+# Licensed under WTFPL 2.0
+# >> http://www.wtfpl.net/txt/copying/
+#
+
+VIEWER=meh
+EXEC_UPLOAD=~/bin/imgurup
+SSHOT_DIR=$PWD
+WMNAME=`wmname`
+
+upload() {
+    $EXEC_UPLOAD $1
+}
+
+usage() {
+    cat <<SHBLAH
+Usage : instagram [-tmuwh] [-g number] [-s screen] [filename.png]
+    -t          : create thumbnail
+    -u          : upload the file using $UPLOAD_BIN <filename>
+    -w          : take only a window for the shot (choose with pointer)
+    -h          : display this help
+    -d path     : save the shot in <path>
+    -s screen   : use only the screen number <screen> for the shot
+
+Also, do not give path to shot. They're saved to $SSHOT_DIR by default.
+
+Configuration:
+    instagram sources $USER/.config/instagram at start.
+    You can set variables here, so that they will overide the default ones:
+
+    IMAGE_DIR   : Where images are stored
+    SSHOT_DIR   : Where to save your shots
+    EXEC_UPLOAD : Path to the script/program used to upload your shot
+SHBLAH
+}
+
+headshot() {
+
+    xdpyinfo -ext XINERAMA | sed 's/^  head #//p' |
+    while IFS=' :x@,' read i w h x y; do
+        if [[ $1 = "$i" ]]; then
+            import -window $WINDOW -crop ${w}x${h}+${x}+${y} $SSHOT_DIR/$OUTPUT
+        fi
+    done
+}
+
+[[ "$1" = "--help" ]] && usage && exit 0
+
+while getopts ":htmuwd:gs:" opt; do
+    case $opt in
+        t) THUMB=1 ;;
+        d) SSHOT_DIR=$OPTARG ;;
+        s) SCREEN=$OPTARG ;;
+        u) UPLOAD=1 ;;
+        w) WINDOW=`xprop|grep 'window id'|cut -d\  -f7`;;
+        h) usage; exit 0;;
+        ?) echo "invalid option: -$OPTARG"; exit 1 ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+test -z $1 && OUTPUT=$WMNAME-`date +%Y-%m-%d`.png || OUTPUT=$1
+test -z "$WINDOW" && WINDOW='root'
+
+if [ -n "$SCREEN" ]; then
+    headshot $SCREEN
+else
+    import -window ${WINDOW} $SSHOT_DIR/$OUTPUT
+fi
+
+test -n "$THUMB" && import -window ${WINDOW} -thumbnail 25% $SSHOT_DIR/thumb-${OUTPUT}
+
+
+$VIEWER $SSHOT_DIR/$OUTPUT
+
+test "$UPLOAD" = "1" && upload ${OUTPUT}

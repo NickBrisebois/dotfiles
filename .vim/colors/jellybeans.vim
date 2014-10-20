@@ -47,7 +47,7 @@
 " NECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 " THE SOFTWARE.
 
-set background=dark
+"background=dark
 
 hi clear
 

@@ -7,8 +7,10 @@ source ~/.bin/panel.cfg
 groups() {
     cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
     tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
-
-    echo "$cur/$tot"
+    for w in `seq 0 $((cur - 1))`; do lines="${lines}- "; done
+    lines="%{F$ICON2_FG}${lines}+ %{F-}"
+    for w in `seq $((cur + 2)) $tot`; do lines="${lines}- "; done
+    echo $lines
 }
 
 nowplaying() {
@@ -37,7 +39,7 @@ while read -r line ; do
 			wifistr=`panel_wifi`
 			clk=`date "+%I:%M %p" `
 			#bat="%{F$ICON_FG}Bat:%{F-} $(battery)"
-			sys_infos="%{F$ICON_FG}${SOUNDIC} %{F$TEXT_FG}${vol} :: %{F$ICON_FG}${WIFIIC}%{F$TEXT_FG} ${wifissid} :: %{F$ICON_FG}${CLKIC} %{F$TEXT_FG}${clk}%{B-}"
+			sys_infos="%{F$ICON2_FG}${SOUNDIC} %{F$TEXT_FG}${vol} :: %{F$ICON3_FG}${WIFIIC}%{F$TEXT_FG} ${wifissid} :: %{F$ICON4_FG}${CLKIC} %{F$TEXT_FG}${clk} %{B-}"
         	;;
 		T*)
 			# xtitle output

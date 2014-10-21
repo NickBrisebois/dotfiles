@@ -13,15 +13,15 @@ static const float    resize_keep_aspect_ratio= 1.03;
 ///---Offsets---///
 /*0)offsetx          1)offsety
  *2)maxwidth         3)maxheight */
-static const uint8_t offsets[] = {5,30,5,35};
+static const uint8_t offsets[] = {5,25,5,30};
 ///---Colors---///
 /*0)focuscol         1)unfocuscol
  *2)fixedcol         3)unkilcol
  *4)fixedunkilcol    5)outerbordercol
  *6)emptycol         */
-static const char *colors[] = {"#202020","#606060","202020","#606060","#101010","#d2c5bc","#000000"};
+//static const char *colors[] = {"#202020","#606060","202020","#606060","#101010","#d2c5bc","#000000"};
 //default colours
-//static const char *colors[] = {"#35586c","#333333","#7a8c5c","#ff6666","#cc9933","#0d131a","#000000"};
+static const char *colors[] = {"#35586c","#333333","#7a8c5c","#ff6666","#cc9933","#0d131a","#000000"};
 /*
  * If you are using a composition manager enable the COMPTON flag in the Makefile
  */

@@ -34,7 +34,10 @@ scrot() {
     cd -;
 }
 
-alias scrot=scrot
+
+alias mpdwave="mpdviz --scale=5 -v 'spectrum' --icolor=true --imode='grayscale'"
+
+alias screenshot="instagram -s 0"
 
 # aur aliases
 alias yaur="yaourt -Syua"
@@ -125,6 +128,7 @@ ex () {
       case $1 in
         *.tar.bz2)   tar xjf $1     ;;
         *.tar.gz)    tar xzf $1     ;;
+        *.tar.xz)    tar xJf $1     ;;
         *.bz2)       bunzip2 $1     ;;
         *.rar)       unrar e $1     ;;
         *.gz)        gunzip $1      ;;

@@ -6,49 +6,57 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.buffered: true
-URxvt*depth: 32
-URxvt*geometry: 75x20
+URxvt.depth: 32
+#URxvt*geometry: 75x20
 
 Urxvt.visualBell: false
 
-URxvt*font: xft:Fira Mono OT:regular:size=8
+URxvt*font: xft:gohufont:regular:size=11
 Urxvt.boldFont:
-URxvt.letterSpace: -1
-
 
 !Padding
 
 URxvt.internalBorder: 8
 URxvt.externalBorder: 0
 
-! [ terminal colors ]
-!   black / dark gray
-URxvt*color0: #4D4D4D
-URxvt*color8: #9E9E9E
-!   red
-URxvt*color1: #725631
-URxvt*color9: #AC885B
-!   green
-URxvt*color2: #5F6C3F
-URxvt*color10: #8F9D6A
-!   yellow
-URxvt*color3: #757575
-URxvt*color11: #B8B8B8
-!   blue
-URxvt*color4: #39598E
-URxvt*color12: #7587A6
-!   magenta
-URxvt*color5: #713B71
-URxvt*color13: #9B859D
-!   cyan
-URxvt*color6: #404040
-URxvt*color14: #404040
-!   light gray / white
-URxvt*color7: #B8B8B8
-URxvt*color15: #757575
+! special
+*.foreground:   #d2c5bc
+URxvt.background:#101010
 
-! [ urxvt ]
-URxvt*background: #141414
-URxvt*foreground: #F8F8F8
-URxvt*cursorColor: #404040
+*.cursorColor:  #d2c5bc
+
+! black
+*.color0:       #202020
+*.color8:       #606060
+
+! red
+*.color1:       #b91e2e
+*.color9:       #d14548
+
+! green
+*.color2:       #81957c
+*.color10:      #a7b79a
+
+! yellow
+*.color3:       #f9bb80
+*.color11:      #fae3a0
+
+! blue
+*.color4:       #356579
+*.color12:      #7491a1
+
+! magenta
+*.color5:       #2d2031
+*.color13:      #87314e
+
+! cyan
+*.color6:       #0b3452
+*.color14:      #0f829d
+
+! white
+*.color7:       #909090
+*.color15:      #fff0f0
+
+
+
 URxvt.scrollBar: false

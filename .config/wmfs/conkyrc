@@ -1,0 +1,27 @@
+##############################################
+#  Settings
+##############################################
+background no
+out_to_x no
+format_human_readable yes
+out_to_console yes
+update_interval 1
+total_run_times 0
+uppercase no
+short_units yes
+use_spacer none
+if_up_strictness address
+##############################################
+#  Output
+##############################################
+TEXT
+\
+^s[right;\#4e5254; MUS]\
+^s[right;\#cccccc; ${mpd_artist} - ${mpd_title} ]\
+\
+^s[right;\#4e5254; NET]\
+^s[right;\#cccccc; ${if_up wlp4s0}${wireless_essid wlp4s0}${else}no connection${endif} ]\
+\
+^s[right;\#4e5254; TIME]\
+^s[right;\#CCCCCC; ${time %I:%M%P}]\
+^s[right;\#4e5254;  |=| ]\

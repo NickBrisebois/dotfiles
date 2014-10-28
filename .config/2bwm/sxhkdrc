@@ -2,8 +2,6 @@
 # 2bwm hotkeys
 #
 
-. ~/dotfiles/.config/xy_conf
-
 #Shutdown script
 #super + shift + esc
 #	/home/nick/.bin/dmenu_shutdown

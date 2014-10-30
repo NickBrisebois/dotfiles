@@ -1,10 +1,6 @@
 #
-# 2bwm hotkeys
+# hotkeys
 #
-
-#Shutdown script
-#super + shift + esc
-#	/home/nick/.bin/dmenu_shutdown
 
 #Run launcher
 super + d 
@@ -26,7 +22,7 @@ super + shift + p
 
 #MPD shuffle all music
 super + p
-    mpc listall | shuf | mpc add; mpc next
+    mpc clear; mpc listall | shuf | mpc add; mpc next; mpc play
 
 #Media Keys
 XF86AudioPlay

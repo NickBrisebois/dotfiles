@@ -1,0 +1,31 @@
+#! /bin/sh
+
+#bspc config border_width 2
+#bspc config window_gap   7
+i=1
+for monitor in $(bspc query -M); do
+bspc monitor $monitor \
+        -n "$i" \
+        -d $i/{1,2,3,4,5}
+    let i++
+done
+NMON=$i
+unset i
+
+#bspc config focused_border_color            "#4D4D4D"
+#bspc config normal_border_color             "#282729"
+
+bspc config split_ratio         0.50
+bspc config borderless_monocle  false
+bspc config gapless_monocle     false
+bspc config focus_follows_pointer true
+bspc config adaptative_raise true
+
+bspc rule -a feh floating=true center=true
+bspc rule -a magic floating=true center=true #Floating terminal
+bspc rule -a Nitrogen floating=true center=true
+bspc rule -a Lxappearance floating=true center=true
+bspc rule -a transmission-gtk desktop=1/4
+bspc rule -a chromium desktop=1/1
+bspc rule -a Steam desktop=2/1
+

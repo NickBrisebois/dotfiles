@@ -17,23 +17,22 @@
      # Bars
      bars_width = 20
      bars_fg = "#CCCCCC"
-     bars_bg = "#111111"
+     bars_bg = "#181818"
 
      # Element tags
      tags_normal_fg = "#CCCCCC"
-     tags_normal_bg = "#111111"
+     tags_normal_bg = "#181818"
      # tags_normal_statusline = ""
 
      tags_sel_fg    = "#999999"
      tags_sel_bg    = "#1E1D21"
      tags_sel_statusline = "\R[0;18;100;5;#ED565F]"
-     # tags_sel_statusline = ""
 
      tags_occupied_fg = "#999999"
-     tags_occupied_bg = "#111111"
+     tags_occupied_bg = "#181818"
 
      tags_urgent_fg    = "#223322"
-     tags_urgent_bg    = "#111111"
+     tags_urgent_bg    = "#181818"
      # tags_urgent_statusline = ""
 
      tags_border_color = "#222222"
@@ -41,7 +40,7 @@
 
      # Frame / Client
      client_normal_fg = "#DDDDDD"
-     client_normal_bg = "#121212"
+     client_normal_bg = "#181818"
      
      client_sel_fg = "#CCCCCC"
      client_sel_bg = "#222222"
@@ -49,8 +48,8 @@
      # client_free_statusline = ""
 
      frame_bg = "#555555"
-     client_titlebar_width = 15
-     client_border_width = 1
+     client_titlebar_width = 18
+     client_border_width = 0
 
    [/theme]
 
@@ -91,7 +90,7 @@
 [tags]
 
   # Tag wrapping navigation
-  circular = false
+  circular = true
 
   # Use no screen option or screen = -1 to set tag on each screen
   [tag]
@@ -106,6 +105,8 @@
   [tag] name = "5" [/tag]
   [tag] name = "6" [/tag]
   [tag] name = "7" [/tag]
+  [tag] name = "8" [/tag]
+  [tag] name = "9" [/tag]
 
   # Mousebinds associated to Tags element button
   [mouse] button = "1" func = "tag_click" [/mouse]
@@ -121,7 +122,7 @@
   padding = 50
 
   # Give focus to new created client (default = false)
-  autofocus = false
+  autofocus = true
 
   theme = "default"
   key_modifier = "Super"

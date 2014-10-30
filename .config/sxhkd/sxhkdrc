@@ -1,0 +1,163 @@
+#
+# bspwm hotkeys
+#
+
+#Quit bspwm
+ctrl + alt + q
+	/home/nick/.bin/dmenu_shutdown
+
+#Kill Window
+super + x
+	bspc window -c
+
+#Monocle toggle
+super + t
+	bspc desktop -l next
+
+super + b
+	bspc desktop -B
+
+super + {s,f}
+	bspc window -t {floating,fullscreen}
+
+super + shift s 
+    bspc window -t pseudo_tiled
+
+super + {grave,Tab}
+	bspc {window,desktop} -f last
+
+super + apostrophe
+	bspc window -s last
+
+super + {o,i}
+	bspc control --record-history off; \
+	bspc window {older,newer} -f; \
+	bspc control --record-history on
+
+super + y
+	bspc window -w last.manual
+
+super + m
+	bspc window -s biggest
+
+
+#Navigate windows
+super + {_,shift + }{h,j,k,l}
+	bspc window -{f,s} {left,down,up,right}
+
+super + {_,shift + }{Left,Down,Up,Right}
+    bspc window -{f,s} {left,down,up,right}
+
+super + {comma,period}
+    bspc desktop -F {horizontal,vertical}
+
+super + bracket{left,right}
+	bspc desktop -f {prev,next}
+
+super + ctrl + {h,j,k,l}
+	bspc window -p {left,down,up,right}
+
+super + ctrl + {_,shift + }space
+	bspc {window -p cancel,desktop -c}
+
+super + alt + {Left,Down,Up,Right}
+	bspc window -e {left -20,down +20,down -20,left +20}
+
+super + alt + {h,j,k,l}
+	bspc window -e {left -20,down +20,down -20,left +20}
+
+ctrl + {h,l,k,j}
+    xdo move {-x -20,-x +20,-y -20,-y +20}
+
+ctrl + shift + {h,j,l,k}
+    xdo resize {-w -20,-h -20,-w +20,-h +20}
+
+super + {v, c}
+    bspc window -p {right, down}
+
+super + ctrl + {1-9}
+	bspc window -r 0.{1-9}
+
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} ^{1-9,10}
+
+~button1
+	bspc pointer -g focus
+
+super + button{1-3}
+	bspc pointer -g {move,resize_side,resize_corner}
+
+super + !button{1-3}
+	bspc pointer -t %i %i
+
+super + @button{1-3}
+	bspc pointer -u
+
+super + {minus,equal}
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` 
+{+,-} 2 ))
+
+super + ctrl + {Left,Down,Up,Right}
+    bspc window -p {left,down,up,right}
+
+
+#
+# wm independent hotkeys
+#
+
+#Normal terminal
+super + Return
+   urxvt
+
+#Floating terminal
+super + shift + Return
+   urxvt -name 'magic'
+
+#Run launcher
+super + d 
+    ~/.bin/dmenu_gen
+
+#choose wifi
+super + w 
+    /home/nick/.bin/nmcli_dmenu
+
+#Run music dmenu
+super + shift + d
+    /home/nick/.bin/dmenu_mpd
+
+# make sxhkd reload its configuration files:
+super + q
+	pkill -USR1 -x sxhkd
+
+#Volume Keys
+XF86AudioRaiseVolume
+    /home/nick/.bin/volume -i 2
+
+XF86AudioLowerVolume
+    /home/nick/.bin/volume -d 2
+
+XF86AudioMute 
+    /home/nick/.bin/volume --toggle
+
+#MPD select random album
+super + shift + p
+    /home/nick/.bin/mpd-random-album
+
+#MPD shuffle all music
+super + p
+    mpc clear; mpc listall | shuf | mpc add; mpc next; mpc play
+
+#Media Keys
+XF86AudioPlay
+    mpc toggle
+
+XF86AudioNext
+    mpc next
+
+XF86AudioPrev
+    mpc prev
+
+#Screenshot then upload to imgur
+super + Print
+    ~/.bin/imgur-screenshot.sh
+

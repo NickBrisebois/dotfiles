@@ -1,11 +1,13 @@
-#pkill conky &
-pkill mpd-notification &
-pkill nm-applet &
-pkill volumeicon &
 
-compton -cCG -r 7 -l -11 -t -11 -o 0.5 -f -D 5 --glx-use-copysubbuffermesa &
+xsetroot -cursor_name left_ptr &
+compton &
 nitrogen --restore &
 mpd-notification &
-sxhkd -c ~/.config/sxhkd/sxhkdrc &
+nm-applet &
+volumeicon &
 
-#conky -c ~/.config/wmfs/conkyrc | while true; read line; do wmfs -c status "conkybar $line"; done &
+if [ "$wmname" == "Name: wmfs" ]; then
+    conky -c ~/.config/wmfs/conkyrc | while true; read line; do wmfs -c status "conkybar $line"; done &
+fi
+
+sxhkd -c ~/.config/wmfs/sxhkdrc &

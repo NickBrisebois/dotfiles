@@ -1,16 +1,18 @@
 " .vimrc
 
-" Plugins
+" Bundles
 
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#rc()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'pangloss/vim-javascript'
-Plugin 'nanotech/jellybeans.vim'
+Bundle 'gmarik/Vundle.vim'
+Bundle 'bling/vim-airline'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -19,42 +21,30 @@ let g:airline_theme='murmur'
 " Settings
 
 set laststatus=2
-
 set tabstop=4       
- 
 set shiftwidth=4    
- 
 set expandtab       
-
 set smarttab        
- 
 set showcmd        
-
 set number          
-
 set showmatch       
-                    
 set hlsearch        
- 
 set incsearch       
- 
 set ignorecase      
- 
 set smartcase       
-
 set nocompatible    
-
 set backspace=2      
- 
 set autoindent      
- 
 set formatoptions=c,q,r,t 
- 
 set ruler 
  
 "set background=dark 
  
 set mouse=a         
+
+noremap <tab> <c-w><c-w>
+
+command -nargs=0 Quit :qa!
  
 filetype plugin indent on
 syntax enable
@@ -68,3 +58,4 @@ if (&t_Co == 256 || &t_Co == 88) && !has('gui_running') &&
     runtime! plugin/guicolorscheme.vim
     colorscheme jellybeans
 endif
+

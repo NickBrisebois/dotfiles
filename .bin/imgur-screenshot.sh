@@ -16,7 +16,7 @@ imgur_secret=""
 login="false"
 credentials_file="$HOME/.config/imgur-screenshot/credentials.conf"
 
-file_name_format="%Y_%m_%d-%H:%M:%S.png" # when using scrot, must end with .png!
+file_name_format="%Y_%m_%d-%H:%M:%S.png" # when using maim, must end with .png!
 file_dir="$HOME/Pictures"
 
 upload_connect_timeout="5"
@@ -27,8 +27,8 @@ if is_mac; then
   screenshot_select_command="screencapture -s %img"
   screenshot_window_command="screencapture -oWa %img"
 else
-  screenshot_select_command="scrot -s %img"
-  screenshot_window_command="scrot %img"
+  screenshot_select_command="maim -s %img"
+  screenshot_window_command="maim %img"
 fi
 
 edit_command="gimp %img"
@@ -59,7 +59,7 @@ if [ "$1" = "--check" ]; then
     (which pbcopy &>/dev/null && echo "OK: found pbcopy") || echo "ERROR: pbcopy not found"
   else
     (which notify-send &>/dev/null && echo "OK: found notify-send") || echo "ERROR: notify-send (from libnotify-bin) not found"
-    (which scrot &>/dev/null && echo "OK: found scrot") || echo "ERROR: scrot not found"
+    (which maim &>/dev/null && echo "OK: found scrot") || echo "ERROR: scrot not found"
     (which xclip &>/dev/null && echo "OK: found xclip") || echo "ERROR: xclip not found"
   fi
   (which curl &>/dev/null && echo "OK: found curl") || echo "ERROR: curl not found"
@@ -89,7 +89,7 @@ function take_screenshot() {
 
   shot_err="$($screenshot_select_command 2>&1 >/dev/null)" #takes a screenshot with selection
   if [ "$?" != "0" ]; then
-    if [ "$shot_err" == "giblib error: no image grabbed" ]; then # scrot specific
+    if [ "$shot_err" == "giblib error: no image grabbed" ]; then # maim specific
       echo "You cancelled the selection. Exiting."
       exit 1
     else

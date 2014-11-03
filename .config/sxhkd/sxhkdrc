@@ -4,7 +4,7 @@
 
 #Quit bspwm
 ctrl + alt + q
-	/home/nick/.bin/dmenu_shutdown
+	bspc quit
 
 #Kill Window
 super + x

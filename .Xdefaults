@@ -9,54 +9,43 @@ Xft.buffered: true
 URxvt.depth: 32
 #URxvt*geometry: 75x20
 
-Urxvt.visualBell: false
+URxvt.visualBell: false
 
-URxvt*font: xft:gohufont:regular:size=11
-Urxvt.boldFont:
-
-!Padding
+URxvt*font: xft:gohufont:regular:size=10
+URxvt.boldFont:
 
 URxvt.internalBorder: 8
-URxvt.externalBorder: 0
 
-! special
-*.foreground:   #d2c5bc
-URxvt.background:#101010
+URxvt.scrollBar:false
 
-*.cursorColor:  #d2c5bc
+URxvt.background: #1d1d1d
+URxvt.foreground: #676767
+URxvt.cursorColor: #676767
 
-! black
-*.color0:       #202020
-*.color8:       #606060
-
-! red
-*.color1:       #b91e2e
-*.color9:       #d14548
-
-! green
-*.color2:       #81957c
-*.color10:      #a7b79a
-
-! yellow
-*.color3:       #f9bb80
-*.color11:      #fae3a0
-
-! blue
-*.color4:       #356579
-*.color12:      #7491a1
-
-! magenta
-*.color5:       #2d2031
-*.color13:      #87314e
-
-! cyan
-*.color6:       #0b3452
-*.color14:      #0f829d
-
-! white
-*.color7:       #909090
-*.color15:      #fff0f0
-
-
+!light/dark
+!black
+*color0:     #424242
+*color8:     #424242
+!red (red)
+*color1:     #805959
+*color9:     #805959
+!green (green)
+*color2:     #94a168
+*color10:    #94a168
+!yellow (orange)
+*color3:     #805d40
+*color11:    #805d40
+!blue (blue
+*color4:     #536473
+*color12:    #536473
+!magenta (magenta)
+*color5:     #7e6c80
+*color13:    #7e6c80
+!cyan (cyan)
+*color6:     #526b6a
+*color14:    #526b6a
+!white (white)
+*color7:     #ababab
+*color15:    #ababab
 
 URxvt.scrollBar: false

@@ -2,8 +2,8 @@ sw_volume: 38
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 61
-time: 119.968000
+current: 1722
+time: 120.232000
 random: 1
 repeat: 0
 single: 0

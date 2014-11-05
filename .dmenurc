@@ -1,0 +1,10 @@
+WIDTH=400
+Y=$((1080/2-$WIDTH/2))
+X=$((1920/2-$WIDTH/2))
+FONT="Amble"
+NB="#111"
+NF="#eee"
+SB='#222'
+SF=$NF
+
+DMENU='dmenu -i -s 0 -x "$X" -y "$Y" -w "$WIDTH" -l 15 -dim 0.8 -p "#!" -fn "$FONT" -nb "$NB" -nf "$NF" -sb "$SB" -sf "$SF"'

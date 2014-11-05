@@ -1,6 +1,6 @@
 
 xsetroot -cursor_name left_ptr &
-compton &
+#compton &
 nitrogen --restore &
 mpd-notification &
 nm-applet &

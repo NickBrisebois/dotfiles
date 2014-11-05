@@ -8,10 +8,11 @@ if [ -z "$geometry" ] ;then
     exit 1
 fi
 # geometry has the format W H X Y
-x=${geometry[0]}
-y=${geometry[1]}
-panel_width=${geometry[2]}
-panel_height=22
+panel_padding=5
+x=$((${geometry[0]}+$panel_padding*3))
+y=$((${geometry[1]}+$panel_padding))
+panel_width=$((${geometry[2]}-($panel_padding*6)))
+panel_height=20
 font="-*-Source Code Pro-medium-*-*-*-12-*-*-*-*-*-*-*"
 bgcolor='#1D1D1D'
 #$(hc get frame_border_normal_color)
@@ -79,7 +80,7 @@ hc pad $monitor $panel_height
     visible=true
     date=""
     windowtitle=""
-    #volume="$(/home/nick/.bin/get_volume)"
+    volume="$(/home/nick/.bin/get_volume)"
     #mpd="$(mpc current)"
 
     #wireless="$(iwconfig wlp4s0 | grep ESSID | awk -F:'"' '{print $2}' | head -c -4)"
@@ -202,4 +203,5 @@ hc pad $monitor $panel_height
 
 } 2> /dev/null | dzen2 -w $panel_width -x $x -y $y -fn "$font" -h $panel_height \
     -e 'button3=' \
-    -ta l -bg "$bgcolor" -fg '#efefef'
+    -ta l -bg "$bgcolor" -fg '#efefef' && dzen2 -w $(($panel_width+10)) -x $x -y $y -h 30 -bg "#FFFFFF"
+

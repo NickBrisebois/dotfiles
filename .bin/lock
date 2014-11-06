@@ -1,0 +1,4 @@
+maim /tmp/screenshot.png
+notify-send "Locking Screen"
+convert /tmp/screenshot.png -blur 0x3 /tmp/screenshotblur.png
+i3lock -i /tmp/screenshotblur.png

@@ -1,0 +1,143 @@
+# See xmodmap
+set $mod Mod4
+# choose a FreeType font, such as:
+font pango:Terminus 12px
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+# Window borders (normal|pixel|1pixel|none)
+#new_window pixel 1
+# Change window focus on mouse hover?
+focus_follows_mouse yes
+
+# start a terminal
+bindsym $mod+Return exec urxvt
+# kill focused window
+bindsym $mod+x kill
+# split in horizontal orientation
+bindsym $mod+v split h
+# split in vertical orientation
+bindsym $mod+c split v
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+# toggle tiling / floating
+bindsym $mod+s floating toggle
+# focus the parent container
+bindsym $mod+a focus parent
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+q layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+# Move through workspaces.
+bindsym $mod+z workspace prev
+
+# Workspace name
+workspace "1  MAIN" output DVI-I-1
+workspace "2  WWW" output DVI-I-1
+workspace "3  PROG" output DVI-I-1
+workspace "4  STEAM" output DVI-I-1
+workspace "5  GAMES" output DVI-I-1
+workspace "6  MISC" output DVI-I-1
+workspace "7  MISC" output DVI-I-1
+workspace "8  MISC" output DVI-I-1
+workspace "9  MISC" output DVI-I-1
+workspace "10  MISC" output DVI-I-1
+# switch to workspace
+bindsym $mod+1 workspace 1  MAIN
+bindsym $mod+2 workspace 2  WWW
+bindsym $mod+3 workspace 3  PROG
+bindsym $mod+4 workspace 4  STEAM
+bindsym $mod+5 workspace 5  GAMES
+bindsym $mod+6 workspace 6  MISC
+bindsym $mod+7 workspace 7  MISC
+bindsym $mod+8 workspace 8  MISC
+bindsym $mod+9 workspace 9  MISC
+bindsym $mod+0 workspace 10  MISC
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1  MAIN
+bindsym $mod+Shift+2 move container to workspace 2  WWW
+bindsym $mod+Shift+3 move container to workspace 3  PROG
+bindsym $mod+Shift+4 move container to workspace 4  STEAM
+bindsym $mod+Shift+5 move container to workspace 5  GAMES
+bindsym $mod+Shift+6 move container to workspace 6  MISC
+bindsym $mod+Shift+7 move container to workspace 7  MISC
+bindsym $mod+Shift+8 move container to workspace 8  MISC
+bindsym $mod+Shift+9 move container to workspace 9  MISC
+bindsym $mod+Shift+0 move container to workspace 10  MISC
+
+# resize window (you can also use the mouse for that)
+# Why does resize mode even need to exist when you can just use ctrl?
+bindsym $mod+Ctrl+l resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+k resize grow height 10 px or 10 ppt
+bindsym $mod+Ctrl+j resize shrink height 10 px or 10 ppt
+bindsym $mod+Ctrl+h resize grow width 10 px or 10 ppt
+
+bar {
+    position top
+    font pango:Terminus, awesome 8
+    status_command ~/.i3/conky.sh 
+    mode dock
+    i3bar_command /usr/bin/i3bar-icons
+    output DVI-I-1
+
+    colors {
+        background #252525
+        statusline #ffffff
+        separator #252525
+
+        # Colors           border  backgr. text
+        focused_workspace  #141414 #CCCCCC #333333
+        active_workspace   #141414 #141414 #746C48
+        inactive_workspace #141414 #141414 #444444
+        urgent_workspace   #141414 #141414 #8c644c
+    }
+}
+
+# Window colors         border  backgr. text    indicator
+client.focused          #222323 #444444 #888888 #444444
+client.focused_inactive #222323 #222323 #888888 #484e50
+client.unfocused        #222323 #222323 #888888 #292d2e
+client.urgent           #2f343a #8c644c #888888 #900000
+
+# Application rules.
+for_window [class="Skype"] floating enable
+for_window [class="Steam"] floating enable
+
+assign [class="hl_linux4"] 5  GAMES
+assign [class="hl2_linux"] 5  GAMES
+assign [class="Chromium"] 2  WWW
+assign [class="Steam"] 4  STEAM
+assign [class="Skype"] 6  MISC
+
+# Run applications on startup.
+exec compton --config ~/.config/compton.conf
+exec sxhkd -c ~/.config/sxhkdrc 
+exec volumeicon
+exec nm-applet
+exec nitrogen --restore
+exec xsetroot -cursor_name left_ptr 

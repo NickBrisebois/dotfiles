@@ -1,6 +1,5 @@
 
 xsetroot -cursor_name left_ptr &
-#compton &
 nitrogen --restore &
 mpd-notification &
 nm-applet &
@@ -10,4 +9,4 @@ if [ "$wmname" == "Name: wmfs" ]; then
     conky -c ~/.config/wmfs/conkyrc | while true; read line; do wmfs -c status "conkybar $line"; done &
 fi
 
-sxhkd -c ~/.config/wmfs/sxhkdrc &
+sxhkd -c ~/.config/sxhkdrc &

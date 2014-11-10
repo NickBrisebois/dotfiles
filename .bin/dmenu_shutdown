@@ -12,16 +12,16 @@ case $result in
         gksu shutdown -h now
         ;;
     lock)
-        xscreensaver-command -lock
+        /home/nick/.bin/lock 
         ;;
     reboot)
-        gksu reboot
+        systemctl reboot
         ;;
     suspend)
-		gksu systemctl suspend
+		systemctl suspend
         ;;
     hibernate)
-        gksu pm-hibernate
+        systemctl hibernate
         ;;
     *)
         ;;

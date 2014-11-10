@@ -19,8 +19,9 @@ URxvt.internalBorder: 8
 URxvt.scrollBar:false
 
 URxvt.background: #1d1d1d
-URxvt.foreground: #676767
+URxvt.foreground: [90]#676767
 URxvt.cursorColor: #676767
+Xcursor.size: 16
 
 !light/dark
 !black

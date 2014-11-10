@@ -6,7 +6,7 @@ else
     DMENU='dmenu -i'
 fi
 
-result=`printf "choose program\ngoogle\nchoose music\nchoose wifi\nscreenshot\nnow playing\ntoggle sound\nsleep\nhibernate\nshutdown" | eval $DMENU`
+result=`printf "choose program\ngoogle\nchoose music\nchoose wifi\nscreenshot\nnow playing\ntoggle sound\npower options" | eval $DMENU`
 case $result in
     choose\ program)
         dmenu_run -i -s 3 -x "$X" -y "$Y" -w "$WIDTH" -l 15 -dim 0.8 -p "Programs: " -fn "$FONT" -nb "$NB" -nf "$NF" -sb "$SB" -sf "$SF"
@@ -26,14 +26,8 @@ case $result in
     toggle\ sound )
         /home/nick/.bin/volume -t
         ;;
-    sleep )
-        gksu systemctl suspend
-        ;;
-    hibernate )
-        gksu systemctl hibernate
-        ;;
-    shutdown )
-        gksu shutdown now
+    power\ options )
+        /home/nick/.bin/dmenu_shutdown 
         ;;
     google )
         /home/nick/.bin/dmenu_google

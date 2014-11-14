@@ -105,15 +105,15 @@ bar {
     output DVI-I-1
 
     colors {
-        background #252525
-        statusline #ffffff
+        background #181b20
+        statusline #9b9081
         separator #252525
 
         # Colors           border  backgr. text
         focused_workspace  #141414 #CCCCCC #333333
-        active_workspace   #141414 #141414 #746C48
-        inactive_workspace #141414 #141414 #444444
-        urgent_workspace   #141414 #141414 #8c644c
+        active_workspace   #141414 #181b20 #746C48
+        inactive_workspace #141414 #181b20 #444444
+        urgent_workspace   #141414 #181b20 #8c644c
     }
 }
 
@@ -126,11 +126,13 @@ client.urgent           #2f343a #8c644c #888888 #900000
 # Application rules.
 for_window [class="Skype"] floating enable
 for_window [class="Steam"] floating enable
+for_window [class="java"] floating enable
 
 assign [class="hl_linux4"] 5 GAMES
 assign [class="hl2_linux"] 5 GAMES
 assign [class="Chromium"] 2 WWW
 assign [class="Steam"] 4 STEAM
+assign [class="transmission"] 6 TORRENT
 assign [class="Skype"] 7 MISC
 
 # Run applications on startup.
@@ -141,4 +143,5 @@ exec volumeicon
 exec nm-applet
 exec nitrogen --restore
 exec xsetroot -cursor_name left_ptr 
+exec start-pulseaudio-x11
 exec transset-df -n i3bar 0.93

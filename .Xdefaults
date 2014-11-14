@@ -18,35 +18,45 @@ URxvt.internalBorder: 8
 
 URxvt.scrollBar:false
 
-URxvt.background: #1d1d1d
-URxvt.foreground: [90]#676767
 URxvt.cursorColor: #676767
 Xcursor.size: 16
 
-!light/dark
-!black
-*color0:     #424242
-*color8:     #424242
-!red (red)
-*color1:     #805959
-*color9:     #805959
-!green (green)
-*color2:     #94a168
-*color10:    #94a168
-!yellow (orange)
-*color3:     #805d40
-*color11:    #805d40
-!blue (blue
-*color4:     #536473
-*color12:    #536473
-!magenta (magenta)
-*color5:     #7e6c80
-*color13:    #7e6c80
-!cyan (cyan)
-*color6:     #526b6a
-*color14:    #526b6a
-!white (white)
-*color7:     #ababab
-*color15:    #ababab
+! special
+*.foreground:   #9b9081
+*.background:   #181b20
+*.cursorColor:  #9b9081
+
+! black
+*.color0:       #353535
+*.color8:       #5f5f5f
+
+! red
+*.color1:       #744b40
+*.color9:       #785850
+
+! green
+*.color2:       #6d6137
+*.color10:      #6f6749
+
+! yellow
+*.color3:       #765636
+*.color11:      #776049
+
+! blue
+*.color4:       #61564b
+*.color12:      #696057
+
+! magenta
+*.color5:       #6b4a49
+*.color13:      #6f5a59
+
+! cyan
+*.color6:       #435861
+*.color14:      #525f66
+
+! white
+*.color7:       #b3b3b3
+*.color15:      #cdcdcd
+
 
 URxvt.scrollBar: false

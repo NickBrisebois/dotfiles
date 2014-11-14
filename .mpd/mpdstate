@@ -1,9 +1,9 @@
-sw_volume: 35
+sw_volume: 32
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 14
-time: 1044.723000
+current: 0
+time: 119.931000
 random: 1
 repeat: 1
 single: 0
@@ -12,19 +12,19 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Keeno/Life Cycle/01 - As One (feat. Pat Fulgoni).mp3
-1:Keeno/Life Cycle/02 - Scripted (feat. Louisa Bass).mp3
-2:Keeno/Life Cycle/03 - Nocturne.mp3
-3:Keeno/Life Cycle/04 - Innocence.mp3
-4:Keeno/Life Cycle/05 - A Wheel Within a Wheel.mp3
-5:Keeno/Life Cycle/06 - Break the Silence.mp3
-6:Keeno/Life Cycle/07 - Another Night, Another Day.mp3
-7:Keeno/Life Cycle/08 - Frozen (feat. Louisa Bass).mp3
-8:Keeno/Life Cycle/09 - Out of Nowhere.mp3
-9:Keeno/Life Cycle/10 - Green Flash.mp3
-10:Keeno/Life Cycle/11 - Sleeplessness (feat. Whiney).mp3
-11:Keeno/Life Cycle/12 - Falling (feat. Zoë Klinck).mp3
-12:Keeno/Life Cycle/13 - Borderless (feat. Whiney).mp3
-13:Keeno/Life Cycle/14 - Moonrise (feat. AZEDIA).mp3
-14:Keeno/Life Cycle/15 - Life Cycle (Continuous Album Mix).mp3
+0:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/01. Faith.mp3
+1:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/02. Under Control (feat. Hurts).mp3
+2:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/03. Blame (feat. John Newman).mp3
+3:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/04. Love Now (feat. All About She).mp3
+4:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/05. Slow Acid.mp3
+5:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/06. Outside (feat. Ellie Goulding).mp3
+6:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/07. It Was You (with Firebeatz).mp3
+7:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/08. Summer.mp3
+8:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/09. Overdrive (with Ummet Ozcan).mp3
+9:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/10. Ecstacy (feat. Hurts).mp3
+10:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/11. Pray To God (feat. HAIM).mp3
+11:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/12. Open Wide (feat. Big Sean).mp3
+12:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/13. Together (feat. Gwen Stefani).mp3
+13:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/14. Burnin (with R3hab).mp3
+14:Calvin Harris/Calvin Harris • Motion [2014] 320/[2014]/15. Dollar Signs (feat. Tinashe).mp3
 playlist_end

@@ -126,7 +126,7 @@ client.urgent           #2f343a #8c644c #888888 #900000
 # Application rules.
 for_window [class="Skype"] floating enable
 for_window [class="Steam"] floating enable
-for_window [class="java"] floating enable
+for_window [class="Java"] floating enable
 
 assign [class="hl_linux4"] 5 GAMES
 assign [class="hl2_linux"] 5 GAMES
@@ -138,10 +138,9 @@ assign [class="Skype"] 7 MISC
 # Run applications on startup.
 exec compton --config ~/.config/compton.conf
 exec sxhkd -c ~/.config/sxhkdrc 
-exec mpd-notification
 exec volumeicon
 exec nm-applet
 exec nitrogen --restore
 exec xsetroot -cursor_name left_ptr 
 exec start-pulseaudio-x11
-exec transset-df -n i3bar 0.93
+exec mpd-notification

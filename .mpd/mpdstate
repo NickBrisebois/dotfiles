@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:alsa_audio
 audio_device_state:1:FIFO
 state: play
-current: 4
-time: 119.954000
+current: 2
+time: 120.070000
 random: 0
 repeat: 0
 single: 0
@@ -12,11 +12,15 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Bangs (Audio).mp3
-1:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Heatstroke (Audio).mp3
-2:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Keep This Place Beautiful (Audio).mp3
-3:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Locked In A Cage (Audio).mp3
-4:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - No I Wont Go (Audio).mp3
-5:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Old Boy (Audio).mp3
-6:Brick+Mortar/Brick and Mortar - Bangs EP 2013/Brick   Mortar - Terrible Things (Audio).mp3
+0:Sir Sly/sir sly - you haunt me - 2014/01 where im going.mp3
+1:Sir Sly/sir sly - you haunt me - 2014/02 ghost.mp3
+2:Sir Sly/sir sly - you haunt me - 2014/03 gold.mp3
+3:Sir Sly/sir sly - you haunt me - 2014/04 you haunt me.mp3
+4:Sir Sly/sir sly - you haunt me - 2014/05 found you out.mp3
+5:Sir Sly/sir sly - you haunt me - 2014/06 nowhere - bloodlines pt 1.mp3
+6:Sir Sly/sir sly - you haunt me - 2014/07 inferno.mp3
+7:Sir Sly/sir sly - you haunt me - 2014/08 leave you.mp3
+8:Sir Sly/sir sly - you haunt me - 2014/09 floods.mp3
+9:Sir Sly/sir sly - you haunt me - 2014/10 too far gone.mp3
+10:Sir Sly/sir sly - you haunt me - 2014/11 helpless - bloodlines pt 2.mp3
 playlist_end

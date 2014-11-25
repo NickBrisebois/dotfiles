@@ -1,5 +1,5 @@
 # Set default Xft(3) font
-fontname "GohuFont"
+fontname "xft:gohufont:regular:size=10"
 
 # Turn on sticky-group mode
 sticky yes
@@ -33,41 +33,46 @@ bind CM-l 		unmap
 bind M-question unmap
 
 # Any entry here is shown in the application menu
-command files           nautilus
+command "file manager"  nautilus
 command steam           steam
-command term            urxvt
-command internet        chromium
-command "--------"      clear
+command term			urxvt
+command internet        google-chrome-stable
+command "---------- "   clear
+command "music player"  "urxvt -e ncmpcpp"
+command "shuffle music" "mpc clear; mpc listall | shuf | mpc add; mpc next; mpc play"  
+command "----------"       clear
 command screenshot      "/home/nick/.bin/instagram -s 0"
+command "change wallpaper" nitrogen
 command lock            /home/nick/.bin/lock
 command quit            "pkill cwm"
 
 # do not manage these
 ignore xclock
-ignore budgie-panel
 
 # behavior, look & feel
 borderwidth             5
 color inactiveborder    "#222222"
 color activeborder      "#555555"
-color font              "#ffffff"
-color menubg            "#222222"
+color font              "#9b9081"
+color menubg            "#181b20"
 color selfont           "#ffffff"
-color menufg            "#4c4c4c"
+color menufg            "#101d20"
 color groupborder       "#526f33"
 color ungroupborder     "#8b3e2f"
 
-gap                     8 40 8 8
+gap                     8 8 8 8
 moveamount              5
-snapdist                10
+snapdist                15
 sticky yes
 
 # Keybindings
 # SIZE
 bind 4-m        vmaximize
 bind 4S-m       hmaximize
+bind 4-v        vtile
+bind 4-c        htile
 bind 4-f        maximize
-bind 4-i        iconify
+bind 4-w        hide
 bind 4-x        delete
 #bind 4S-h       resizeleft
 #bind 4S-j       resizedown
@@ -99,7 +104,7 @@ bind 4-Escape   delete
 # Group CONTROL
 # (Set it up like virtual desktops because i'm too lazy to figure out groups)
 bind 4-g            grouptoggle
-#bind 4-l            cyclegroup
+#bind 4-n            cyclegroup
 #bind 4-h            rcyclegroup
 bind 4-1           grouponly1
 bind 4-2           grouponly2
@@ -110,7 +115,6 @@ bind 4-6           grouponly6
 bind 4-7           grouponly7
 bind 4-8           grouponly8
 bind 4-9           grouponly9
-bind 4-10          nogroup
 bind 4S-1          movetogroup1
 bind 4S-2          movetogroup2
 bind 4S-3          movetogroup3

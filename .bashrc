@@ -52,7 +52,6 @@ alias pkS="packer"
 
 alias thunard="dbus-launch thunar"
 alias mu="ncmpcpp"
-alias mocp="ncmpcpp"
 
 #-------------------------------
 # function: type "path" in terminal for ordered $PATH display:

@@ -38,6 +38,8 @@ scrot() {
 }
 
 
+alias :q="exit"
+
 alias mpdwave="mpdviz --scale=5 -v 'spectrum' --icolor=true --imode='grayscale'"
 
 alias screenshot="instagram -s 0"

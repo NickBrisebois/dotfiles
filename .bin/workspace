@@ -1,0 +1,2 @@
+#### Return workspace #
+echo `expr $(xprop -root _NET_CURRENT_DESKTOP | sed -e 's/_NET_CURRENT_DESKTOP(CARDINAL) = //') + 1`

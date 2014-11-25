@@ -98,10 +98,9 @@ bindsym $mod+Ctrl+j resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+h resize grow width 10 px or 10 ppt
 
 bar {
-    position top
+    position bottom
     font pango:Terminus 10
     status_command ~/.i3/conky.sh 
-    mode dock
     output DVI-I-1
 
     colors {

@@ -1,0 +1,2 @@
+#### wifi
+echo `iwgetid | cut -d '"' -f 2`

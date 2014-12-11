@@ -1,0 +1,39 @@
+Config { 
+
+   -- appearance
+     font =         "xft:gohufont:size=10:regular:antialias=true"
+   , bgColor =      "#181512"
+   , fgColor =      "#AFAC99"
+   , position =     Top
+   , border =       BottomB
+   , borderColor =  "#646464"
+
+   -- layout
+   , sepChar =  "%"   -- delineator between plugin names and straight text
+   , alignSep = "}{"  -- separator between left-right alignment
+   , template = " %StdinReader%}{ %CYOW%  <fc=#444444>Music: </fc>%mpd%  %date% "
+
+   -- general behavior
+   , lowerOnStart =     True    -- send to bottom of window stack on start
+   , hideOnStart =      False   -- start with window unmapped (hidden)
+   , allDesktops =      True    -- show on all desktops
+   , overrideRedirect = True    -- set the Override Redirect flag (Xlib)
+   , pickBroadest =     True   -- choose widest display (multi-monitor)
+   , persistent =       True    -- enable/disable hiding (True = disabled)
+
+   , commands = 
+
+        [ 
+        -- WEATHER
+        Run Weather "CYOW" [ "--template", "<fc=#444444>Weather:</fc> <fc=#4682B4><tempC></fc>°C and <skyCondition>"] 36000
+
+        , Run StdinReader
+
+        -- MPD
+        , Run Com "/home/nick/.bin/now_playing" [] "mpd" 10  
+
+        -- DATE
+        , Run Date           "<fc=#444444>Time:</fc> %I:%M%P" "date" 10
+        ]
+   }
+

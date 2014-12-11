@@ -9,6 +9,9 @@ super + d
 super + Escape 
     /home/nick/.bin/lock
 
+#super + Return
+#    urxvt
+
 #Volume Keys
 #XF86AudioRaiseVolume
 #    /home/nick/.bin/volume -i 2
@@ -20,11 +23,11 @@ super + Escape
 #    /home/nick/.bin/volume --toggle
 
 #MPD select random album
-super + shift + p
+super + shift + i
     /home/nick/.bin/mpd-random-album
 
 #MPD shuffle all music
-super + p
+super + i
     mpc clear; mpc listall | shuf | mpc add; mpc next; mpc play
 
 #Media Keys

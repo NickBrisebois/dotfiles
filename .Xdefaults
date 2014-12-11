@@ -23,40 +23,42 @@ URxvt.cursorColor: #676767
 Xcursor.size: 16
 
 ! special
-*.foreground:   #9b9081
-*.background:   #181b20
-*.cursorColor:  #9b9081
+*.foreground:   #AFAC99
+*.background:   #181512
+*.cursorColor:  #c5c8c6
 
 ! black
-*.color0:       #353535
-*.color8:       #5f5f5f
+*.color0:       #282a2e
+*.color8:       #373b41
+
 ! red
-*.color1:       #744b40
-*.color9:       #785850
+*.color1:       #a54242
+*.color9:       #cc6666
 
 ! green
-*.color2:       #6d6137
-*.color10:      #6f6749
+*.color2:       #8c9440
+*.color10:      #b5bd68
 
 ! yellow
-*.color3:       #765636
-*.color11:      #776049
+*.color3:       #de935f
+*.color11:      #f0c674
 
 ! blue
-*.color4:       #61564b
-*.color12:      #696057
+*.color4:       #5f819d
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #6b4a49
-*.color13:      #6f5a59
+*.color5:       #85678f
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #435861
-*.color14:      #525f66
+*.color6:       #5e8d87
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #b3b3b3
-*.color15:      #cdcdcd
+*.color7:       #707880
+*.color15:      #c5c8c6
+
 
 
 URxvt.scrollBar: false

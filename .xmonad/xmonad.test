@@ -1,0 +1,248 @@
+import Data.List
+import System.Directory
+import System.IO
+import XMonad
+import XMonad.Actions.Navigation2D
+import XMonad.Actions.WorkspaceNames
+-- import XMonad.Actions.Volume
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.Place
+import XMonad.Layout.BinarySpacePartition hiding (Swap)
+import qualified XMonad.Layout.BinarySpacePartition as BSP
+import XMonad.Layout.EqualSpacing
+import XMonad.Layout.Gaps
+import XMonad.Layout.Mosaic
+import XMonad.Layout.MosaicAlt
+import XMonad.Layout.MouseResizableTile
+import XMonad.Layout.MultiToggle
+import XMonad.Layout.MultiToggle.Instances
+import XMonad.Layout.NoBorders
+import XMonad.Layout.Renamed
+import XMonad.Layout.Simplest
+import XMonad.Layout.SubLayouts
+import XMonad.Layout.Tabbed
+import XMonad.Layout.WindowNavigation
+import XMonad.Prompt
+import XMonad.Prompt.AppendFile
+import XMonad.Prompt.Input
+import XMonad.Prompt.RunOrRaise
+import XMonad.Prompt.Man
+import XMonad.Prompt.Shell
+import XMonad.Prompt.Window
+import XMonad.Prompt.XMonad
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys, additionalKeysP, removeKeysP)
+import qualified XMonad.StackSet as W
+
+
+-------- Entry point
+main = do
+  xmobar <- spawnPipe myXmobar
+  xmonad $ myConfig xmobar
+--dzenLeft  <- spawnPipe myDzenLeft
+--dzenRight <- spawnPipe myDzenRight 
+
+
+-------- Config
+myConfig xmobar =
+  withNavigation2DConfig myNav2DConfig $
+  defaultConfig
+    { terminal   = myTerminal
+    , workspaces = myWorkspaces
+    , modMask    = mod4Mask
+
+--  , handleEventHook = myEventHook
+    , layoutHook      = myLayoutHook
+    , logHook         = myXmobarLogHook xmobar
+--  , logHook         = myDzenLogHook dzenLeft
+    , manageHook      = myManageHook 
+
+    , normalBorderColor  = myBorderColor
+    , focusedBorderColor = myFocusedBorderColor
+    , borderWidth        = myBorderWidth
+    } `removeKeysP`     myRemovedKeysP
+      `additionalKeys`  concat [ myTermKeys xmobar
+                               , myMediaKeys
+                               ] 
+      `additionalKeysP` concat [ myNav2DKeysP
+                               , myScrotKeysP
+                               , myPromptKeysP
+                               , myMRTKeysP
+                               , myBSPKeysP
+                               , myESpKeysP
+                               , myTabKeysP
+                               , myMediaKeysP
+                               , myMiscKeysP
+                               ]
+
+
+-- Layouts
+-- myWorkspaces = ["Î±", "Î²", "Î³", "Î´", "Î»", "Ï†", "Ï‡", "Ïˆ", "Ï‰"]
+myWorkspaces = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix"]
+myLayoutHook = windowNavigation $ smartBorders $ avoidStruts $ myLayouts
+myLayouts    = mkToggle (single FULL) (myLayout3 ||| myLayout1 ||| myLayout2)
+    where myMRT     = mouseResizableTile { draggerType = FixedDragger 0 8 }
+          myBSP     = emptyBSP
+          myLayout1 = renamed [Replace "|"] $ myMRT 
+          myLayout2 = renamed [Replace "-"] $ myMRT { isMirrored = True }
+          myLayout3 = renamed [Replace "B"] $ equalSpacing 36 6 1 1 $ myBSP
+          myFull    = renamed [Replace "O"] $ Full
+myLayout1    = mouseResizableTile { draggerType = FixedDragger 0 8 }
+myLayout2    = myLayout1 { isMirrored = True }
+myMRTKeysP   = [ ("M-S-l",  sendMessage ShrinkSlave)
+               , ("M-S-h",  sendMessage ExpandSlave) ]
+myBSPKeysP   = [ ("M-M1-h", sendMessage $ ExpandTowards L)
+               , ("M-M1-j", sendMessage $ ExpandTowards U)
+               , ("M-M1-k", sendMessage $ ExpandTowards D)
+               , ("M-M1-l", sendMessage $ ExpandTowards R)
+               , ("M-M1-y", sendMessage $ ShrinkFrom L)
+               , ("M-M1-u", sendMessage $ ShrinkFrom U)
+               , ("M-M1-i", sendMessage $ ShrinkFrom D)
+               , ("M-M1-o", sendMessage $ ShrinkFrom R)
+               , ("M-s",    sendMessage $ BSP.Swap)
+               , ("M-M1-s", sendMessage $ Rotate) ]
+myESpKeysP   = [ ("M-[",    sendMessage $ LessSpacing)
+               , ("M-]",    sendMessage $ MoreSpacing) ]
+myMiscKeysP  = [ ("M-n",    spawn "nautilus") ]
+
+
+-- Remove defaults that get in the way
+myRemovedKeysP = [ "M-m" ]
+
+
+-- Media control
+myMediaKeys  = [ ((0, xK_Super_R), sendMessage ToggleStruts)
+               , ((0, xK_Super_R), sendMessage $ Toggle FULL)]
+myMediaKeysP = []
+--                 ("<XF86AudioRaiseVolume>", raiseVolume 5 >> return ())
+--               , ("<XF86AudioLowerVolume>", lowerVolume 5 >> return ())
+--               , ("<XF86AudioMute>",        toggleMute    >> return ())
+--               , ("M-m",                    toggleMute    >> return ()) ]
+
+
+-- Terminal
+myTerminal = "urxvt"
+myTermKeys xmobar =
+  [((mod4Mask, xK_Super_R), spawn $ XMonad.terminal (myConfig xmobar)) ]
+
+
+-- Navigation
+myNav2DConfig = defaultNavigation2DConfig
+myNav2DKeysP  = [ ("M-<Left>",    windowGo   L False)
+                , ("M-<Right>",   windowGo   R False)
+                , ("M-<Up>",      windowGo   U False)
+                , ("M-<Down>",    windowGo   D False)
+                , ("M-S-<Left>",  windowSwap L False)
+                , ("M-S-<Right>", windowSwap R False)
+                , ("M-S-<Up>",    windowSwap U False)
+                , ("M-S-<Down>",  windowSwap D False) ]
+
+
+-- Selfies
+myScrotFolder = "/home/epimetheus/screenshots/"
+myScrotKeysP  = [("<Print>", withFilePrompt "[TODO] Screenshot name" myScrotFolder capToFile)]
+capToFile :: MonadIO m => String -> m ()
+capToFile picName = spawn $ concat ["import ", myScrotFolder, picName]
+
+
+-- Tabs
+myShrinker = shrinkText
+myTabTheme = defaultTheme { activeColor         = yellow
+                          , activeTextColor     = white
+                          , activeBorderColor   = yellow
+                          , inactiveColor       = lightBlack
+                          , inactiveBorderColor = lightBlack
+                          , urgentColor         = tomato
+                          , urgentBorderColor   = tomato
+                          , fontName            = myFont
+                          , decoHeight          = 24 }
+myTabKeysP = [ ("M-C-h", sendMessage $ pullGroup L)
+             , ("M-C-l", sendMessage $ pullGroup R)
+             , ("M-C-k", sendMessage $ pullGroup U)
+             , ("M-C-j", sendMessage $ pullGroup D)
+             ]
+
+-- Prompts
+myPromptConfig = defaultXPConfig { fgColor           = myForeground
+                                 , bgColor           = "#27404d"  --myBackground
+                                 , fgHLight          = yellow
+                                 , bgHLight          = myBackground
+                                 , promptBorderWidth = 0
+                                 , height            = 20
+                                 , font              = myFont }
+myPromptKeysP = [ ("M-a",   appendFilePrompt myPromptConfig "/home/epimetheus/NOTES")
+                , ("M-S-a", appendFilePrompt myPromptConfig "/home/epimetheus/TODO")
+                , ("M-r",   shellPrompt myPromptConfig)
+                , ("M-S-r", unsafePrompt ("urxvt -e") myPromptConfig)
+                , ("M-f",   safePrompt "firefox" myPromptConfig)
+                , ("M-g",   windowPromptGoto myPromptConfig)
+                , ("M-b",   windowPromptBring myPromptConfig) 
+                , ("M-S-m", manPrompt myPromptConfig) ]
+
+withPrompt prompt fn = inputPrompt myPromptConfig prompt ?+ fn
+
+withCompletingPrompt prompt completions fn = 
+  inputPromptWithCompl myPromptConfig prompt comp ?+ fn
+  where comp = mkComplFunFromList completions
+
+withFilePrompt prompt directory fn = do
+  files <- liftIO $ getDirectoryContents directory
+  let fs = filter relevant files
+      relevant f = '.' /= head f
+  withCompletingPrompt prompt fs fn
+ 
+
+-- Event hook
+-- myEventHook        = notFocusFloat <+> handleEventHook where
+--                       notFocusFloat = followOnlyIf (fmap not isFloat)
+--                         where isFloat = fmap (isSuffixOf "Float")
+--                         $ gets (description . W.layout . W.workspace . W.current . windowset)
+
+-- Manage hook
+myManageHook       = composeAll
+    [ resource =? "gsimplecal"     --> placeHook (fixed (1,1058/1080))
+    , resource =? "popup-mixer"    --> placeHook (fixed (1,1051/1080)) <+> doFloat
+    , manageDocks ]
+
+-- Xmobar
+myXmobarLogHook  h = dynamicLogWithPP myXmobarPP { ppOutput = hPutStrLn h, ppVisible = wrap "" "" }
+myXmobar           = "xmobar /home/epimetheus/.xmobarrc"
+myXmobarPP         = xmobarPP { ppTitle  = xmobarColor yellow "" . shorten 100
+                              , ppSep  = " " }
+
+-- Dzen2
+myDzenLogHook    h = dynamicLogWithPP $ myDzenPP { ppOutput = hPutStrLn h } 
+myDzenLeft  = "dzen2 -x '6'   -y '0' -h '24' -w '1908' -ta 'l' -fn '" ++ dzenFont ++ "'"
+myDzenRight = "dzen2 -x '1201' -y '0' -h '36' -w '700'  -ta 'r'"
+myDzenPP    = dzenPP
+  { ppCurrent         = dzenColor "#ccaa26" "" . wrap " " " "
+  , ppHidden          = dzenColor "#ffffff" "" . wrap " " " "
+  , ppHiddenNoWindows = dzenColor "#777777" "" . wrap " " " "
+  , ppUrgent          = dzenColor "#ff6347" "" . wrap " " " "
+  , ppSep             = " "
+  , ppLayout          = dzenColor "#ffffff" "" . wrap "^ca(1,xdotool key super+space)Â· " " Â·^ca()"
+  , ppTitle           = dzenColor "#ccaa26" "" . wrap "^ca(1,xdotool key super+k)^ca(2,xdotool key super+shift+c)"
+                            "                          ^ca()^ca()" . shorten 100 . dzenEscape
+  }
+
+
+-------- Colors
+myBorderColor        = "#111111"
+myFocusedBorderColor = "#595959"
+myBorderWidth        = 4
+myForeground         = whitish
+myBackground         = lightBlack
+
+black      = "#000000"
+lightBlack = "#26292C"
+yellow     = "#CCAA26"
+white      = "#FFFFFF"
+whitish    = "#EEEEDD"
+tomato     = "#FF6347"
+
+-------- Fonts
+-- myFont = "-*-fixed-medium-r-semicondensed--13-*-*-*-*-*-*-*"
+-- myFont = "xft:Droid Sans Mono:size=9.5"
+myFont   = "-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*"
+dzenFont = "-*-termsyn-medium-*-*-*-12-*-*-*-*-*-*-*"

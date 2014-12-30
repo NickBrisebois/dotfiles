@@ -12,10 +12,10 @@ export PATH
 export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'vim'; else echo 'vim'; fi)"	# gedit, nano
 
 # pacman aliases (if desired, adapt for your favourite AUR helper)
-alias pac="sudo apt-get install"		# default action	- install one or more packages
-alias pacu="sudo apt-get upgrade"		# '[u]pdate'		- upgrade all packages to their newest version
-alias pacr="sudo apt-get remove --purge"		# '[r]emove'		- uninstall one or more packages
-alias pacs="aptitude search"		# '[s]earch'		- search for a package using one or more keywords
+alias pac="sudo pacman -S"		# default action	- install one or more packages
+alias pacu="sudo pacman -Syu"		# '[u]pdate'		- upgrade all packages to their newest version
+alias pacr="sudo pacman -Rsc"		# '[r]emove'		- uninstall one or more packages
+alias pacs="pacsearch"		# '[s]earch'		- search for a package using one or more keywords
 
 folsize() {
    du -c -h $1 | grep 'total';

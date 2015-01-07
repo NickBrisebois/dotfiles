@@ -12,7 +12,7 @@ Xft.buffered: true
 
 URxvt.visualBell: false
 
-URxvt*font: xft:gohufont:regular:size=10
+URxvt*font: xft:monaco:regular:size=10
 URxvt.boldFont:
 
 URxvt.internalBorder: 8
@@ -23,8 +23,8 @@ URxvt.cursorColor: #676767
 Xcursor.size: 16
 
 ! special
-*.foreground:   #AFAC99
-*.background:   #181512
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
 *.cursorColor:  #c5c8c6
 
 ! black
@@ -58,7 +58,6 @@ Xcursor.size: 16
 ! white
 *.color7:       #707880
 *.color15:      #c5c8c6
-
 
 
 URxvt.scrollBar: false

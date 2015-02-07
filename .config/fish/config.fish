@@ -13,6 +13,12 @@ alias pacr="sudo pacman -Rsc"
 alias pac="sudo pacman -S"
 alias pacu="sudo pacman -Syu"
 
+alias apts="apt-cache search"
+alias aptr="sudo apt-get remove --purge"
+alias apt="sudo apt-get install"
+alias aptu="sudo apt-get upgrade"
+alias aptdu="sudo apt-get dist-upgrade"
+
 #Music aliases
 alias mu="ncmpcpp"
 
@@ -23,6 +29,8 @@ alias ls="ls --group-directories-first --color=auto"
 
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
+
+set fish_greeting ""
 
 function ex 
   if set -q argv
@@ -109,7 +117,7 @@ function fish_prompt
     set -l git_branch '[' (_git_branch_name) ']'
 
     if [ (_is_git_dirty) ]
-      set git_info $red $git_branch " â˜… "
+      set git_info $red $git_branch " ˜… "
     else
       set git_info $green $git_branch
     end
@@ -117,6 +125,6 @@ function fish_prompt
   end
 
   # Terminate with a nice prompt char
-  echo -n -s $blue(whoami)$normal' Â» ' $normal
+  echo -n -s $blue(whoami)$normal' - ' $normal
 
 end

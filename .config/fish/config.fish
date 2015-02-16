@@ -7,6 +7,8 @@ set -U EDITOR vim
 #Vim like quit that I do by mistake sometimes
 alias :q="exit"
 
+alias lsblk="diskutil list"
+
 #Pacman aliases
 alias pacs="pacsearch"
 alias pacr="sudo pacman -Rsc"
@@ -25,7 +27,7 @@ alias mu="ncmpcpp"
 #ls aliases
 alias la="ls -a"
 alias ll="ls -la"
-alias ls="ls --group-directories-first --color=auto"
+alias ls="ls -Gp"
 
 alias mkdir="mkdir -pv"
 alias cp="cp -i"

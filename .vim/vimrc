@@ -1,8 +1,18 @@
-let mapleader=";"
-set nocompatible
+set shell=/bin/sh
 set viminfo='1000,f1,:1000,/1000
 set history=1000
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.nvim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'StanAngeloff/php.vim'
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 "------  Visual Options  ------
 syntax on
@@ -10,26 +20,29 @@ set number
 set nowrap
 set vb
 set ruler
-set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
-let g:buftabs_only_basename=1
-let g:buftabs_marker_modified = "+"
-
-" Toggle whitespace visibility with ,s
-nmap <Leader>s :set list!<CR>
-set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×,eol:¬
-
-" ,L = Toggle line numbers
-map <Leader>L :set invnumber<CR>
-
 
 "------  Generic Behavior  ------
 set tabstop=4
 set shiftwidth=4
+set backspace=2
 set hidden
+set nobackup
+set noswapfile
 filetype indent on
-filetype plugin on
+filetype plugin indent on
 set autoindent
 "set expandtab
+autocmd vimenter * NERDTree
+
+"-----  Some Key Commands -------
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Makes up and down movement more normal
+nnoremap j gj
+nnoremap k gk
 
 "------  GUI Options  ------
 if has("gui_running")
@@ -42,7 +55,7 @@ if has("gui_running")
 
 	"autocmd VimEnter * TagbarOpen
 
-	"Invisible character colors
+
 	highlight NonText guifg=#4a4a59
 	highlight SpecialKey guifg=#4a4a59
 
@@ -109,10 +122,4 @@ else
 	set t_Co=256
 	colorscheme void
 	set mouse=a
-endif
-
-
-"------  Local Overrides  ------
-if filereadable($HOME.'/.vimrc_local')
-	source $HOME/.vimrc_local
 endif

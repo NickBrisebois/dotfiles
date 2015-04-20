@@ -8,7 +8,9 @@ filetype off                  " required
 set rtp+=~/.nvim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/nerdtree'
+Plugin 'CruizeMissile/Revolution.vim'
 Plugin 'bling/vim-airline'
 Plugin 'StanAngeloff/php.vim'
 call vundle#end()            " required
@@ -20,6 +22,7 @@ set number
 set nowrap
 set vb
 set ruler
+let python_highlight_all = 1
 
 "------  Generic Behavior  ------
 set tabstop=4
@@ -32,13 +35,13 @@ filetype indent on
 filetype plugin indent on
 set autoindent
 "set expandtab
-autocmd vimenter * NERDTree
 
 "-----  Some Key Commands -------
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+nnoremap <C-e> :NERDTreeToggle<CR>
 
 " Makes up and down movement more normal
 nnoremap j gj
@@ -51,7 +54,7 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	colorscheme void 
+	colorscheme Revolution
 
 	"autocmd VimEnter * TagbarOpen
 

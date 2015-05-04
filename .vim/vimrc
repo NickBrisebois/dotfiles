@@ -5,7 +5,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.nvim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'hdima/python-syntax'
@@ -123,6 +123,6 @@ if has("gui_running")
 	endif
 else
 	set t_Co=256
-	colorscheme void
+	colorscheme Revolution
 	set mouse=a
 endif

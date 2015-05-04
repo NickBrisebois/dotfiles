@@ -30,4 +30,5 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-curl https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
+curl curl https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
+| bash

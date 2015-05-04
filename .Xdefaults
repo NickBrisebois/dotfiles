@@ -12,7 +12,7 @@ Xft.buffered: true
 
 URxvt.visualBell: false
 
-URxvt*font: xft:monaco:regular:size=10
+URxvt*font: xft:monospace:regular:size=9
 URxvt.boldFont:
 
 URxvt.internalBorder: 8
@@ -22,42 +22,34 @@ URxvt.scrollBar:false
 URxvt.cursorColor: #676767
 Xcursor.size: 16
 
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+*background:        #0F0E0F
+*foreground:        #A59461
 
-! black
-*.color0:       #282a2e
-*.color8:       #373b41
-
-! red
-*.color1:       #a54242
-*.color9:       #cc6666
-
-! green
-*.color2:       #8c9440
-*.color10:      #b5bd68
-
-! yellow
-*.color3:       #de935f
-*.color11:      #f0c674
-
-! blue
-*.color4:       #5f819d
-*.color12:      #81a2be
-
-! magenta
-*.color5:       #85678f
-*.color13:      #b294bb
-
-! cyan
-*.color6:       #5e8d87
-*.color14:      #8abeb7
-
-! white
-*.color7:       #707880
-*.color15:      #c5c8c6
-
+! Parker Brothers colors
+!black
+*color0:    #322a2c
+*color8:    #46423b
+!red
+*color1:    #79220E
+*color9:    #AA261F
+!green
+*color2:    #344B1B
+*color10:   #76550F
+!yellow
+!*color3:    #c77920
+*color3:    #B45B00
+*color11:   #B57F02
+!blue
+*color4:    #434045
+*color12:   #908862
+!magenta
+*color5:    #5C1E25
+*color13:   #624A35
+!cyan
+*color6:    #394745
+*color14:   #393E38
+!white
+*color7:    #AE8842
+*color15:   #A59058
 
 URxvt.scrollBar: false

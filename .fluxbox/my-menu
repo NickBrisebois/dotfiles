@@ -1,0 +1,26 @@
+[begin] (Arch Linux on nick-pc)
+[encoding] {UTF-8}
+[separator]
+[exec] (urxvt) {/usr/bin/urxvt }
+[separator]
+[submenu] (Audio)
+[include] (/home/nick/.fluxbox/my-audio-menu)
+[end]
+[separator]
+[submenu] (Video)
+[include] (/home/nick/.fluxbox/my-video-menu)
+[end]
+[submenu] (Media)
+[include] (/my-media-menu)
+[end]
+[separator]
+[exec] (HTop) {urxvt -e /usr/bin/htop}
+[separator]
+[submenu] (System Menu)
+[include] (/home/nick/.fluxbox/menu)
+[end]
+[separator]
+[submenu] (Logout)
+[include] (/home/nick/.fluxbox/my-logout-menu)
+[end]
+[separator]

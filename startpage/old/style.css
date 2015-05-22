@@ -1,0 +1,117 @@
+html, body {
+	background-color: #191919;
+	font-family: "Liberation Sans";
+	font-size: 13px;
+	color: #eee;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: absolute;
+	top: 35%;
+	width: 100%;
+}
+
+* {
+	font-weight: 100;
+	text-decoration: none;
+}
+
+.main {
+	position: static;
+	background-color: #262626;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.main a.tab{
+	width: 100px;
+	margin: 0 auto;
+	font-size: 14px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: inline;
+	color: #eee;
+	background-color: transparent;
+	font-family: "Liberation Mono";
+}
+
+
+#top {
+	background-color: #1E1E1E;
+}
+
+a {
+	color: #2363A5;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.reddit {
+	color: #768741;
+}
+
+.tpb {
+	color: #897242;
+}
+
+#links {
+	background-color: #262626;
+	position: absolute;
+	top: 1px;
+	z-index: 1;
+	margin-top:15px;
+	width: 500px;
+	height: 70px;
+}
+
+#links:target {
+	z-index: 1;
+}
+
+#links a[href="#links"] {
+	background-color: #262626;
+}
+
+#search {
+	position: absolute;
+	top: 1px;
+	margin-top: 15px;
+	width: 500px;
+	height: 70px;
+	background-color: #262626;
+	text-align: center;
+}
+
+#search:target {
+	z-index: 1;
+}
+
+#search a[href="#search"]{
+	background-color: #262626;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+#google {
+	margin-top: -10px;
+	width: 80%;
+	border: 2px solid #222;
+	background-color: transparent;
+}
+
+input[type="text"] {
+	color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

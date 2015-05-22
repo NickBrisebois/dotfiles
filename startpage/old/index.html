@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+	<div id="links">
+
+		<div id="top">	
+			<a class="tab" href="#links">Links</a>
+			<a class="tab" href="#search">Search</a>
+		</div>
+
+		<div id="content"> 
+			<a href="http://www.4chan.org/g">/g/</a>
+			<a href="http://www.reddit.com" class="reddit">Reddit</a>
+			<a href="https://thepiratebay.se/" class="tpb">TPB</a>
+		</div>
+
+	</div>
+
+	<div id="search">
+
+		<div id="top">	
+			<a class="tab" href="#links">Links</a>
+			<a class="tab" href="#search">Search</a>
+		</div>
+
+		<div id="content">
+			<input type="text" id="google"/>
+		</div>
+
+	</div>
+
+</div>
+
+	<script type="text/javascript">
+
+	//Shitty search javascript
+	var searchBox = document.getElementById("google")
+	searchBox.addEventListener("keydown", function(e) {
+		if(!e) {var e = window.event; }
+
+		if(e.keyCode == 13) {
+			console.log(searchBox.value);
+			window.location.href = "http://google.ca/?#q=" + searchBox.value;
+			searchBox.value = "";
+		}
+
+	}, false);
+
+	</script>
+
+</body>
+</html>

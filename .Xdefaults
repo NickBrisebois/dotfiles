@@ -12,7 +12,7 @@ Xft.buffered: true
 
 URxvt.visualBell: false
 
-URxvt*font: xft:monospace:regular:size=9
+URxvt*font: xft:terminus:regular:pixelsize=14
 URxvt.boldFont:
 
 URxvt.internalBorder: 8
@@ -22,34 +22,36 @@ URxvt.scrollBar:false
 URxvt.cursorColor: #676767
 Xcursor.size: 16
 
-*background:        #0F0E0F
-*foreground:        #A59461
-
-! Parker Brothers colors
-!black
-*color0:    #322a2c
-*color8:    #46423b
+*foreground: #D7D0C7
+*background: #151515
+! !black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
 !red
-*color1:    #79220E
-*color9:    #AA261F
+*color1:     #E84F4F
+*color9:     #D23D3D
 !green
-*color2:    #344B1B
-*color10:   #76550F
+*color2:     #B8D68C
+*color10:    #A0CF5D
 !yellow
-!*color3:    #c77920
-*color3:    #B45B00
-*color11:   #B57F02
+*color3:     #E1AA5D
+*color11:    #F39D21
 !blue
-*color4:    #434045
-*color12:   #908862
+*color4:     #7DC1CF
+*color12:    #4E9FB1
 !magenta
-*color5:    #5C1E25
-*color13:   #624A35
+*color5:     #9B64FB
+*color13:    #8542FF
 !cyan
-*color6:    #394745
-*color14:   #393E38
+*color6:     #6D878D
+*color14:    #42717B
 !white
-*color7:    #AE8842
-*color15:   #A59058
-
+*color7:     #dddddd
+*color15:    #dddddd
+URxvt*borderColor:        #151515
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #ff8939
+URxvt*cursorColor2:       #151515
 URxvt.scrollBar: false

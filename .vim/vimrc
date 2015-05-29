@@ -31,6 +31,9 @@ set backspace=2
 set hidden
 set nobackup
 set noswapfile
+set splitbelow
+set splitright
+set wildmode=longest,list "makes filename completion similar to bash
 filetype indent on
 filetype plugin indent on
 set autoindent
@@ -54,7 +57,7 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	colorscheme Revolution
+	colorscheme Monokai
 
 	"autocmd VimEnter * TagbarOpen
 
@@ -119,10 +122,13 @@ if has("gui_running")
 		map <silent> <A-9> 9gt
 
 	elseif has("gui_win32") " Windows
-		" WHAT ARE YOU DOING WITH YOUR LIFE?!
+		" kek
 	endif
 else
 	set t_Co=256
-	colorscheme Revolution
+	if exists('$TMUX')
+		  set term=screen-256color
+    endif
+	colorscheme badwolf
 	set mouse=a
 endif

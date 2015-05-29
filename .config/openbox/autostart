@@ -1,0 +1,4 @@
+nitrogen --restore &
+compton --config ~/.config/compton.conf &
+xfce4-session &
+volumeicon &

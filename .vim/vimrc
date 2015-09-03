@@ -7,6 +7,8 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
+Bundle 'klen/python-mode'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/nerdtree'
@@ -37,6 +39,18 @@ set wildmode=longest,list "makes filename completion similar to bash
 filetype indent on
 filetype plugin indent on
 set autoindent
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+set laststatus=2
+
+"python options
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_folding = 0
+
 "set expandtab
 
 "-----  Some Key Commands -------
@@ -57,7 +71,7 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	colorscheme Monokai
+	colorscheme Revolution 
 
 	"autocmd VimEnter * TagbarOpen
 
@@ -99,7 +113,7 @@ if has("gui_running")
 		let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 
 	elseif has("gui_gtk2") " Linux
-		set guifont=monospace\ 9
+		set guifont=menlo\ 9
 
 		" Alt+n = new buffer
 		map <silent> <A-n> :enew<CR>
@@ -126,9 +140,6 @@ if has("gui_running")
 	endif
 else
 	set t_Co=256
-	if exists('$TMUX')
-		  set term=screen-256color
-    endif
-	colorscheme badwolf
+	colorscheme Revolution
 	set mouse=a
 endif

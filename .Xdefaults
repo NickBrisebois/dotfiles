@@ -13,7 +13,6 @@ Xft.buffered: true
 URxvt.visualBell: false
 
 URxvt*font: xft:terminus:regular:pixelsize=14
-URxvt.boldFont:
 
 URxvt.internalBorder: 8
 

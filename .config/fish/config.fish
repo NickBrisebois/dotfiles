@@ -27,7 +27,7 @@ alias mu="ncmpcpp"
 #ls aliases
 alias la="ls -a"
 alias ll="ls -la"
-alias ls="ls -Gp"
+alias ls="ls -Gp --color=always"
 
 alias mkdir="mkdir -pv"
 alias cp="cp -i"

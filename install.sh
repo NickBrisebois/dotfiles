@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .config/fish .dmenurc .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .config/sxhkdrc .i3/ .ncmpcpp .mpd .bin"    # list of files/folders to symlink in homedir
+files=".bashrc .config/fish .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .i3/ .ncmpcpp .mpd .bin .config/openbox .config/bard .themes"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -30,5 +30,5 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-curl curl https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
-| bash
+curl https://raw.githubusercontent.com/hbin/top-programming-fonts/master/install.sh | bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -25,6 +25,9 @@
   <placement>
     <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
+    <center>yes</center>
+    <!-- whether to place windows in the center of the free area found or
+       the top left corner -->
     <monitor>Primary</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
@@ -37,8 +40,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Nightmare-01</name>
-    <titleLayout>SIMC</titleLayout>
+    <name>yellow (copy)</name>
+    <titleLayout>DSLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -52,57 +55,57 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Terminus</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -115,11 +118,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -127,7 +132,7 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>Always</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
@@ -146,10 +151,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
+    <top>30</top>
+    <bottom>30</bottom>
     <left>0</left>
-    <right>0</right>
+    <right>1</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -172,46 +177,68 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="C-A-Left">
-      <action name="GoToDesktop"/>
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Right">
-      <action name="GoToDesktop"/>
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Up">
-      <action name="GoToDesktop"/>
+      <action name="GoToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Down">
-      <action name="GoToDesktop"/>
+      <action name="GoToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="S-A-Left">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Right">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Up">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Down">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
-    <keybind key="W-1">
-      <action name="GoToDesktop"/>
+    <keybind key="W-F1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
     </keybind>
-    <keybind key="W-2">
-      <action name="GoToDesktop"/>
+    <keybind key="W-F2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
     </keybind>
-    <keybind key="W-3">
-      <action name="GoToDesktop"/>
+    <keybind key="W-F3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
     </keybind>
-    <keybind key="W-4">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="W-d">
-      <action name="Execute"/>
-    </keybind>
-    <keybind key="W-f">
-      <action name="ToggleMaximizeFull"/>
+    <keybind key="W-F4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
     </keybind>
     <keybind key="W-g">
       <action name="MoveToCenter"/>
@@ -219,14 +246,29 @@
     <keybind key="W-x">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-m">
-      <action name="ToggleMaximizeVert"/>
+    <keybind key="W-f">
+      <action name="ToggleMaximizeFull"/>
     </keybind>
-    <keybind key="S-W-m">
-      <action name="ToggleMaximizeHorz"/>
+    <keybind key="S-W-f">
+      <action name="ToggleMaximizeVert"/>
     </keybind>
     <keybind key="W-s">
       <action name="ToggleShade"/>
+    </keybind>
+    <keybind key="W-l">
+      <action name="DirectionalTargetEast"/>
+    </keybind>
+    <keybind key="W-k">
+      <action name="DirectionalTargetNorth"/>
+    </keybind>
+    <keybind key="W-j">
+      <action name="DirectionalTargetSouth"/>
+    </keybind>
+    <keybind key="W-h">
+      <action name="DirectionalFocusWest"/>
+    </keybind>
+    <keybind key="A-F4">
+      <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
@@ -262,9 +304,13 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows"/>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-e">
       <action name="Execute">
-        <command>bashrun</command>
+        <command>kfmclient openProfile filemanagement</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Konqueror</name>
+        </startupnotify>
       </action>
     </keybind>
   </keyboard>
@@ -281,35 +327,31 @@
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
        switching due to hitting the edge of the screen -->
     <context name="Frame">
-      <mousebind action="Press" button="W-Left">
+      <mousebind action="Press" button="A-Left">
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-      <mousebind action="Click" button="W-Left">
-        <action name="Unshade"/>
-      </mousebind>
-      <mousebind action="Drag" button="W-Left">
+      <mousebind action="Drag" button="A-Left">
         <action name="Move"/>
       </mousebind>
-      <mousebind action="Press" button="W-Right">
+      <mousebind action="Press" button="A-Right">
         <action name="Focus"/>
         <action name="Raise"/>
-        <action name="Unshade"/>
       </mousebind>
-      <mousebind action="Drag" button="W-Right">
+      <mousebind action="Drag" button="A-Right">
         <action name="Resize"/>
       </mousebind>
-      <mousebind action="Press" button="W-Middle">
+      <mousebind action="Press" button="A-Middle">
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
-      <mousebind action="Click" button="W-Up">
+      <mousebind action="Click" button="A-Up">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind action="Click" button="W-Down">
+      <mousebind action="Click" button="A-Down">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
@@ -340,7 +382,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
-        <action name="ToggleMaximizeFull"/>
+        <action name="ToggleMaximize"/>
       </mousebind>
       <mousebind action="Click" button="Up">
         <action name="if">
@@ -357,7 +399,6 @@
         <action name="if">
           <shaded>yes</shaded>
           <then>
-            <action name="Unshade"/>
             <action name="Raise"/>
           </then>
         </action>

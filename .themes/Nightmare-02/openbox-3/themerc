@@ -1,0 +1,98 @@
+#============================================================
+#
+#
+# 	 _   _ _       _     _                            
+#	| \ | (_)     | |   | |                           
+#	|  \| |_  __ _| |__ | |_ _ __ ___   __ _ _ __ ___ 
+#	| . ` | |/ _` | '_ \| __| '_ ` _ \ / _` | '__/ _ \
+#	| |\  | | (_| | | | | |_| | | | | | (_| | | |  __/
+#	\_| \_/_|\__, |_| |_|\__|_| |_| |_|\__,_|_|  \___|
+#	          __/ |                                   
+#	         |___/                                    
+#
+#                                  
+# "Nightmare" for openbox by Maxim. Date June 01, 2014.         
+#  Inspired by "Nightmare" for pekwm by Gilbert Flores.                                                                                
+#============================================================
+
+#======================================
+#     Menu Settings	
+#======================================
+
+menu.title.bg: raised
+menu.title.bg.color: #181818
+menu.title.text.color: #ffffff
+menu.separator.color: #242424
+menu.items.bg: raised
+menu.items.bg.color: #181818
+menu.items.text.color: #ffffff
+menu.items.disabled.text.color: #707070
+menu.items.active.bg: flat border
+menu.items.active.bg.color: #18375a
+menu.items.active.bg.border.color: #25548a
+menu.items.active.text.color: #ffffff
+
+#======================================
+#     Focused Window Settings
+#======================================
+
+window.active.title.bg: flat border
+window.active.title.bg.color: #18375a
+window.active.title.bg.border.color: #25548a
+window.active.handle.bg: raised
+window.active.handle.bg.color: #181818
+window.active.grip.bg: parentrelative
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+window.active.button.*.pressed.image.color: #000000
+window.active.button.disabled.image.color: #ffffff
+
+#======================================
+#     Unfocused Window Settings
+#======================================
+
+window.inactive.title.bg: raised
+window.inactive.title.bg.color: #181818
+window.inactive.handle.bg: raised
+window.inactive.handle.bg.color: #181818
+window.inactive.grip.bg: parentrelative
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #ffffff
+window.inactive.button.*.image.color: #ffffff
+
+#======================================
+#     Global Width Settings
+#======================================
+
+padding.width: 1
+padding.height: 1
+border.width: 1
+window.handle.width: 3
+window.client.padding.width: 0
+menu.overlap.x: -5
+
+#======================================
+#     Miscellaneous Settings
+#======================================
+
+border.color: #000000
+menu.border.color: #000000
+
+#======================================
+#     Osd		
+#======================================
+
+osd.bg: raised
+osd.bg.color: #181818
+osd.hilight.bg: flat border
+osd.hilight.bg.color: #18375a
+osd.hilight.bg.border.color: #25548a
+
+#======================================
+#     Title Justification
+#======================================
+
+menu.title.text.justify: center
+window.label.text.justify: center

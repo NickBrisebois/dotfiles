@@ -7,8 +7,6 @@ set -U EDITOR vim
 #Vim like quit that I do by mistake sometimes
 alias :q="exit"
 
-alias lsblk="diskutil list"
-
 #Pacman aliases
 alias pacs="pacsearch"
 alias pacr="sudo pacman -Rsc"
@@ -119,7 +117,7 @@ function fish_prompt
     set -l git_branch '[' (_git_branch_name) ']'
 
     if [ (_is_git_dirty) ]
-      set git_info $red $git_branch " ˜… "
+      set git_info $red $git_branch " ~= "
     else
       set git_info $green $git_branch
     end

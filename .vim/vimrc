@@ -10,6 +10,8 @@ call vundle#begin()
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
 Bundle 'klen/python-mode'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
 Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/nerdtree'
 Plugin 'CruizeMissile/Revolution.vim'
@@ -50,6 +52,16 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
+
+"Vim-notes options
+let g:notes_directories = ['~/Dropbox/Algonquin Notes/']
+let g:notes_suffix = '.txt'
+
+"Airline options
+let g:airline_right_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_alt_sep= ''
+let g:airline_left_sep = ''
 
 "set expandtab
 

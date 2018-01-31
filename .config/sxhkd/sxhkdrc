@@ -1,0 +1,8 @@
+super + Return
+	gnome-terminal
+
+super + d
+	rofi -show drun
+
+super + D
+	rofi -show run

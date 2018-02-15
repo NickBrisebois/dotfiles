@@ -9,7 +9,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Bundle 'python-mode/python-mode'
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Shougo/neocomplete.vim'
+if has('nvim')
+    Plugin 'roxma/nvim-completion-manager'
+    Plugin 'roxma/ncm-clang'
+    Plugin 'roxma/ncm-phpactor'
+endif
+Plugin 'othree/csscomplete.vim'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Yggdroot/indentLine'
@@ -41,6 +46,9 @@ let g:pymode_python = 'python3'
 "------  Generic Behavior  ------
 set tabstop=4
 set shiftwidth=4
+set softtabstop=0
+set expandtab
+set smarttab
 set backspace=2
 set hidden
 set nobackup
@@ -53,6 +61,10 @@ filetype plugin indent on
 set autoindent
 set laststatus=2
 
+"nvim-completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 "python options
 let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
@@ -62,11 +74,6 @@ let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
 
-"airline options
-"let g:airline_right_alt_sep  =  ""
-"let g:airline_right_sep =  ""
-"let g:airline_left_alt_sep = ""
-"let g:airline_left_sep = ""
 let g:airline_powerline_fonts=1
 let g:airline_theme='deus'
 let g:airline#extensions#tabline#enabled = 1
@@ -85,20 +92,6 @@ let g:syntastic_check_on_wq = 0
 let g:indentLine_char = '│'
 set list lcs=tab:\│\ 
 
-"Neovim Options
-let g:neocomplete#enable_at_startup = 1
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-
-"set expandtab
-
 "-----  Some Key Commands -------
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -113,5 +106,5 @@ nnoremap k gk
 
 " Colorscheme options
 set t_Co=256
-colorscheme space-vim-dark
+colorscheme jellybeans
 set mouse=a

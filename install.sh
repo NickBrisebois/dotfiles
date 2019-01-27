@@ -33,6 +33,12 @@ done
 mkdir ~/.config/nvim
 ln -s ~/.vim ~/.local/share/nvim/site
 ln -s ~/.vimrc ~/.config/nvim/init.vim
+ln -s ~/.vim/colors/ ~/.config/nvim/colors
 
 curl https://raw.githubusercontent.com/hbin/top-programming-fonts/master/install.sh | bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+git config --global user.name "NickBrisebois"
+git config --global user.email "nickbrisebois12@gmail.com"
+git config --global core.autocrlf input
+git config --global core.safecrlf true

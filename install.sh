@@ -4,11 +4,27 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
+shell_config_only=false
+
+while getopts ":s" o; do
+    case "${o}" in
+        s)
+            echo Only installing shell configs
+            shell_config_only=true
+            ;;
+    esac
+done
+
 ########## Variables
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .config/fish .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .i3/ .ncmpcpp .mpd .bin .config/openbox .config/bard .themes"    # list of files/folders to symlink in homedir
+
+if $shell_config_only; then
+    files=".config/fish .bashrc .xDefaults"
+else
+    files=".bashrc .config/fish .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .i3/ .ncmpcpp .mpd .bin .config/openbox .config/bard .themes"    # list of files/folders to symlink in homedir
+fi
 
 ##########
 
@@ -30,15 +46,18 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-mkdir ~/.config/nvim
-ln -s ~/.vim ~/.local/share/nvim/site
-ln -s ~/.vimrc ~/.config/nvim/init.vim
-ln -s ~/.vim/colors/ ~/.config/nvim/colors
+if [ ! $shell_config_only ]
+then
+    mkdir ~/.config/nvim
+    ln -s ~/.vim ~/.local/share/nvim/site
+    ln -s ~/.vimrc ~/.config/nvim/init.vim
+    ln -s ~/.vim/colors/ ~/.config/nvim/colors
 
-curl https://raw.githubusercontent.com/hbin/top-programming-fonts/master/install.sh | bash
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    curl https://raw.githubusercontent.com/hbin/top-programming-fonts/master/install.sh | bash
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-git config --global user.name "NickBrisebois"
-git config --global user.email "nickbrisebois12@gmail.com"
-git config --global core.autocrlf input
-git config --global core.safecrlf true
+    git config --global user.name "NickBrisebois"
+    git config --global user.email "nickbrisebois12@gmail.com"
+    git config --global core.autocrlf input
+    git config --global core.safecrlf true
+fi

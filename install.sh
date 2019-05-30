@@ -20,7 +20,7 @@ done
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 
-if $shell_config_only; then
+if [ $shell_config_only ]; then
     files=".config/fish .bashrc .xDefaults"
 else
     files=".bashrc .config/fish .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .i3/ .ncmpcpp .mpd .bin .config/openbox .config/bard .themes"    # list of files/folders to symlink in homedir
@@ -46,7 +46,7 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-if [ ! $shell_config_only ]
+if ! $shell_config_only
 then
     mkdir ~/.config/nvim
     ln -s ~/.vim ~/.local/share/nvim/site

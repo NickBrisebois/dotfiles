@@ -125,6 +125,6 @@ function fish_prompt
   end
 
   # Terminate with a nice prompt char
-  echo -n -s $blue(whoami)$normal' - ' $normal
+  echo -n -s $blue(whoami)$normal'@'$yellow(hostname)$normal' - ' $normal
 
 end

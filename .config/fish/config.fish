@@ -6,6 +6,8 @@ set -x PATH $PATH ~/go/bin
 
 set -U EDITOR vim
 
+set -x -U GOPATH $HOME/go
+
 #Vim like quit that I do by mistake sometimes
 alias :q="exit"
 

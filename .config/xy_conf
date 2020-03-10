@@ -1,8 +1,0 @@
-#! /bin/bash
-
-#Global config for programs so they don't fuck up when I change my monitor layout (Works most of the time)
-
-MAIN_MONITOR_W=1080
-
-MAIN_X=$((`sres -W`-$MAIN_MONITOR_W))
-MAIN_Y=`sres -H`

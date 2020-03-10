@@ -1,2 +1,0 @@
-#### Return battery strength
-echo "♥" $(acpi | cut -d ',' -f 2)

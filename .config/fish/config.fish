@@ -1,6 +1,8 @@
 #
 
-set -x PATH $PATH /home/nick/.bin/
+set -x PATH $PATH /snap/bin
+
+set -x PATH $PATH ~/go/bin
 
 set -U EDITOR vim
 
@@ -18,6 +20,9 @@ alias aptr="sudo apt-get remove --purge"
 alias apt="sudo apt-get install"
 alias aptu="sudo apt-get upgrade"
 alias aptdu="sudo apt-get dist-upgrade"
+
+alias dc="docker-compose"
+alias dcrs="dc stop; echo \"y\" | dc rm; dc up -d"
 
 #Music aliases
 alias mu="ncmpcpp"
@@ -64,7 +69,7 @@ function ex
     end
 end
 
-function fish_right_prompt
+function fish_right_prompt_disabled
   set -l last_status $status
   set -l green (set_color -o green)
   set -l red (set_color -o red)
@@ -87,7 +92,8 @@ function _is_git_dirty
   echo (command git status -s --ignore-submodules=dirty ^/dev/null)
 end
 
-function fish_prompt
+#function fish_promt
+function fish_prompt_disabled
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
   set -l red (set_color -o red)
@@ -125,5 +131,6 @@ function fish_prompt
 
   # Terminate with a nice prompt char
   echo -n -s $blue(whoami)$normal'@'$yellow(hostname)$normal' - ' $normal
-
 end
+
+starship init fish | source

@@ -1,12 +1,7 @@
 dotfiles
 ========
 
-This repo is kind of a mess. I don't put much effort into it anymore
+I have deleted most of this repo as it was 99% stuff I didn't use anymore and I use this script often so I didn't want to have to clone it all everytime. If you are here looking for some of my configs, check out one of my past commits and it should all be there.
 
-If you're using my lemon bar configs, you need to use this wrapper:
-https://github.com/DelusionalLogic/bard
-
-What my desktop looks right now as i'm typing this readme:
-![Current Screenshot](./desktop-current.png)
 
 

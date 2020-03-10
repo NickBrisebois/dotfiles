@@ -25,7 +25,7 @@ if $shell_config_only
 then
     files=".config/fish .bashrc .xDefaults"
 else
-    files=".bashrc .config/fish .tmux.conf .config/compton.conf .xinitrc .vimrc .vim .Xdefaults .i3/ .ncmpcpp .mpd .bin .config/openbox .config/bard .themes"    # list of files/folders to symlink in homedir
+    files=".bashrc .config/fish .tmux.conf .xDefaults .vimrc .vim"    # list of files/folders to symlink in homedir
 fi
 
 ##########
@@ -63,3 +63,5 @@ then
     git config --global core.autocrlf input
     git config --global core.safecrlf true
 fi
+
+curl -fsSL https://starship.rs/install.sh | bash

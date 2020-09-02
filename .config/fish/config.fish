@@ -1,7 +1,7 @@
 #
 
 set -x PATH $PATH /snap/bin
-
+set -x PATH $PATH /home/nick/.local/bin
 set -x PATH $PATH ~/go/bin
 
 set -U EDITOR vim
@@ -10,6 +10,8 @@ set -x -U GOPATH $HOME/go
 
 #Vim like quit that I do by mistake sometimes
 alias :q="exit"
+
+alias workvpn="sudo openfortivpn -c /etc/openfortivpn/rhea"
 
 #Pacman aliases
 alias pacs="pacsearch"
@@ -36,40 +38,11 @@ alias ll="ls -la"
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
 
-set fish_greeting ""
-
-function ex 
-  if set -q argv
-      switch ($argv) 
-        case *.tar.bz2
-          tar xjf $argv 
-        case *.tar.gz
-          tar xzf $argv
-        case *.tar.xz 
-          tar xJf $argv
-        case *.bz2
-          bunzip2 $argv
-        case *.rar 
-          unrar e $argv
-        case *.gz 
-          gunzip $argv
-        case *.tar
-          tar xf $argv
-        case *.tbz2 
-          tar xjf $argv
-        case *.tgz
-          tar xzf $argv
-        case *.zip
-          unzip $argv
-        case *.Z
-          uncompress $argv
-        case *.7z 
-          7z x $argv
-        case *
-          echo "Could not be extracted"
-        end
-    end
+function search
+    grep -rnw $argv[1] -e $argv[2]
 end
+
+set fish_greeting ""
 
 function fish_right_prompt_disabled
   set -l last_status $status
@@ -134,5 +107,7 @@ function fish_prompt_disabled
   # Terminate with a nice prompt char
   echo -n -s $blue(whoami)$normal'@'$yellow(hostname)$normal' - ' $normal
 end
+
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 starship init fish | source

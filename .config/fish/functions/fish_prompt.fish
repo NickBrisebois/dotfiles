@@ -1,0 +1,1 @@
+/home/nick/.local/share/omf/themes/idan/fish_prompt.fish

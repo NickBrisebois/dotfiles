@@ -9,12 +9,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 if has('nvim')
-    Plugin 'roxma/nvim-completion-manager'
-    Plugin 'roxma/ncm-clang'
-    Plugin 'roxma/ncm-phpactor'
+    Plugin 'ncm2/ncm2'
+    Plugin 'roxma/nvim-yarp'
+    Plugin 'ncm2/ncm2-path'
+    Plugin 'ncm2/ncm2-go'
+    Plugin 'ncm2/ncm2-jedi'
+    Plugin 'ncm2/ncm2-tern'
 endif
+Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'othree/csscomplete.vim'
-Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Yggdroot/indentLine'
 Plugin 'hail2u/vim-css3-syntax'
@@ -25,7 +28,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'StanAngeloff/php.vim'
+Plugin 'jacoborus/tender.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -35,6 +38,7 @@ set number
 set nowrap
 set vb
 set ruler
+let g:indentLine_conceallevel=0 " don't hide anything
 let python_highlight_all = 1
 let g:pymode_python = 'python3'
 
@@ -70,7 +74,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='deus'
+let g:airline_theme='tender'
 let g:airline#extensions#tabline#enabled = 1
 
 "Syntastic Options
@@ -99,7 +103,15 @@ nnoremap <C-t> :TagbarToggle<CR>
 nnoremap j gj
 nnoremap k gk
 
+if has('nvim')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    " ncm2 options
+    autocmd BufEnter * call ncm2#enable_for_buffer()
+    set completeopt=noinsert,menuone,noselect
+endif
+
 " Colorscheme options
 set t_Co=256
-colorscheme gruvbox
+set t_ut=
+colorscheme tender
 set mouse=a

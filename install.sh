@@ -25,7 +25,7 @@ if $shell_config_only
 then
     files=".config/fish .bashrc .xDefaults"
 else
-    files=".bashrc .config/fish .tmux.conf .xDefaults .vimrc .vim"    # list of files/folders to symlink in homedir
+    files=".bashrc .config/fish .tmux.conf .xDefaults .vimrc .vim .config/nvim"    # list of files/folders to symlink in homedir
 fi
 
 ##########
@@ -50,10 +50,7 @@ done
 
 if ! $shell_config_only
 then
-    mkdir ~/.config/nvim
-    ln -s ~/.vim ~/.local/share/nvim/site
-    ln -s ~/.vimrc ~/.config/nvim/init.vim
-    ln -s ~/.vim/colors/ ~/.config/nvim/colors
+    ln -s ~/dotfiles/.config/nvim ~/.config/nvim
 
     curl https://raw.githubusercontent.com/hbin/top-programming-fonts/master/install.sh | bash
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

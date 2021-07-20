@@ -64,9 +64,9 @@ alias please='eval "sudo $(fc -ln -1)"'
 alias xbks='xbindkeys'
 alias lsid='ls -lah /dev/disk/by-id/'
 
-alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ls='ls'
+alias ll='ls -l'
+alias la='ls -la'
 alias grep='grep --color=tty -d skip'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes

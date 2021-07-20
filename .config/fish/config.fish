@@ -1,9 +1,9 @@
 #
-set -x PATH $PATH /snap/bin
+set -x GOPATH "/Users/nibriseb/go"
 set -x PATH $PATH ~/.local/bin
 set -x PATH $PATH ~/go/bin
 set -x PATH $PATH ~/.nvm/
-set -x PATH $PATH /home/nick/Android/Sdk/platform-tools
+set -x PATH $PATH $GOPATH/bin
 
 set -U EDITOR nvim
 
@@ -12,36 +12,11 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 set -x -U GOPATH $HOME/go
 
-set -x GPG_TTY (tty)
-gpgconf --launch gpg-agent
-
-#Vim like quit that I do by mistake sometimes
-alias :q="exit"
-
-# VPN for work
-alias workvpn="sudo openfortivpn -c /etc/openfortivpn/rhea"
-
-# Systemd aliases
-alias sstart="sudo systemctl start"
-alias sstop="sudo systemctl stop"
-alias srestart="sudo systemctl restart"
-alias sstatus="sudo systemctl status"
-
-# Pacman aliases
-alias pacs="pacsearch"
-alias pacr="sudo pacman -Rsc"
-alias pac="sudo pacman -S"
-alias pacu="sudo pacman -Syu"
-
-# Apt aliases
-alias apts="apt search"
-
 # Docker aliases
 alias dc="docker-compose"
 alias dcrs="dc stop; echo \"y\" | dc rm; dc up -d"
 
-#Music aliases
-alias mu="ncmpcpp"
+alias cat="bat"
 
 #ls aliases
 alias la="ls -a"
@@ -50,11 +25,9 @@ alias ll="ls -la"
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
 
+alias pull="git pull --ff-only"
+
 alias vim=nvim
-
-alias worktunnel="ssh -L 5901:127.0.0.1:5901 -C -N -l nick 10.20.205.10"
-
-set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
 
 function search
     grep -rnw $argv[1] -e $argv[2]
@@ -137,3 +110,17 @@ function fish_prompt
   echo -n -s $blue(whoami)$normal'@'$yellow(hostname) $normal ' ' $status_indicator $normal
 end
 
+
+# Cisco
+set -x VMS_HOME $HOME/vms-3.1
+set -x NSO_HOME $VMS_HOME/nso-4.7.1.1
+ 
+set -x VMSSPCICD_HOME "$VMS_HOME/vmsspcicd"
+set -x MS_JAR_HOME "$HOME/msx/stage/platform"
+set -g fish_user_paths "/usr/local/opt/maven@3.5/bin" $fish_user_paths
+
+export NVM_DIR="$HOME/.nvm"
+
+set -x NO_PROXY "34.232.123.22,127.0.0.0/8,127.0.0.1,localhost,,.cisco.com,engci-maven.cisco.com,https://engci-maven-master.cisco.com,.cisco.com,172.,10.*"
+set -x ROUTERSERVICE_HOST 10.81.85.95
+set -x VMS_VM 10.81.85.95

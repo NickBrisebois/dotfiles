@@ -20,6 +20,12 @@ lsputils.clients['clangd'].setup {
     end
 }
 
+lsputils.clients['tsserver'].setup {
+    on_attach = function(client)
+        client.resolved_capabilities.document_formatting = false
+    end
+}
+
 lsputils.clients['rust_analyzer'].setup {
     on_attach = function(client, bufnr)
         lsputils.default_on_attach(client, bufnr)

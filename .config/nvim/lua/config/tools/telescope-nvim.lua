@@ -48,8 +48,6 @@ require('telescope').load_extension('dap')
 
 local bind_picker = require('config.tools.telescope-nvim-utils').bind_picker
 
--- Alt-Shift-P command palette
-bind_picker('<S-A-p>', 'commands')
 
 -- Normal
 bind_picker('<Leader>ff', 'find_files')
@@ -58,6 +56,7 @@ bind_picker('<Leader>fb', 'buffers')
 bind_picker('<Leader>fh', 'help_tags')
 bind_picker('<Leader>ft', 'treesitter')
 bind_picker('<Leader>fo', 'oldfiles')
+bind_picker('<Leader>fc', 'commands')
 
 local keys = {
     f = {
@@ -67,7 +66,8 @@ local keys = {
         g = 'Live grep',
         h = 'Help tags',
         t = 'Treesitter',
-        o = 'Old files'
+        o = 'Old files',
+        c = 'Commands'
     }
 }
 

@@ -4,8 +4,10 @@ local fn = vim.fn
 local opt = vim.opt
 local bind = vim.api.nvim_set_keymap
 local utils = require('utils')
+local colors = require 'colors'
 
 local M = {}
+
 
 -- Set encoding
 opt.encoding = 'utf-8'

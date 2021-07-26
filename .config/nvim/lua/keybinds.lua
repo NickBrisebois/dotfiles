@@ -74,6 +74,10 @@ bind('n', '<Leader>vr', ':lua require("nvim-reload").Reload()<CR>', opts)
 bind('n', '<Leader>vR', ':lua require("nvim-reload").Restart()<CR>', opts)
 bind('n', '<Leader>vv', ':version<CR>', opts)
 
+-- Toggleterm
+bind('n', '<Leader>tt', ':ToggleTerm<CR>', opts)
+bind('n', '<Leader>tg', ':TermExec cmd="lazygit"<CR>', opts)
+
 local keys = {
     q = 'Quit all',
     Q = 'Quit all without save',

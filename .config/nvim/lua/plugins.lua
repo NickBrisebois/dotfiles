@@ -17,6 +17,8 @@ use { 'equalsraf/neovim-gui-shim', opt = true }
 
 -- Colorscheme
 use 'rakr/vim-one'
+use 'sainnhe/sonokai'
+use 'yong1le/darkplus.nvim'
 
 -- Statusline
 use 'famiu/feline.nvim'
@@ -34,7 +36,7 @@ use 'chrisbra/Colorizer'
 use 'kyazdani42/nvim-web-devicons'
 
 -- Indent guides
-use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+use { 'lukas-reineke/indent-blankline.nvim' }
 
 -- Which Key
 use 'folke/which-key.nvim'

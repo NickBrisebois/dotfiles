@@ -33,6 +33,31 @@ function search
     grep -rnw $argv[1] -e $argv[2]
 end
 
+source ~/.config/fish/colours.fish
+
+# Configure fish git prompt
+set -g __fish_git_prompt_showupstream auto
+set -g __fish_git_prompt_show_informative_status 1
+set -g __fish_git_prompt_hide_untrackedfiles 1
+
+set -g __fish_git_prompt_color_branch magenta
+set -g __fish_git_prompt_showupstream "informative"
+set -g __fish_git_prompt_char_upstream_ahead "↑"
+set -g __fish_git_prompt_char_upstream_behind "↓"
+set -g __fish_git_prompt_char_upstream_prefix ""
+
+set -g __fish_git_prompt_char_stagedstate "●"
+set -g __fish_git_prompt_char_dirtystate "✚"
+set -g __fish_git_prompt_char_untrackedfiles "…"
+set -g __fish_git_prompt_char_conflictedstate "✖"
+set -g __fish_git_prompt_char_cleanstate "✔"
+
+set -g __fish_git_prompt_color_dirtystate blue
+set -g __fish_git_prompt_color_stagedstate yellow
+set -g __fish_git_prompt_color_invalidstate red
+set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
+set -g __fish_git_prompt_color_cleanstate green
+
 # set fish_greeting ""
 
 function fish_right_prompt
@@ -48,14 +73,7 @@ function fish_right_prompt
     printf ' ≡ %d' $last_status
     set_color normal
   end
-end
-
-function _git_branch_name
-  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-end
-
-function _is_git_dirty
-  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+  
 end
 
 function fish_prompt
@@ -80,19 +98,7 @@ function fish_prompt
   end
 
   # Display the current directory name
-  echo -n -s $normal
-
-  # Show git branch and dirty state
-  if [ (_git_branch_name) ]
-    set -l git_branch '[' (_git_branch_name) ']'
-
-    if [ (_is_git_dirty) ]
-      set git_info $red $git_branch " ~= "
-    else
-      set git_info $green $git_branch
-    end
-    echo -n -s $git_info $normal
-  end
+  echo -n -s (fish_git_prompt)
 
   # Was last command succesful or not
   if test $last_status = 0
@@ -105,7 +111,7 @@ function fish_prompt
   if [ "$CMD_DURATION" -gt 300000 ]
     echo The last command took (math "$CMD_DURATION/1000") seconds.
   end
-
+  
   # Terminate with a nice prompt char
   echo -n -s $blue(whoami)$normal'@'$yellow(hostname) $normal ' ' $status_indicator $normal
 end

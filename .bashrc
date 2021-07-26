@@ -9,7 +9,7 @@ PATH=$PATH:/home/nick/.bin
 export PATH
 
 # environment variables
-export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'vim'; else echo 'vim'; fi)"	# gedit, nano
+export EDITOR="nvim"	# gedit, nano
 
 # pacman aliases (if desired, adapt for your favourite AUR helper)
 alias pac="sudo pacman -S"		# default action	- install one or more packages

@@ -20,13 +20,13 @@ g.indent_blankline_filetype_exclude = {'help', 'startify', 'NvimTree', 'undotree
 g.indent_blankline_buftype_exclude = {'terminal', 'nofile'}
 
 vim.api.nvim_set_keymap(
-    'n', '<Leader>ti',
+    'n', '<Leader>ui',
     '<cmd>IndentBlanklineToggle<CR>',
     { noremap = true, silent = true }
 )
 
 require('which-key').register({
-    t = {
+    u = {
         name = '+ui-toggle',
         i = 'Indent guides',
     }

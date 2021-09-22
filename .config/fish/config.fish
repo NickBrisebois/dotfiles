@@ -27,6 +27,8 @@ alias cp="cp -i"
 
 alias pull="git pull --ff-only"
 
+alias pidof="ps -A | grep "
+
 alias vim=nvim
 
 function search
@@ -130,3 +132,4 @@ export NVM_DIR="$HOME/.nvm"
 set -x NO_PROXY "34.232.123.22,127.0.0.0/8,127.0.0.1,localhost,,.cisco.com,engci-maven.cisco.com,https://engci-maven-master.cisco.com,.cisco.com,172.,10.*"
 set -x ROUTERSERVICE_HOST 10.81.85.95
 set -x VMS_VM 10.81.85.95
+set -x JAVA_HOME "/Users/nibriseb/Library/Java/JavaVirtualMachines/adopt-openj9-11.0.11/Contents/Home"

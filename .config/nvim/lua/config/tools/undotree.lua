@@ -1,7 +1,7 @@
-vim.api.nvim_set_keymap('n', '<Leader>tu', ':UndotreeToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>uu', ':UndotreeToggle<CR>', { noremap = true })
 
 require('which-key').register({
-    t = {
+    u = {
         name = '+ui-toggle',
         u = 'UndoTree'
     }

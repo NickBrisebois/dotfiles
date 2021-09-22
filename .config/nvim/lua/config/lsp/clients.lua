@@ -20,11 +20,7 @@ lsputils.clients['clangd'].setup {
     end
 }
 
-lsputils.clients['tsserver'].setup {
-    on_attach = function(client)
-        client.resolved_capabilities.document_formatting = false
-    end
-}
+lsputils.clients['tsserver'].setup {}
 
 lsputils.clients['rust_analyzer'].setup {
     on_attach = function(client, bufnr)
@@ -101,53 +97,6 @@ lsputils.clients['pyright'].setup {
 lsputils.clients['cmake'].setup {
     cmd = {
         lspinstall_path .. 'cmake/venv/bin/cmake-language-server'
-    }
-}
-
-lsputils.clients['texlab'].setup {
-    on_attach = function(client, bufnr)
-        lsputils.default_on_attach(client, bufnr)
-
-        local opts = { noremap = true, silent = true }
-
-        -- Preview on save
-        utils.create_buf_augroup({
-            {
-                'BufWritePost',
-                'TexlabForward'
-            }
-        }, 'texlab_preview_on_save', bufnr)
-
-        lsputils.client_add_binds(
-            bufnr,
-            {
-                {'n', '<Leader>lb', '<cmd>TexlabBuild<CR>', opts},
-                {'n', '<Leader>lp', '<cmd>TexlabForward<CR>', opts}
-            },
-            { b = 'Build', p = 'Preview' },
-            { prefix = '<leader>l' }
-        )
-    end,
-
-    filetypes = { 'tex', 'plaintex', 'bib' },
-
-    settings = {
-        texlab = {
-            build = {
-                executable = 'latexmk',
-                args = { '-pdf', '-interaction=nonstopmode', '-synctex=1', '-pvc', '%f' },
-                isContinuous = true,
-            },
-            chktex = {
-                onEdit = false,
-                onOpenAndSave = true,
-            },
-            formatterLineLength = 100,
-            forwardSearch = {
-                executable = 'okular',
-                args = { '--unique', '%p#src:%l%f' }
-            }
-        }
     }
 }
 

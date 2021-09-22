@@ -2,10 +2,10 @@ require'nvim-lightbulb'.update_lightbulb {
     sign = {
         enabled = true,
         -- Priority of the gutter sign
-        priority = 20,
+        priority = 10,
     },
     float = {
-        enabled = true,
+        enabled =true,
         -- Text to show in the popup float
         text = "",
         -- Available keys for window options:
@@ -25,7 +25,7 @@ require'nvim-lightbulb'.update_lightbulb {
         win_opts = {},
     },
     virtual_text = {
-        enabled = false,
+        enabled = true,
         -- Text to show at virtual text
         text = "",
     }

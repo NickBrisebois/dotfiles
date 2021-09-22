@@ -16,6 +16,8 @@ use 'wbthomason/packer.nvim'
 use { 'equalsraf/neovim-gui-shim', opt = true }
 
 -- Colorscheme
+use 'tomasiser/vim-code-dark'
+use 'yashguptaz/calvera-dark.nvim'
 use 'rakr/vim-one'
 use 'sainnhe/sonokai'
 use 'yong1le/darkplus.nvim'
@@ -48,6 +50,7 @@ use 'kyazdani42/nvim-tree.lua'
 use 'tpope/vim-fugitive'
 use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
 use 'junegunn/gv.vim'
+use 'APZelos/blamer.nvim'
 
 -- Undo Tree
 use 'mbbill/undotree'

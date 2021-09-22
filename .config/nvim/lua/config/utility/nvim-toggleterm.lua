@@ -32,3 +32,27 @@ require"toggleterm".setup {
         }
     }
 }
+
+local Terminal = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+local normalterm = Terminal:new({ hidden = true })
+local wk = require('which-key')
+
+function _lazygit_toggle()
+    lazygit:toggle()
+end
+
+function _terminal_toggle()
+    normalterm:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<Leader>tg", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>tt", "<cmd>lua _terminal_toggle()<CR>", {noremap = true, silent = true})
+
+wk.register({
+    t = {
+        name = '+toggleterm',
+        t = 'Toggle terminal',
+        g = 'Toggle lazygit',
+    }
+}, { prefix = "<leader>" })

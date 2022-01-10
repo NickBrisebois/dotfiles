@@ -2,8 +2,6 @@ require'bufferline'.setup {
     options = {
         view = "multiwindow",
         numbers = "ordinal",
-        number_style = "superscript", -- buffer_id at index 1, ordinal at index 2
-        mappings = false,
         buffer_close_icon = '',
         modified_icon = '●',
         close_icon = '',
